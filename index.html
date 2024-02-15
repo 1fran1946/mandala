@@ -35,7 +35,7 @@
 
 <br>
 <!-- <svg width="633" height="457" viewBox="0 0 633 457" fill="none">-->
-<svg width="1200" height="1000" viewBox="0 0 633 457" fill="none">
+<svg width="1200" height="900" viewBox="0 0 633 400" fill="none">
 <rect x="0" y="0" width="633" height="457" fill="none"></rect>
 
 <!--g id="txt"></g-->
@@ -1006,23 +1006,24 @@
 </svg> 
 </td></tr><tr><td>
 <div style="text-align: right; background:white; color: black; padding: 8px;display: inline-block">
-<span>1 Красный </span>
+<div id="inkcolor" style="width:40px; height:13px; border: 1px solid white; margin: auto;"></div>
+<span onclick="ink='red';inkcolor.style.background=ink;">1 Красный </span>
 <br>
-<span>2 Синий </span>
+<span onclick="ink='blue';inkcolor.style.background=ink;">2 Синий </span>
 <br>
-<span>3 Зеленый </span>
+<span onclick="ink='springgreen';inkcolor.style.background=ink;">3 Зеленый </span>
 <br>
-<span>4 Желтый </span>
+<span onclick="ink='yellow';inkcolor.style.background=ink;">4 Желтый </span>
 <br>
-<span>5 Голубой </span>
+<span onclick="ink='cyan';inkcolor.style.background=ink;">5 Голубой </span>
 <br>
-<span>6 Сиреневый </span>
+<span onclick="ink='tomato';inkcolor.style.background=ink;">6 Сиреневый </span>
 <br>
-<span>7 Розовый </span>
+<span onclick="ink='fuchsia';inkcolor.style.background=ink;">7 Розовый </span>
 <br>
-<span>8 Оранжевый </span>
+<span onclick="ink='orange';inkcolor.style.background=ink;">8 Оранжевый </span>
 <br>
-<span>9 Фиолетовый </span>
+<span onclick="ink='purple';inkcolor.style.background=ink;">9 Фиолетовый </span>
 <br>
 <!--
 <input type="range" min="2" max="10" value="10" step="1" id="r1">
@@ -1044,6 +1045,24 @@
 
 <script>//
 var s='';
+let c6=[ // разводка
+[g21,g31,g32,g33,g34,g35,g36,g37,0,0, 0,0,0,0,0,0],
+[g20,g30,g71,g70,g47,g48,g49,g50,0,0, 0,0,0,0,0,0],
+[g19,g29,g72,g46,g51,g52,g53,0,0,0, 0,0,0,0,0,0],
+[g18,g28,g45,g54,g55,g56,g60,0,0,0, 0,0,0,0,0,0],
+[g17,g27,g44,g57,g59,g61,0,0,0,0, 0,0,0,0,0,0],
+[g16,g26,g43,g58,g62,g64,0,0,0,0, 0,0,0,0,0,0],
+[g15,g25,g42,g63,g65,0,0,0,0,0, 0,0,0,0,0,0],
+[g14,g24,g41,g67,g66,0,0,0,0,0, 0,0,0,0,0,0],
+[g13,g23,g40,g68,0,0,0,0,0,0, 0,0,0,0,0,0],
+[g12,g22,g39,g69,0,0,0,0,0,0, 0,0,0,0,0,0],
+[g11,g10,g38,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+[g8,g9,g6,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+[g7,g5,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+[g4,g3,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+[g2,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+[g1,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0]
+];
 let b;
 const pox=document.querySelectorAll('[id^="g"]'); //alert(pox.length);
 pox.forEach(x=>{x.style.fill='white'});
@@ -1113,25 +1132,10 @@ for (let k=1;k<b6.length;k++){
 	}
 
 
-let c6=[ // разводка
-[g21,g31,g32,g33,g34,g35,g36,g37,0,0, 0,0,0,0,0,0],
-[g20,g30,g71,g70,g47,g48,g49,g50,0,0, 0,0,0,0,0,0],
-[g19,g29,g72,g46,g51,g52,g53,0,0,0, 0,0,0,0,0,0],
-[g18,g28,g45,g54,g55,g56,g60,0,0,0, 0,0,0,0,0,0],
-[g17,g27,g44,g57,g59,g61,0,0,0,0, 0,0,0,0,0,0],
-[g16,g26,g43,g58,g62,g64,0,0,0,0, 0,0,0,0,0,0],
-[g15,g25,g42,g63,g65,0,0,0,0,0, 0,0,0,0,0,0],
-[g14,g24,g41,g67,g66,0,0,0,0,0, 0,0,0,0,0,0],
-[g13,g23,g40,g68,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g12,g22,g39,g69,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g11,g10,g38,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g8,g9,g6,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g7,g5,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g4,g3,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g2,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g1,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0]
-];
 
+
+
+/*
 const r1=document.querySelector('#r1');
 const r2=document.querySelector('#r2');
 const r3=document.querySelector('#r3');
@@ -1141,7 +1145,7 @@ const r6=document.querySelector('#r6');
 const r7=document.querySelector('#r7');
 const r8=document.querySelector('#r8');
 const r9=document.querySelector('#r9');
-/*
+
 const opa=[1,
 r1.value/10,
 r2.value/10,
@@ -1312,11 +1316,13 @@ let w=q.map((x,i)=>{
 	let v=h[x[0]].querySelectorAll('polygon')[x[1]];
 	let m=v.getAttribute('points').split(' ').map(y=>+y);
 	//d+='<polygon points="'+m.join(' ')+'" stroke="grey"></polygon>\n';
-	return '<text text-anchor="middle" x="'+(m[4]+(m[0]-m[4])/2)+'" y="'+(3+m[7]+(m[3]-m[7])/2)+'" fill="black">'+b6[x[2]][x[3]]+'</text>';
+	return '<text text-anchor="middle" x="'+(m[4]+(m[0]-m[4])/2)+'" y="'+(3+m[7]+(m[3]-m[7])/2)+'" fill="black" onclick="'+(c6[x[2]][x[3]].id)+'.style.fill=ink">'+b6[x[2]][x[3]]+'</text>';
 }).join('\n');
 txt.innerHTML=d+w;//id="txt1"
 }
 
+
+//onclick="c6[x[2]][x[3]].style.fill=ink"
 
 //digit();
 
