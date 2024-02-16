@@ -1159,9 +1159,9 @@
 <br>
 <span onclick="ink='yellow';inkcolor.style.background=ink;">4 Желтый </span>
 <br>
-<span onclick="ink='cyan';inkcolor.style.background=ink;">5 Голубой </span>
+<span onclick="ink='#00BFFF';inkcolor.style.background=ink;">5 Голубой </span>
 <br>
-<span onclick="ink='tomato';inkcolor.style.background=ink;">6 Бирюзовый </span>
+<span onclick="ink='#40E0D0';inkcolor.style.background=ink;">6 Бирюзовый </span>
 <br>
 <span onclick="ink='fuchsia';inkcolor.style.background=ink;">7 Розовый </span>
 <br>
@@ -1210,17 +1210,17 @@ let c6=[ // разводка
 let b;
 const pox=document.querySelectorAll('[id^="g"]'); //alert(pox.length);
 pox.forEach(x=>{x.style.fill='white'});
-var ink='#0118A4';
+var ink='red';
 
 const ogg=document.querySelectorAll('polygon');
 ogg.forEach(x=>{x.addEventListener('click',()=>{
 	s+=x.parentNode.id+',';
-	console.log(s);
+	
 	})});
 
 ogg.forEach((x,i)=>{x.setAttribute('data-n',`${i}`)});
 
-const a=['#E60000','#E60000','#0118A4','#19D208','#FFF001','#009EE7','#009A9C','#E6007C','#F77D02','#A4019C']; 
+//const //console.log(s);a=['#E60000','#E60000','#0118A4','#19D208','#FFF001','#009EE7','#009A9C','#E6007C','#F77D02','#A4019C']; 
 
 var aa=a.map(x=>document.createElement('div'));
 aa.forEach((x,i)=>{x.style.fill=a[i]});
