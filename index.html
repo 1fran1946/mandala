@@ -1167,7 +1167,7 @@
 <br>
 <span onclick="ink='orange';inkcolor.style.background=ink;">8 Оранжевый </span>
 <br>
-<span onclick="ink='purple';inkcolor.style.background=ink;">9 Фиолетовый </span>
+<span onclick="ink='#8b00ff';inkcolor.style.background=ink;">9 Фиолетовый </span>
 <br>
 <!--
 <input type="range" min="2" max="10" value="10" step="1" id="r1">
@@ -1221,10 +1221,11 @@ ogg.forEach(x=>{x.addEventListener('click',()=>{
 ogg.forEach((x,i)=>{x.setAttribute('data-n',`${i}`)});
 
 //const //console.log(s);a=['#E60000','#E60000','#0118A4','#19D208','#FFF001','#009EE7','#009A9C','#E6007C','#F77D02','#A4019C']; 
-
+/*
 var aa=a.map(x=>document.createElement('div'));
 aa.forEach((x,i)=>{x.style.fill=a[i]});
 aa=aa.map(x=>{let y=x.style.fill; x.remove(); return y});
+*/
 
 const rf=document.querySelector('#rf');
 rf.addEventListener('change',()=>{//'blur'
@@ -1347,7 +1348,7 @@ txt.innerHTML=
 ray.map(x=>x).join('\n');*/
 //
 
-console.log(b6);
+//console.log(b6);
 digit();
 });//end Listener('change
 
@@ -1380,7 +1381,7 @@ digit();
 //let v=h.querySelectorAll('polygon')[2];/**////[1,3]
 
 function digit(){
-console.log(b6);
+//console.log(b6);
 let h=document.querySelectorAll('g');
 let q=[
 
