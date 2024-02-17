@@ -9,29 +9,20 @@
 <style>  
   *:not(hr), *::after, *::before {box-sizing: border-box;margin:0;padding:0;border:0}ul {list-style-type: none}
   input[type='date'] {font-size: 36px}
-  @media screen and (max-width: 1080px) {input[type='date'] {font-size: 24px}}
-  .but0{position:fixed; right:0;width:64px; background:gold; border:2px solid pink;
-  border-radius:6px;padding:10px;box-shadow: 0 0 10px rgba(0,0,0,0.5);cursor:pointer;}
-  .but1{top:5px}
-  .but2{top:52px}
-  .but3{top:98px}
-  text {font-family: sans-serif; font-size: 9px;}
-  /*style="stroke: gray; stroke-width: 1;*/
+  /*@media screen and (max-width: 1080px) {input[type='date'] {font-size: 24px}}*/
+
   polygon {stroke:#000f;}
   polygon {stroke-width: .5px;}
   #fish { overflow: hidden; margin: auto; width:880px; background: white;}
  
   
   #fish svg {transform: translateX(-160px);user-select: none;}
+  
+  text {text-anchor:middle; fill:black; font-family: sans-serif; font-size: 9px;}
+  #inkcolor {font-size: 18px;width:40px; height:13px; border: 1px solid white; margin: auto;}
  </style>
-<body style="b0ackground: red; text-align: center; padding-top: 51px; padding-bottom: 51px;">
+<body style="text-align: center; padding-top: 51px; padding-bottom: 51px;">
 
-
-<!--p0osition:relative;p0osition: absolute;  #fish svg {transform: translatex: (-50%);}
-<div class="but0 but1" onclick="window.location.href=&#39;./main.html&#39;" style="background:yellow">date</div>
-<div class="but0 but2" onclick="window.location.href=&#39;./index.html&#39;">draw</div>
-<div class="but0 but3" onclick="window.location.href=&#39;./bukva.html&#39;">word</div>
--->
 
 <table style="margin: 0 auto"><tbody><tr><td>
 <input type="date" id="rf">
@@ -40,11 +31,11 @@
 <br>
 
 <div id="fish">
-<!-- <svg width="633" height="457" viewBox="0 0 633 457" fill="none">-->
+
 <svg width="1200" height="900" viewBox="0 0 633 400" fill="none">
 <rect x="0" y="0" width="633" height="457" fill="none"></rect>
 
-<!--g id="txt"></g-->
+
 
 <g id="g1" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
 <polygon points="316.000 228.000 329.647 228.000 336.471 216.181 322.824 216.181" data-n="0"></polygon>
@@ -1009,148 +1000,149 @@
 
 
 <g id="txt">
-<text text-anchor="middle" x="254.588" y="65.538" fill="black" onclick="g72.style.fill=ink"> </text>
-<text text-anchor="middle" x="377.412" y="65.538" fill="black" onclick="g72.style.fill=ink"> </text>
-<text text-anchor="middle" x="247.765" y="53.72" fill="black" onclick="g71.style.fill=ink"> </text>
-<text text-anchor="middle" x="384.235" y="53.72" fill="black" onclick="g71.style.fill=ink"> </text>
-<text text-anchor="middle" x="261.412" y="53.72" fill="black" onclick="g70.style.fill=ink"> </text>
-<text text-anchor="middle" x="370.588" y="53.72" fill="black" onclick="g70.style.fill=ink"> </text>
-<text text-anchor="middle" x="316" y="148.269" fill="black" onclick="g69.style.fill=ink"> </text>
-<text text-anchor="middle" x="309.176" y="136.45" fill="black" onclick="g68.style.fill=ink"> </text>
-<text text-anchor="middle" x="322.824" y="136.45" fill="black" onclick="g68.style.fill=ink"> </text>
-<text text-anchor="middle" x="302.353" y="124.632" fill="black" onclick="g67.style.fill=ink"> </text>
-<text text-anchor="middle" x="329.647" y="124.632" fill="black" onclick="g67.style.fill=ink"> </text>
-<text text-anchor="middle" x="316" y="124.632" fill="black" onclick="g66.style.fill=ink"> </text>
-<text text-anchor="middle" x="309.176" y="112.813" fill="black" onclick="g65.style.fill=ink"> </text>
-<text text-anchor="middle" x="322.824" y="112.813" fill="black" onclick="g65.style.fill=ink"> </text>
-<text text-anchor="middle" x="316" y="100.994" fill="black" onclick="g64.style.fill=ink"> </text>
-<text text-anchor="middle" x="295.529" y="112.813" fill="black" onclick="g63.style.fill=ink"> </text>
-<text text-anchor="middle" x="336.471" y="112.813" fill="black" onclick="g63.style.fill=ink"> </text>
-<text text-anchor="middle" x="302.353" y="100.994" fill="black" onclick="g62.style.fill=ink"> </text>
-<text text-anchor="middle" x="329.647" y="100.994" fill="black" onclick="g62.style.fill=ink"> </text>
-<text text-anchor="middle" x="309.176" y="89.176" fill="black" onclick="g61.style.fill=ink"> </text>
-<text text-anchor="middle" x="322.824" y="89.176" fill="black" onclick="g61.style.fill=ink"> </text>
-<text text-anchor="middle" x="316" y="77.357" fill="black" onclick="g60.style.fill=ink"> </text>
-<text text-anchor="middle" x="295.529" y="89.176" fill="black" onclick="g59.style.fill=ink"> </text>
-<text text-anchor="middle" x="336.471" y="89.176" fill="black" onclick="g59.style.fill=ink"> </text>
-<text text-anchor="middle" x="288.706" y="100.994" fill="black" onclick="g58.style.fill=ink"> </text>
-<text text-anchor="middle" x="343.294" y="100.994" fill="black" onclick="g58.style.fill=ink"> </text>
-<text text-anchor="middle" x="281.882" y="89.176" fill="black" onclick="g57.style.fill=ink"> </text>
-<text text-anchor="middle" x="350.118" y="89.176" fill="black" onclick="g57.style.fill=ink"> </text>
-<text text-anchor="middle" x="302.353" y="77.357" fill="black" onclick="g56.style.fill=ink"> </text>
-<text text-anchor="middle" x="329.647" y="77.357" fill="black" onclick="g56.style.fill=ink"> </text>
-<text text-anchor="middle" x="288.706" y="77.357" fill="black" onclick="g55.style.fill=ink"> </text>
-<text text-anchor="middle" x="343.294" y="77.357" fill="black" onclick="g55.style.fill=ink"> </text>
-<text text-anchor="middle" x="275.059" y="77.357" fill="black" onclick="g54.style.fill=ink"> </text>
-<text text-anchor="middle" x="356.941" y="77.357" fill="black" onclick="g54.style.fill=ink"> </text>
-<text text-anchor="middle" x="309.176" y="65.538" fill="black" onclick="g53.style.fill=ink"> </text>
-<text text-anchor="middle" x="322.824" y="65.538" fill="black" onclick="g53.style.fill=ink"> </text>
-<text text-anchor="middle" x="295.529" y="65.538" fill="black" onclick="g52.style.fill=ink"> </text>
-<text text-anchor="middle" x="336.471" y="65.538" fill="black" onclick="g52.style.fill=ink"> </text>
-<text text-anchor="middle" x="281.882" y="65.538" fill="black" onclick="g51.style.fill=ink"> </text>
-<text text-anchor="middle" x="350.118" y="65.538" fill="black" onclick="g51.style.fill=ink"> </text>
-<text text-anchor="middle" x="316" y="53.72" fill="black" onclick="g50.style.fill=ink"> </text>
-<text text-anchor="middle" x="302.353" y="53.72" fill="black" onclick="g49.style.fill=ink"> </text>
-<text text-anchor="middle" x="329.647" y="53.72" fill="black" onclick="g49.style.fill=ink"> </text>
-<text text-anchor="middle" x="288.706" y="53.72" fill="black" onclick="g48.style.fill=ink"> </text>
-<text text-anchor="middle" x="343.294" y="53.72" fill="black" onclick="g48.style.fill=ink"> </text>
-<text text-anchor="middle" x="275.059" y="53.72" fill="black" onclick="g47.style.fill=ink"> </text>
-<text text-anchor="middle" x="356.941" y="53.72" fill="black" onclick="g47.style.fill=ink"> </text>
-<text text-anchor="middle" x="268.235" y="65.538" fill="black" onclick="g46.style.fill=ink"> </text>
-<text text-anchor="middle" x="363.765" y="65.538" fill="black" onclick="g46.style.fill=ink"> </text>
-<text text-anchor="middle" x="261.412" y="77.357" fill="black" onclick="g45.style.fill=ink"> </text>
-<text text-anchor="middle" x="370.588" y="77.357" fill="black" onclick="g45.style.fill=ink"> </text>
-<text text-anchor="middle" x="268.235" y="89.176" fill="black" onclick="g44.style.fill=ink"> </text>
-<text text-anchor="middle" x="363.765" y="89.176" fill="black" onclick="g44.style.fill=ink"> </text>
-<text text-anchor="middle" x="275.059" y="100.994" fill="black" onclick="g43.style.fill=ink"> </text>
-<text text-anchor="middle" x="356.941" y="100.994" fill="black" onclick="g43.style.fill=ink"> </text>
-<text text-anchor="middle" x="281.882" y="112.813" fill="black" onclick="g42.style.fill=ink"> </text>
-<text text-anchor="middle" x="350.118" y="112.813" fill="black" onclick="g42.style.fill=ink"> </text>
-<text text-anchor="middle" x="288.706" y="124.632" fill="black" onclick="g41.style.fill=ink"> </text>
-<text text-anchor="middle" x="343.294" y="124.632" fill="black" onclick="g41.style.fill=ink"> </text>
-<text text-anchor="middle" x="295.529" y="136.45" fill="black" onclick="g40.style.fill=ink"> </text>
-<text text-anchor="middle" x="336.471" y="136.45" fill="black" onclick="g40.style.fill=ink"> </text>
-<text text-anchor="middle" x="302.353" y="148.269" fill="black" onclick="g39.style.fill=ink"> </text>
-<text text-anchor="middle" x="329.647" y="148.269" fill="black" onclick="g39.style.fill=ink"> </text>
-<text text-anchor="middle" x="309.176" y="160.088" fill="black" onclick="g38.style.fill=ink"> </text>
-<text text-anchor="middle" x="322.824" y="160.088" fill="black" onclick="g38.style.fill=ink"> </text>
-<text text-anchor="middle" x="309.176" y="41.901" fill="black" onclick="g37.style.fill=ink"> </text>
-<text text-anchor="middle" x="322.824" y="41.901" fill="black" onclick="g37.style.fill=ink"> </text>
-<text text-anchor="middle" x="295.529" y="41.901" fill="black" onclick="g36.style.fill=ink"> </text>
-<text text-anchor="middle" x="336.471" y="41.901" fill="black" onclick="g36.style.fill=ink"> </text>
-<text text-anchor="middle" x="281.882" y="41.901" fill="black" onclick="g35.style.fill=ink"> </text>
-<text text-anchor="middle" x="350.118" y="41.901" fill="black" onclick="g35.style.fill=ink"> </text>
-<text text-anchor="middle" x="268.235" y="41.901" fill="black" onclick="g34.style.fill=ink"> </text>
-<text text-anchor="middle" x="363.765" y="41.901" fill="black" onclick="g34.style.fill=ink"> </text>
-<text text-anchor="middle" x="254.588" y="41.901" fill="black" onclick="g33.style.fill=ink"> </text>
-<text text-anchor="middle" x="377.412" y="41.901" fill="black" onclick="g33.style.fill=ink"> </text>
-<text text-anchor="middle" x="240.941" y="41.901" fill="black" onclick="g32.style.fill=ink"> </text>
-<text text-anchor="middle" x="391.059" y="41.901" fill="black" onclick="g32.style.fill=ink"> </text>
-<text text-anchor="middle" x="227.294" y="41.901" fill="black" onclick="g31.style.fill=ink"> </text>
-<text text-anchor="middle" x="404.706" y="41.901" fill="black" onclick="g31.style.fill=ink"> </text>
-<text text-anchor="middle" x="234.118" y="53.72" fill="black" onclick="g30.style.fill=ink"> </text>
-<text text-anchor="middle" x="397.882" y="53.72" fill="black" onclick="g30.style.fill=ink"> </text>
-<text text-anchor="middle" x="240.941" y="65.538" fill="black" onclick="g29.style.fill=ink"> </text>
-<text text-anchor="middle" x="391.059" y="65.538" fill="black" onclick="g29.style.fill=ink"> </text>
-<text text-anchor="middle" x="247.765" y="77.357" fill="black" onclick="g28.style.fill=ink"> </text>
-<text text-anchor="middle" x="384.235" y="77.357" fill="black" onclick="g28.style.fill=ink"> </text>
-<text text-anchor="middle" x="254.588" y="89.176" fill="black" onclick="g27.style.fill=ink"> </text>
-<text text-anchor="middle" x="377.412" y="89.176" fill="black" onclick="g27.style.fill=ink"> </text>
-<text text-anchor="middle" x="261.412" y="100.994" fill="black" onclick="g26.style.fill=ink"> </text>
-<text text-anchor="middle" x="370.588" y="100.994" fill="black" onclick="g26.style.fill=ink"> </text>
-<text text-anchor="middle" x="268.235" y="112.813" fill="black" onclick="g25.style.fill=ink"> </text>
-<text text-anchor="middle" x="363.765" y="112.813" fill="black" onclick="g25.style.fill=ink"> </text>
-<text text-anchor="middle" x="275.059" y="124.632" fill="black" onclick="g24.style.fill=ink"> </text>
-<text text-anchor="middle" x="356.941" y="124.632" fill="black" onclick="g24.style.fill=ink"> </text>
-<text text-anchor="middle" x="281.882" y="136.45" fill="black" onclick="g23.style.fill=ink"> </text>
-<text text-anchor="middle" x="350.118" y="136.45" fill="black" onclick="g23.style.fill=ink"> </text>
-<text text-anchor="middle" x="288.706" y="148.269" fill="black" onclick="g22.style.fill=ink"> </text>
-<text text-anchor="middle" x="343.294" y="148.269" fill="black" onclick="g22.style.fill=ink"> </text>
-<text text-anchor="middle" x="213.647" y="41.901" fill="black" onclick="g21.style.fill=ink"> </text>
-<text text-anchor="middle" x="418.353" y="41.901" fill="black" onclick="g21.style.fill=ink"> </text>
-<text text-anchor="middle" x="220.471" y="53.72" fill="black" onclick="g20.style.fill=ink"> </text>
-<text text-anchor="middle" x="411.529" y="53.72" fill="black" onclick="g20.style.fill=ink"> </text>
-<text text-anchor="middle" x="227.294" y="65.538" fill="black" onclick="g19.style.fill=ink"> </text>
-<text text-anchor="middle" x="404.706" y="65.538" fill="black" onclick="g19.style.fill=ink"> </text>
-<text text-anchor="middle" x="234.118" y="77.357" fill="black" onclick="g18.style.fill=ink"> </text>
-<text text-anchor="middle" x="397.882" y="77.357" fill="black" onclick="g18.style.fill=ink"> </text>
-<text text-anchor="middle" x="240.941" y="89.176" fill="black" onclick="g17.style.fill=ink"> </text>
-<text text-anchor="middle" x="391.059" y="89.176" fill="black" onclick="g17.style.fill=ink"> </text>
-<text text-anchor="middle" x="247.765" y="100.994" fill="black" onclick="g16.style.fill=ink"> </text>
-<text text-anchor="middle" x="384.235" y="100.994" fill="black" onclick="g16.style.fill=ink"> </text>
-<text text-anchor="middle" x="254.588" y="112.813" fill="black" onclick="g15.style.fill=ink"> </text>
-<text text-anchor="middle" x="377.412" y="112.813" fill="black" onclick="g15.style.fill=ink"> </text>
-<text text-anchor="middle" x="261.412" y="124.632" fill="black" onclick="g14.style.fill=ink"> </text>
-<text text-anchor="middle" x="370.588" y="124.632" fill="black" onclick="g14.style.fill=ink"> </text>
-<text text-anchor="middle" x="268.235" y="136.45" fill="black" onclick="g13.style.fill=ink"> </text>
-<text text-anchor="middle" x="363.765" y="136.45" fill="black" onclick="g13.style.fill=ink"> </text>
-<text text-anchor="middle" x="275.059" y="148.269" fill="black" onclick="g12.style.fill=ink"> </text>
-<text text-anchor="middle" x="356.941" y="148.269" fill="black" onclick="g12.style.fill=ink"> </text>
-<text text-anchor="middle" x="281.882" y="160.088" fill="black" onclick="g11.style.fill=ink"> </text>
-<text text-anchor="middle" x="350.118" y="160.088" fill="black" onclick="g11.style.fill=ink"> </text>
-<text text-anchor="middle" x="295.529" y="160.088" fill="black" onclick="g10.style.fill=ink"> </text>
-<text text-anchor="middle" x="336.471" y="160.088" fill="black" onclick="g10.style.fill=ink"> </text>
-<text text-anchor="middle" x="302.353" y="171.907" fill="black" onclick="g9.style.fill=ink"> </text>
-<text text-anchor="middle" x="329.647" y="171.907" fill="black" onclick="g9.style.fill=ink"> </text>
-<text text-anchor="middle" x="288.706" y="171.907" fill="black" onclick="g8.style.fill=ink"> </text>
-<text text-anchor="middle" x="343.294" y="171.907" fill="black" onclick="g8.style.fill=ink"> </text>
-<text text-anchor="middle" x="295.529" y="183.725" fill="black" onclick="g7.style.fill=ink"> </text>
-<text text-anchor="middle" x="336.471" y="183.725" fill="black" onclick="g7.style.fill=ink"> </text>
-<text text-anchor="middle" x="316" y="171.907" fill="black" onclick="g6.style.fill=ink"> </text>
-<text text-anchor="middle" x="309.176" y="183.725" fill="black" onclick="g5.style.fill=ink"> </text>
-<text text-anchor="middle" x="322.824" y="183.725" fill="black" onclick="g5.style.fill=ink"> </text>
-<text text-anchor="middle" x="302.353" y="195.544" fill="black" onclick="g4.style.fill=ink"> </text>
-<text text-anchor="middle" x="329.647" y="195.544" fill="black" onclick="g4.style.fill=ink"> </text>
-<text text-anchor="middle" x="316" y="195.544" fill="black" onclick="g3.style.fill=ink"> </text>
-<text text-anchor="middle" x="309.176" y="207.363" fill="black" onclick="g2.style.fill=ink"> </text>
-<text text-anchor="middle" x="322.824" y="207.363" fill="black" onclick="g2.style.fill=ink"> </text>
-<text text-anchor="middle" x="316" y="219.181" fill="black" onclick="g1.style.fill=ink"> </text>
+<text x="254.588" y="65.538" onclick="g72.style.fill=ink"> </text>
+<text x="377.412" y="65.538" onclick="g72.style.fill=ink"> </text>
+<text x="247.765" y="53.72" onclick="g71.style.fill=ink"> </text>
+<text x="384.235" y="53.72" onclick="g71.style.fill=ink"> </text>
+<text x="261.412" y="53.72" onclick="g70.style.fill=ink"> </text>
+<text x="370.588" y="53.72" onclick="g70.style.fill=ink"> </text>
+<text  x="316" y="148.269" onclick="g69.style.fill=ink"> </text>
+<text  x="309.176" y="136.45" onclick="g68.style.fill=ink"> </text>
+<text  x="322.824" y="136.45" onclick="g68.style.fill=ink"> </text>
+<text  x="302.353" y="124.632" onclick="g67.style.fill=ink"> </text>
+<text  x="329.647" y="124.632" onclick="g67.style.fill=ink"> </text>
+<text  x="316" y="124.632" onclick="g66.style.fill=ink"> </text>
+<text  x="309.176" y="112.813" onclick="g65.style.fill=ink"> </text>
+<text  x="322.824" y="112.813" onclick="g65.style.fill=ink"> </text>
+<text  x="316" y="100.994" onclick="g64.style.fill=ink"> </text>
+<text  x="295.529" y="112.813" onclick="g63.style.fill=ink"> </text>
+<text  x="336.471" y="112.813" onclick="g63.style.fill=ink"> </text>
+<text  x="302.353" y="100.994" onclick="g62.style.fill=ink"> </text>
+<text  x="329.647" y="100.994" onclick="g62.style.fill=ink"> </text>
+<text  x="309.176" y="89.176" onclick="g61.style.fill=ink"> </text>
+<text  x="322.824" y="89.176" onclick="g61.style.fill=ink"> </text>
+<text  x="316" y="77.357" onclick="g60.style.fill=ink"> </text>
+<text  x="295.529" y="89.176" onclick="g59.style.fill=ink"> </text>
+<text  x="336.471" y="89.176" onclick="g59.style.fill=ink"> </text>
+<text  x="288.706" y="100.994" onclick="g58.style.fill=ink"> </text>
+<text  x="343.294" y="100.994" onclick="g58.style.fill=ink"> </text>
+<text  x="281.882" y="89.176" onclick="g57.style.fill=ink"> </text>
+<text  x="350.118" y="89.176" onclick="g57.style.fill=ink"> </text>
+<text  x="302.353" y="77.357" onclick="g56.style.fill=ink"> </text>
+<text  x="329.647" y="77.357" onclick="g56.style.fill=ink"> </text>
+<text  x="288.706" y="77.357" onclick="g55.style.fill=ink"> </text>
+<text  x="343.294" y="77.357" onclick="g55.style.fill=ink"> </text>
+<text  x="275.059" y="77.357" onclick="g54.style.fill=ink"> </text>
+<text  x="356.941" y="77.357" onclick="g54.style.fill=ink"> </text>
+<text  x="309.176" y="65.538" onclick="g53.style.fill=ink"> </text>
+<text  x="322.824" y="65.538" onclick="g53.style.fill=ink"> </text>
+<text  x="295.529" y="65.538" onclick="g52.style.fill=ink"> </text>
+<text  x="336.471" y="65.538" onclick="g52.style.fill=ink"> </text>
+<text  x="281.882" y="65.538" onclick="g51.style.fill=ink"> </text>
+<text  x="350.118" y="65.538" onclick="g51.style.fill=ink"> </text>
+<text  x="316" y="53.72" onclick="g50.style.fill=ink"> </text>
+<text  x="302.353" y="53.72" onclick="g49.style.fill=ink"> </text>
+<text x="329.647" y="53.72" onclick="g49.style.fill=ink"> </text>
+<text x="288.706" y="53.72" onclick="g48.style.fill=ink"> </text>
+<text x="343.294" y="53.72" onclick="g48.style.fill=ink"> </text>
+<text x="275.059" y="53.72" onclick="g47.style.fill=ink"> </text>
+<text x="356.941" y="53.72" onclick="g47.style.fill=ink"> </text>
+<text  x="268.235" y="65.538" onclick="g46.style.fill=ink"> </text>
+<text  x="363.765" y="65.538" onclick="g46.style.fill=ink"> </text>
+<text  x="261.412" y="77.357" onclick="g45.style.fill=ink"> </text>
+<text  x="370.588" y="77.357" onclick="g45.style.fill=ink"> </text>
+<text  x="268.235" y="89.176" onclick="g44.style.fill=ink"> </text>
+<text  x="363.765" y="89.176" onclick="g44.style.fill=ink"> </text>
+<text  x="275.059" y="100.994" onclick="g43.style.fill=ink"> </text>
+<text  x="356.941" y="100.994" onclick="g43.style.fill=ink"> </text>
+<text  x="281.882" y="112.813" onclick="g42.style.fill=ink"> </text>
+<text  x="350.118" y="112.813" onclick="g42.style.fill=ink"> </text>
+<text  x="288.706" y="124.632" onclick="g41.style.fill=ink"> </text>
+<text  x="343.294" y="124.632" onclick="g41.style.fill=ink"> </text>
+<text  x="295.529" y="136.45" onclick="g40.style.fill=ink"> </text>
+<text  x="336.471" y="136.45" onclick="g40.style.fill=ink"> </text>
+<text  x="302.353" y="148.269" onclick="g39.style.fill=ink"> </text>
+<text  x="329.647" y="148.269" onclick="g39.style.fill=ink"> </text>
+<text  x="309.176" y="160.088" onclick="g38.style.fill=ink"> </text>
+<text  x="322.824" y="160.088" onclick="g38.style.fill=ink"> </text>
+<text  x="309.176" y="41.901" onclick="g37.style.fill=ink"> </text>
+<text  x="322.824" y="41.901" onclick="g37.style.fill=ink"> </text>
+<text  x="295.529" y="41.901" onclick="g36.style.fill=ink"> </text>
+<text  x="336.471" y="41.901" onclick="g36.style.fill=ink"> </text>
+<text  x="281.882" y="41.901" onclick="g35.style.fill=ink"> </text>
+<text  x="350.118" y="41.901" onclick="g35.style.fill=ink"> </text>
+<text  x="268.235" y="41.901" onclick="g34.style.fill=ink"> </text>
+<text  x="363.765" y="41.901" onclick="g34.style.fill=ink"> </text>
+<text  x="254.588" y="41.901" onclick="g33.style.fill=ink"> </text>
+<text  x="377.412" y="41.901" onclick="g33.style.fill=ink"> </text>
+<text  x="240.941" y="41.901" onclick="g32.style.fill=ink"> </text>
+<text  x="391.059" y="41.901" onclick="g32.style.fill=ink"> </text>
+<text  x="227.294" y="41.901" onclick="g31.style.fill=ink"> </text>
+<text  x="404.706" y="41.901" onclick="g31.style.fill=ink"> </text>
+<text  x="234.118" y="53.72" onclick="g30.style.fill=ink"> </text>
+<text  x="397.882" y="53.72" onclick="g30.style.fill=ink"> </text>
+<text  x="240.941" y="65.538" onclick="g29.style.fill=ink"> </text>
+<text  x="391.059" y="65.538" onclick="g29.style.fill=ink"> </text>
+<text  x="247.765" y="77.357" onclick="g28.style.fill=ink"> </text>
+<text  x="384.235" y="77.357" onclick="g28.style.fill=ink"> </text>
+<text  x="254.588" y="89.176" onclick="g27.style.fill=ink"> </text>
+<text  x="377.412" y="89.176" onclick="g27.style.fill=ink"> </text>
+<text  x="261.412" y="100.994" onclick="g26.style.fill=ink"> </text>
+<text  x="370.588" y="100.994" onclick="g26.style.fill=ink"> </text>
+<text  x="268.235" y="112.813" onclick="g25.style.fill=ink"> </text>
+<text  x="363.765" y="112.813" onclick="g25.style.fill=ink"> </text>
+<text  x="275.059" y="124.632" onclick="g24.style.fill=ink"> </text>
+<text  x="356.941" y="124.632" onclick="g24.style.fill=ink"> </text>
+<text  x="281.882" y="136.45" onclick="g23.style.fill=ink"> </text>
+<text  x="350.118" y="136.45" onclick="g23.style.fill=ink"> </text>
+<text  x="288.706" y="148.269"  onclick="g22.style.fill=ink"> </text>
+<text  x="343.294" y="148.269" onclick="g22.style.fill=ink"> </text>
+<text  x="213.647" y="41.901" onclick="g21.style.fill=ink"> </text>
+<text  x="418.353" y="41.901" onclick="g21.style.fill=ink"> </text>
+<text  x="220.471" y="53.72" onclick="g20.style.fill=ink"> </text>
+<text  x="411.529" y="53.72" onclick="g20.style.fill=ink"> </text>
+<text  x="227.294" y="65.538" onclick="g19.style.fill=ink"> </text>
+<text  x="404.706" y="65.538" onclick="g19.style.fill=ink"> </text>
+<text  x="234.118" y="77.357" onclick="g18.style.fill=ink"> </text>
+<text  x="397.882" y="77.357" onclick="g18.style.fill=ink"> </text>
+<text  x="240.941" y="89.176" onclick="g17.style.fill=ink"> </text>
+<text  x="391.059" y="89.176" onclick="g17.style.fill=ink"> </text>
+<text  x="247.765" y="100.994" onclick="g16.style.fill=ink"> </text>
+<text  x="384.235" y="100.994" onclick="g16.style.fill=ink"> </text>
+<text  x="254.588" y="112.813" onclick="g15.style.fill=ink"> </text>
+<text  x="377.412" y="112.813" onclick="g15.style.fill=ink"> </text>
+<text  x="261.412" y="124.632" onclick="g14.style.fill=ink"> </text>
+<text  x="370.588" y="124.632" onclick="g14.style.fill=ink"> </text>
+<text  x="268.235" y="136.45" onclick="g13.style.fill=ink"> </text>
+<text  x="363.765" y="136.45" onclick="g13.style.fill=ink"> </text>
+<text  x="275.059" y="148.269" onclick="g12.style.fill=ink"> </text>
+<text  x="356.941" y="148.269" onclick="g12.style.fill=ink"> </text>
+<text  x="281.882" y="160.088" onclick="g11.style.fill=ink"> </text>
+<text  x="350.118" y="160.088" onclick="g11.style.fill=ink"> </text>
+<text  x="295.529" y="160.088" onclick="g10.style.fill=ink"> </text>
+<text  x="336.471" y="160.088" onclick="g10.style.fill=ink"> </text>
+<text  x="302.353" y="171.907" onclick="g9.style.fill=ink"> </text>
+<text  x="329.647" y="171.907" onclick="g9.style.fill=ink"> </text>
+<text  x="288.706" y="171.907" onclick="g8.style.fill=ink"> </text>
+<text  x="343.294" y="171.907" onclick="g8.style.fill=ink"> </text>
+<text  x="295.529" y="183.725" onclick="g7.style.fill=ink"> </text>
+<text  x="336.471" y="183.725" onclick="g7.style.fill=ink"> </text>
+<text  x="316" y="171.907" onclick="g6.style.fill=ink"> </text>
+<text  x="309.176" y="183.725" onclick="g5.style.fill=ink"> </text>
+<text  x="322.824" y="183.725" onclick="g5.style.fill=ink"> </text>
+<text  x="302.353" y="195.544" onclick="g4.style.fill=ink"> </text>
+<text  x="329.647" y="195.544" onclick="g4.style.fill=ink"> </text>
+<text  x="316" y="195.544" onclick="g3.style.fill=ink"> </text>
+<text  x="309.176" y="207.363" onclick="g2.style.fill=ink"> </text>
+<text  x="322.824" y="207.363" onclick="g2.style.fill=ink"> </text>
+<text  x="316" y="219.181" onclick="g1.style.fill=ink"> </text>
 </g>
 </svg> 
 </div>
 </td></tr><tr><td>
+
 <div style="text-align: right; background:white; color: black; padding: 8px;display: inline-block">
-<div id="inkcolor" style="font-size: 18px;width:40px; height:13px; border: 1px solid white; margin: auto;"></div>
+<div id="inkcolor"></div>
 <span onclick="ink='red';inkcolor.style.background=ink;">1 Красный </span>
 <br>
 <span onclick="ink='blue';inkcolor.style.background=ink;">2 Синий </span>
@@ -1169,20 +1161,11 @@
 <br>
 <span onclick="ink='#8b00ff';inkcolor.style.background=ink;">9 Фиолетовый </span>
 <br>
-<!--
-<input type="range" min="2" max="10" value="10" step="1" id="r1">
-<input type="range" min="2" max="10" value="10" step="1" id="r2">
-<input type="range" min="2" max="10" value="10" step="1" id="r3">
-<input type="range" min="2" max="10" value="10" step="1" id="r4">
-<input type="range" min="2" max="10" value="10" step="1" id="r5">
-<input type="range" min="2" max="10" value="10" step="1" id="r6">
-<input type="range" min="2" max="10" value="10" step="1" id="r7">
-<input type="range" min="2" max="10" value="10" step="1" id="r8">
-<input type="range" min="2" max="10" value="10" step="1" id="r9">
--->
 
 </div>
-</td></tr></tbody></table>
+</td></tr></tbody>
+</table>
+
 <br>
 
 
@@ -1192,25 +1175,25 @@ var s='';
 let c6=[ // разводка
 [g21,g31,g32,g33,g34,g35,g36,g37,0,0, 0,0,0,0,0,0],
 [g20,g30,g71,g70,g47,g48,g49,g50,0,0, 0,0,0,0,0,0],
-[g19,g29,g72,g46,g51,g52,g53,0,0,0, 0,0,0,0,0,0],
-[g18,g28,g45,g54,g55,g56,g60,0,0,0, 0,0,0,0,0,0],
-[g17,g27,g44,g57,g59,g61,0,0,0,0, 0,0,0,0,0,0],
-[g16,g26,g43,g58,g62,g64,0,0,0,0, 0,0,0,0,0,0],
-[g15,g25,g42,g63,g65,0,0,0,0,0, 0,0,0,0,0,0],
-[g14,g24,g41,g67,g66,0,0,0,0,0, 0,0,0,0,0,0],
-[g13,g23,g40,g68,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g12,g22,g39,g69,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g11,g10,g38,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g8,g9,g6,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g7,g5,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g4,g3,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g2,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
-[g1,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0]
+  [g19,g29,g72,g46,g51,g52,g53,0,0,0, 0,0,0,0,0,0],
+  [g18,g28,g45,g54,g55,g56,g60,0,0,0, 0,0,0,0,0,0],
+    [g17,g27,g44,g57,g59,g61,0,0,0,0, 0,0,0,0,0,0],
+    [g16,g26,g43,g58,g62,g64,0,0,0,0, 0,0,0,0,0,0],
+      [g15,g25,g42,g63,g65,0,0,0,0,0, 0,0,0,0,0,0],
+      [g14,g24,g41,g67,g66,0,0,0,0,0, 0,0,0,0,0,0],
+        [g13,g23,g40,g68,0,0,0,0,0,0, 0,0,0,0,0,0],
+        [g12,g22,g39,g69,0,0,0,0,0,0, 0,0,0,0,0,0],
+          [g11,g10,g38,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+           [g8,g9,g6,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+             [g7,g5,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+             [g4,g3,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+               [g2,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
+               [g1,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0]
 ];
 let b;
-const pox=document.querySelectorAll('[id^="g"]'); //alert(pox.length);
+const pox=document.querySelectorAll('[id^="g"]'); 
 pox.forEach(x=>{x.style.fill='white'});
-var ink='red';
+var ink='white';
 
 const ogg=document.querySelectorAll('polygon');
 ogg.forEach(x=>{x.addEventListener('click',()=>{
@@ -1220,27 +1203,10 @@ ogg.forEach(x=>{x.addEventListener('click',()=>{
 
 ogg.forEach((x,i)=>{x.setAttribute('data-n',`${i}`)});
 
-//const //console.log(s);a=['#E60000','#E60000','#0118A4','#19D208','#FFF001','#009EE7','#009A9C','#E6007C','#F77D02','#A4019C']; 
-/*
-var aa=a.map(x=>document.createElement('div'));
-aa.forEach((x,i)=>{x.style.fill=a[i]});
-aa=aa.map(x=>{let y=x.style.fill; x.remove(); return y});
-*/
-
 const rf=document.querySelector('#rf');
-rf.addEventListener('change',()=>{//'blur'
+rf.addEventListener('change',()=>{  // происходит после выбора даты
 const dt=rf.value.split(/\D/).reverse().join('');
-//alert(dt);
-//console.log(aa);
-//const dt='03021973';
-//alert(hf);
-/*//alert(x.dataset.n)})});
-//x.style.stroke='gray'; x.style.strokeWidth='1'; 
-let b6 = new Array(16);
-b6.map(x=>new Array(16).fill(0));//alert(b6[0]);+dt[i]
-*/
-//let b6 = new Array(16).fill(new Array(16));//b6[k].forEach((y,i)=>
-//let 
+
 
 b6=[
 [0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],
@@ -1268,7 +1234,7 @@ for (let i=0; i<8; i++){b6[0][i]=+dt[i]};
 
 for (let i=0; i<8; i++){b6[0][i+8]=b6[0][7-i]};
 for (let k=1;k<b6.length;k++){
-	for (let i=0; i<b6[k].length-1; i++)
+	for (let i=0; i<b6[k].length-1; i++)// расчет цифровых полей
 		{b6[k][i]=
 		parseInt((b6[k-1][i]+b6[k-1][i+1])/10)+
 		parseInt((b6[k-1][i]+b6[k-1][i+1])%10);
@@ -1276,116 +1242,24 @@ for (let k=1;k<b6.length;k++){
 		};
 	}
 
-
-
-
-
-/*
-const r1=document.querySelector('#r1');
-const r2=document.querySelector('#r2');
-const r3=document.querySelector('#r3');
-const r4=document.querySelector('#r4');
-const r5=document.querySelector('#r5');
-const r6=document.querySelector('#r6');
-const r7=document.querySelector('#r7');
-const r8=document.querySelector('#r8');
-const r9=document.querySelector('#r9');
-
-const opa=[1,
-r1.value/10,
-r2.value/10,
-r3.value/10,
-r4.value/10,
-r5.value/10,
-r6.value/10,
-r7.value/10,
-r8.value/10,
-r9.value/10
-];
-*/
-const opa=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,];
-
-for (let i=0; i<c6.length; i++)
+// на будущее
+for (let i=0; i<c6.length; i++)// у цвета есть две характерисеики-прозрачн и цвет
 	for (let j=0;j<c6[i].length;j++)
 		if (c6[i][j])
 			{
 			//c6[i][j].style.fill=a[b6[i][j]];
-			c6[i][j].style.opacity=opa[b6[i][j]];
+			//c6[i][j].style.opacity=opa[b6[i][j]];
 			}
 
-const opas=(x,y)=>{
-	let t=aa[x];
-	opa[x]=y;
-	pox.forEach(z=>{if(z.style.fill===t)
-	z.style.opacity=y});
-	}
-
-/*
-r1.addEventListener('change',()=>{rf.blur(); opas(1,`${r1.value/10}`)});
-r2.addEventListener('change',()=>{rf.blur(); opas(2,`${r2.value/10}`)});
-r3.addEventListener('change',()=>{rf.blur(); opas(3,`${r3.value/10}`)});
-r4.addEventListener('change',()=>{rf.blur(); opas(4,`${r4.value/10}`)});
-r5.addEventListener('change',()=>{rf.blur(); opas(5,`${r5.value/10}`)});
-r6.addEventListener('change',()=>{rf.blur(); opas(6,`${r6.value/10}`)});
-r7.addEventListener('change',()=>{rf.blur(); opas(7,`${r7.value/10}`)});
-r8.addEventListener('change',()=>{rf.blur(); opas(8,`${r8.value/10}`)});
-r9.addEventListener('change',()=>{rf.blur(); opas(9,`${r9.value/10}`)});
-*/
-
-//316.000 228.000 329.647 228.000 336.471 216.181 322.824 216.181"
-
-		
-		//<text id="txt1" x="20" y="35" class="small">Мой</text>
-		//txt1.innerHTML='1';
-
- 
-/*
-let ray=['<text id="txt1" x="'+(316.000+(336.471-316.000)/2)+'" y="'+(216.181+(228.000-216.181)/2)+'" fill="purple">'+b6[0][0]+'</text>'];
-//let ray=['<text id="txt1" x="20" y="35" fill="purple">'+b6[0][0]+'</text>'];
-txt.innerHTML=
-'<polygon points="316.000 228.000 329.647 228.000 336.471 216.181 322.824 216.181"  fill="#ded"></polygon>\n'+
-
-ray.map(x=>x).join('\n');*/
-//
-
-//console.log(b6);
-digit();
+digit();// вставка цифр в рисунок
 });//end Listener('change
 
 
-//*****************************************
-/*
 
-
- b6=[
-['o','=','+','*',0,1,2,3,0,0, 0,0,0,0,0,0],
-['n','w','я','л',7,6,5,4,0,0, 0,0,0,0,0,0],//1
-['m','d','ы','k','i','c','h',0,0,0, 0,0,0,0,0,0],//2
-['l','i','g','H','t','(',')',0,0,0, 0,0,0,0,0,0],//3
-['k','e','K','$',04,1,0,0,0,0, 0,0,0,0,0,0],//4
-['j','S',6,'/','!',05,0,0,0,0, 0,0,0,0,0,0],//5
-['i','s',':','-','z',0,06,0,0,0, 0,0,0,0,0,0],//6
-['h','r','?','D','F',0,0,07,0,0, 0,0,0,0,0,0],//7
-['g','-','o','ю',     0,0,0,0,0,0, 0,0,0,0,0,0],//8
-['f','.',',','!',0,0,0,0,0,0, 0,0,0,0,0,0],//9
-['e','x','E',0,0,0,0,0,0,0, 0,0,0,0,0,0],//10
-['d','a',3,0,0,0,0,0,0,0, 0,0,0,0,0,0],//11
-['c','u',  'C',0,0,0,0,0,0,0, 0,0,0,0,0,0],//12
-['b',2, 'p',0,0,0,0,0,0,0, 0,0,0,0,0,0],//13
-[3, 5,0,0,0,0,0,0,0,0, 0,0,0,0,0,0],//14
-[1, 0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0]
-];
-*/
-//<polygon points="316.000 228.000 329.647 228.000 336.471 216.181 322.824 216.181" data-n="0"></polygon>
-//[1]; //alert(h.length);
-//let v=h.querySelectorAll('polygon')[2];/**////[1,3]
-
-function digit(){
-//console.log(b6);
+function digit(){ // вставка цифр в рисунок
 let h=document.querySelectorAll('g');
 let q=[
-
-[71,2,2,2],[71,3,2,2],
+[71,2,2,2],[71,3,2,2],// группа номер-в-групе b[x] b[y]
 [70,2,1,2],[70,3,1,2],
 [69,2,1,3],[69,3,1,3],
 [68,1,9,3],
@@ -1461,32 +1335,12 @@ let d='';
 let w=q.map((x,i)=>{
 	let v=h[x[0]].querySelectorAll('polygon')[x[1]];
 	let m=v.getAttribute('points').split(' ').map(y=>+y);
-	//d+='<polygon points="'+m.join(' ')+'" stroke="grey"></polygon>\n';
-	return '<text text-anchor="middle" x="'+(m[4]+(m[0]-m[4])/2)+'" y="'+(3+m[7]+(m[3]-m[7])/2)+'" fill="black" onclick="'+(c6[x[2]][x[3]].id)+'.style.fill=ink">'+b6[x[2]][x[3]]+'</text>';
+
+	return '<text  x="'+(m[4]+(m[0]-m[4])/2)+'" y="'+(3+m[7]+(m[3]-m[7])/2)+'" onclick="'+(c6[x[2]][x[3]].id)+'.style.fill=ink">'+b6[x[2]][x[3]]+'</text>';
 }).join('\n');
-txt.innerHTML=d+w;//id="txt1"
+txt.innerHTML=d+w;
 }
 
-
-//onclick="c6[x[2]][x[3]].style.fill=ink"
-
-//digit();
-
-//console.log(m);
-	// fill="'+['#ded','#fed'][+!i]+'" 
-//let m=v.getAttribute('points').split(' ').map(x=>+x);console.log(m);
-//
-/*
-let ray=['<text id="txt1" text-anchor="middle" x="'+(m[4]+(m[0]-m[4])/2)+'" y="'+(m[7]+(m[3]-m[7])/2)+'" fill="purple">'+b6[0][0]+'</text>'];
-
-//let ray=['<text id="txt1" text-anchor="middle" x="'+(m[0]+Math.abs(m[0]-m[4])/2)+'" y="'+(m[7]+Math.abs(m[3]-m[7])/2)+'" fill="purple">'+b6[0][0]+'</text>'];
-//let ray=['<text id="txt1" text-anchor="middle" x="'+(316.000+(336.471-316.000)/2)+'" y="'+(216.181+(228.000-216.181)/2)+'" fill="purple">'+b6[0][0]+'</text>'];
-//let ray=['<text id="txt1" x="20" y="35" fill="purple">'+b6[0][0]+'</text>'];
-txt.innerHTML=
-'<polygon points="'+m.join(' ')+'"  fill="#ded"></polygon>\n'+
-//316.000 228.000 329.647 228.000 336.471 216.181 322.824 216.181
-ray.map(x=>x).join('\n');
-*/
 
 </script>
 
