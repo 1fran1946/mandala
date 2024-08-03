@@ -1265,17 +1265,9 @@ function digit(){ // вставка цифр в рисунок
 	}
 
 let a=['white','red','blue','springgreen','gold','#00BFFF','#40E0D0','fuchsia','orange','#8b00ff'];//'yellow'
-
-
-function flower(x){
-	ink=a[x];
-	//inkcolor.style.background=ink;
-	}
-
  
 [...document.querySelectorAll('.pion')]
-.forEach((k,i)=>k.addEventListener('click',()=>{flower(i+1)}));
-
+.forEach((k,i)=>k.addEventListener('click',()=>{ink=a[i+1]}));
 
 </script>
 
