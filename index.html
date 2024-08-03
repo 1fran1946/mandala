@@ -23,9 +23,16 @@
   #fish svg {transform: translateX(-160px);user-select: none;}
   
   text {text-anchor:middle; fill:black; font-family: sans-serif; font-size: 9px;}
-  #inkcolor {font-size: 18px;width:40px; height:13px; border: 1px solid white; margin: auto;}
+  #i0nkcolor {font-size: 18px;width:40px; height:13px; border: 1px solid white; margin: auto;}
   
-  span {padding: 0 10px 0; border: .2px solid white; line-height:20px;}
+  s0pan {padding: 0 10px 0; border: .2px solid white; line-height:20px;}
+  
+  
+  
+.morz {display:none;}
+.pion {display:inline-block; border:3px solid transparent;padding:2px;}
+.pion:has(.morz:checked){border:3px solid black;}
+.krug {width:40px; aspect-ratio:1;border-radius:50%;background:yellow;}  
  </style>
 <body style="text-align: center; padding-top: 51px; padding-bottom: 51px;">
 
@@ -33,1142 +40,55 @@
 <table style="margin: 0 auto"><tbody><tr><td>
 <input type="date" id="rf">
 </td></tr><tr><td>
+			
+<div>
+	<label class="pion"><span>1</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:red"></div>
+	</label>
+	<label class="pion"><span>2</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:blue"></div>
+	</label>
+	<label class="pion"><span>3</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:green"></div>
+	</label>	
+	<label class="pion"><span>4</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:yellow"></div>
+	</label>
+	<label class="pion"><span>5</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:#00BFFF"></div>
+	</label>
+	<label class="pion"><span>6</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:#40E0D0"></div>
+	</label>
+	<label class="pion"><span>7</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:fuchsia"></div>
+	</label>
+	<label class="pion"><span>8</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:orange"></div>
+	</label>
+	<label class="pion"><span>9</span>
+		<input name="grom" type="radio" class="morz">
+		<div class="krug" style="background:#8b00ff"></div>	
+	</label>	
+</div>
 
 <br>
 
 <div id="fish">
-
-<svg width="1200" height="900" viewBox="0 0 633 400" fill="none">
-<rect x="0" y="0" width="633" height="457" fill="none"></rect>
-
-
-
-<g id="g1" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="316.000 228.000 329.647 228.000 336.471 216.181 322.824 216.181" data-n="0"></polygon>
-<polygon points="316.000 228.000 322.824 216.181 316.000 204.363 309.176 216.181" data-n="1"></polygon>
-<polygon points="316.000 228.000 309.176 216.181 295.529 216.181 302.353 228.000" data-n="2"></polygon>
-<polygon points="316.000 228.000 302.353 228.000 295.529 239.819 309.176 239.819" data-n="3"></polygon>
-<polygon points="316.000 228.000 309.176 239.819 316.000 251.637 322.824 239.819" data-n="4"></polygon>
-<polygon points="316.000 228.000 322.824 239.819 336.471 239.819 329.647 228.000" data-n="5"></polygon>
-</g>
-<g id="g2" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="322.824 216.181 336.471 216.181 343.294 204.363 329.647 204.363" data-n="6"></polygon>
-<polygon points="329.647 228.000 343.294 228.000 350.118 216.181 336.471 216.181" data-n="7"></polygon>
-<polygon points="309.176 216.181 316.000 204.363 309.176 192.544 302.353 204.363" data-n="8"></polygon>
-<polygon points="322.824 216.181 329.647 204.363 322.824 192.544 316.000 204.363" data-n="9"></polygon>
-<polygon points="302.353 228.000 295.529 216.181 281.882 216.181 288.706 228.000" data-n="10"></polygon>
-<polygon points="309.176 216.181 302.353 204.363 288.706 204.363 295.529 216.181" data-n="11"></polygon>
-<polygon points="309.176 239.819 295.529 239.819 288.706 251.637 302.353 251.637" data-n="12"></polygon>
-<polygon points="302.353 228.000 288.706 228.000 281.882 239.819 295.529 239.819" data-n="13"></polygon>
-<polygon points="322.824 239.819 316.000 251.637 322.824 263.456 329.647 251.637" data-n="14"></polygon>
-<polygon points="309.176 239.819 302.353 251.637 309.176 263.456 316.000 251.637" data-n="15"></polygon>
-<polygon points="329.647 228.000 336.471 239.819 350.118 239.819 343.294 228.000" data-n="16"></polygon>
-<polygon points="322.824 239.819 329.647 251.637 343.294 251.637 336.471 239.819" data-n="17"></polygon>
-</g>
-<g id="g3" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="336.471 216.181 350.118 216.181 356.941 204.363 343.294 204.363" data-n="18"></polygon>
-<polygon points="316.000 204.363 322.824 192.544 316.000 180.725 309.176 192.544" data-n="19"></polygon>
-<polygon points="295.529 216.181 288.706 204.363 275.059 204.363 281.882 216.181" data-n="20"></polygon>
-<polygon points="295.529 239.819 281.882 239.819 275.059 251.637 288.706 251.637" data-n="21"></polygon>
-<polygon points="316.000 251.637 309.176 263.456 316.000 275.275 322.824 263.456" data-n="22"></polygon>
-<polygon points="336.471 239.819 343.294 251.637 356.941 251.637 350.118 239.819" data-n="23"></polygon>
-</g>
-<g id="g4" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="329.647 204.363 343.294 204.363 350.118 192.544 336.471 192.544" data-n="24"></polygon>
-<polygon points="343.294 228.000 356.941 228.000 363.765 216.181 350.118 216.181" data-n="25"></polygon>
-<polygon points="302.353 204.363 309.176 192.544 302.353 180.725 295.529 192.544" data-n="26"></polygon>
-<polygon points="329.647 204.363 336.471 192.544 329.647 180.725 322.824 192.544" data-n="27"></polygon>
-<polygon points="288.706 228.000 281.882 216.181 268.235 216.181 275.059 228.000" data-n="28"></polygon>
-<polygon points="302.353 204.363 295.529 192.544 281.882 192.544 288.706 204.363" data-n="29"></polygon>
-<polygon points="302.353 251.637 288.706 251.637 281.882 263.456 295.529 263.456" data-n="30"></polygon>
-<polygon points="288.706 228.000 275.059 228.000 268.235 239.819 281.882 239.819" data-n="31"></polygon>
-<polygon points="329.647 251.637 322.824 263.456 329.647 275.275 336.471 263.456" data-n="32"></polygon>
-<polygon points="302.353 251.637 295.529 263.456 302.353 275.275 309.176 263.456" data-n="33"></polygon>
-<polygon points="343.294 228.000 350.118 239.819 363.765 239.819 356.941 228.000" data-n="34"></polygon>
-<polygon points="329.647 251.637 336.471 263.456 350.118 263.456 343.294 251.637" data-n="35"></polygon>
-</g>
-<g id="g5" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="343.294 204.363 356.941 204.363 363.765 192.544 350.118 192.544" data-n="36"></polygon>
-<polygon points="350.118 216.181 363.765 216.181 370.588 204.363 356.941 204.363" data-n="37"></polygon>
-<polygon points="309.176 192.544 316.000 180.725 309.176 168.907 302.353 180.725" data-n="38"></polygon>
-<polygon points="322.824 192.544 329.647 180.725 322.824 168.907 316.000 180.725" data-n="39"></polygon>
-<polygon points="281.882 216.181 275.059 204.363 261.412 204.363 268.235 216.181" data-n="40"></polygon>
-<polygon points="288.706 204.363 281.882 192.544 268.235 192.544 275.059 204.363" data-n="41"></polygon>
-<polygon points="288.706 251.637 275.059 251.637 268.235 263.456 281.882 263.456" data-n="42"></polygon>
-<polygon points="281.882 239.819 268.235 239.819 261.412 251.637 275.059 251.637" data-n="43"></polygon>
-<polygon points="322.824 263.456 316.000 275.275 322.824 287.093 329.647 275.275" data-n="44"></polygon>
-<polygon points="309.176 263.456 302.353 275.275 309.176 287.093 316.000 275.275" data-n="45"></polygon>
-<polygon points="350.118 239.819 356.941 251.637 370.588 251.637 363.765 239.819" data-n="46"></polygon>
-<polygon points="343.294 251.637 350.118 263.456 363.765 263.456 356.941 251.637" data-n="47"></polygon>
-</g>
-<g id="g6" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="356.941 204.363 370.588 204.363 377.412 192.544 363.765 192.544" data-n="48"></polygon>
-<polygon points="316.000 180.725 322.824 168.907 316.000 157.088 309.176 168.907" data-n="49"></polygon>
-<polygon points="275.059 204.363 268.235 192.544 254.588 192.544 261.412 204.363" data-n="50"></polygon>
-<polygon points="275.059 251.637 261.412 251.637 254.588 263.456 268.235 263.456" data-n="51"></polygon>
-<polygon points="316.000 275.275 309.176 287.093 316.000 298.912 322.824 287.093" data-n="52"></polygon>
-<polygon points="356.941 251.637 363.765 263.456 377.412 263.456 370.588 251.637" data-n="53"></polygon>
-</g>
-<g id="g7" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="336.471 192.544 350.118 192.544 356.941 180.725 343.294 180.725" data-n="54"></polygon>
-<polygon points="356.941 228.000 370.588 228.000 377.412 216.181 363.765 216.181" data-n="55"></polygon>
-<polygon points="295.529 192.544 302.353 180.725 295.529 168.907 288.706 180.725" data-n="56"></polygon>
-<polygon points="336.471 192.544 343.294 180.725 336.471 168.907 329.647 180.725" data-n="57"></polygon>
-<polygon points="275.059 228.000 268.235 216.181 254.588 216.181 261.412 228.000" data-n="58"></polygon>
-<polygon points="295.529 192.544 288.706 180.725 275.059 180.725 281.882 192.544" data-n="59"></polygon>
-<polygon points="295.529 263.456 281.882 263.456 275.059 275.275 288.706 275.275" data-n="60"></polygon>
-<polygon points="275.059 228.000 261.412 228.000 254.588 239.819 268.235 239.819" data-n="61"></polygon>
-<polygon points="336.471 263.456 329.647 275.275 336.471 287.093 343.294 275.275" data-n="62"></polygon>
-<polygon points="295.529 263.456 288.706 275.275 295.529 287.093 302.353 275.275" data-n="63"></polygon>
-<polygon points="356.941 228.000 363.765 239.819 377.412 239.819 370.588 228.000" data-n="64"></polygon>
-<polygon points="336.471 263.456 343.294 275.275 356.941 275.275 350.118 263.456" data-n="65"></polygon>
-</g>
-<g id="g8" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="343.294 180.725 356.941 180.725 363.765 168.907 350.118 168.907" data-n="66"></polygon>
-<polygon points="370.588 228.000 384.235 228.000 391.059 216.181 377.412 216.181" data-n="67"></polygon>
-<polygon points="288.706 180.725 295.529 168.907 288.706 157.088 281.882 168.907" data-n="68"></polygon>
-<polygon points="343.294 180.725 350.118 168.907 343.294 157.088 336.471 168.907" data-n="69"></polygon>
-<polygon points="261.412 228.000 254.588 216.181 240.941 216.181 247.765 228.000" data-n="70"></polygon>
-<polygon points="288.706 180.725 281.882 168.907 268.235 168.907 275.059 180.725" data-n="71"></polygon>
-<polygon points="288.706 275.275 275.059 275.275 268.235 287.093 281.882 287.093" data-n="72"></polygon>
-<polygon points="261.412 228.000 247.765 228.000 240.941 239.819 254.588 239.819" data-n="73"></polygon>
-<polygon points="343.294 275.275 336.471 287.093 343.294 298.912 350.118 287.093" data-n="74"></polygon>
-<polygon points="288.706 275.275 281.882 287.093 288.706 298.912 295.529 287.093" data-n="75"></polygon>
-<polygon points="370.588 228.000 377.412 239.819 391.059 239.819 384.235 228.000" data-n="76"></polygon>
-<polygon points="343.294 275.275 350.118 287.093 363.765 287.093 356.941 275.275" data-n="77"></polygon>
-</g>
-<g id="g9" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="350.118 192.544 363.765 192.544 370.588 180.725 356.941 180.725" data-n="78"></polygon>
-<polygon points="363.765 216.181 377.412 216.181 384.235 204.363 370.588 204.363" data-n="79"></polygon>
-<polygon points="302.353 180.725 309.176 168.907 302.353 157.088 295.529 168.907" data-n="80"></polygon>
-<polygon points="329.647 180.725 336.471 168.907 329.647 157.088 322.824 168.907" data-n="81"></polygon>
-<polygon points="268.235 216.181 261.412 204.363 247.765 204.363 254.588 216.181" data-n="82"></polygon>
-<polygon points="281.882 192.544 275.059 180.725 261.412 180.725 268.235 192.544" data-n="83"></polygon>
-<polygon points="281.882 263.456 268.235 263.456 261.412 275.275 275.059 275.275" data-n="84"></polygon>
-<polygon points="268.235 239.819 254.588 239.819 247.765 251.637 261.412 251.637" data-n="85"></polygon>
-<polygon points="329.647 275.275 322.824 287.093 329.647 298.912 336.471 287.093" data-n="86"></polygon>
-<polygon points="302.353 275.275 295.529 287.093 302.353 298.912 309.176 287.093" data-n="87"></polygon>
-<polygon points="363.765 239.819 370.588 251.637 384.235 251.637 377.412 239.819" data-n="88"></polygon>
-<polygon points="350.118 263.456 356.941 275.275 370.588 275.275 363.765 263.456" data-n="89"></polygon>
-</g>
-<g id="g10" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="356.941 180.725 370.588 180.725 377.412 168.907 363.765 168.907" data-n="90"></polygon>
-<polygon points="377.412 216.181 391.059 216.181 397.882 204.363 384.235 204.363" data-n="91"></polygon>
-<polygon points="295.529 168.907 302.353 157.088 295.529 145.269 288.706 157.088" data-n="92"></polygon>
-<polygon points="336.471 168.907 343.294 157.088 336.471 145.269 329.647 157.088" data-n="93"></polygon>
-<polygon points="254.588 216.181 247.765 204.363 234.118 204.363 240.941 216.181" data-n="94"></polygon>
-<polygon points="275.059 180.725 268.235 168.907 254.588 168.907 261.412 180.725" data-n="95"></polygon>
-<polygon points="275.059 275.275 261.412 275.275 254.588 287.093 268.235 287.093" data-n="96"></polygon>
-<polygon points="254.588 239.819 240.941 239.819 234.118 251.637 247.765 251.637" data-n="97"></polygon>
-<polygon points="336.471 287.093 329.647 298.912 336.471 310.731 343.294 298.912" data-n="98"></polygon>
-<polygon points="295.529 287.093 288.706 298.912 295.529 310.731 302.353 298.912" data-n="99"></polygon>
-<polygon points="377.412 239.819 384.235 251.637 397.882 251.637 391.059 239.819" data-n="100"></polygon>
-<polygon points="356.941 275.275 363.765 287.093 377.412 287.093 370.588 275.275" data-n="101"></polygon>
-</g>
-<g id="g11" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="350.118 168.907 363.765 168.907 370.588 157.088 356.941 157.088" data-n="102"></polygon>
-<polygon points="384.235 228.000 397.882 228.000 404.706 216.181 391.059 216.181" data-n="103"></polygon>
-<polygon points="281.882 168.907 288.706 157.088 281.882 145.269 275.059 157.088" data-n="104"></polygon>
-<polygon points="350.118 168.907 356.941 157.088 350.118 145.269 343.294 157.088" data-n="105"></polygon>
-<polygon points="247.765 228.000 240.941 216.181 227.294 216.181 234.118 228.000" data-n="106"></polygon>
-<polygon points="281.882 168.907 275.059 157.088 261.412 157.088 268.235 168.907" data-n="107"></polygon>
-<polygon points="281.882 287.093 268.235 287.093 261.412 298.912 275.059 298.912" data-n="108"></polygon>
-<polygon points="247.765 228.000 234.118 228.000 227.294 239.819 240.941 239.819" data-n="109"></polygon>
-<polygon points="350.118 287.093 343.294 298.912 350.118 310.731 356.941 298.912" data-n="110"></polygon>
-<polygon points="281.882 287.093 275.059 298.912 281.882 310.731 288.706 298.912" data-n="111"></polygon>
-<polygon points="384.235 228.000 391.059 239.819 404.706 239.819 397.882 228.000" data-n="112"></polygon>
-<polygon points="350.118 287.093 356.941 298.912 370.588 298.912 363.765 287.093" data-n="113"></polygon>
-</g>
-<g id="g12" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="356.941 157.088 370.588 157.088 377.412 145.269 363.765 145.269" data-n="114"></polygon>
-<polygon points="397.882 228.000 411.529 228.000 418.353 216.181 404.706 216.181" data-n="115"></polygon>
-<polygon points="275.059 157.088 281.882 145.269 275.059 133.450 268.235 145.269" data-n="116"></polygon>
-<polygon points="356.941 157.088 363.765 145.269 356.941 133.450 350.118 145.269" data-n="117"></polygon>
-<polygon points="234.118 228.000 227.294 216.181 213.647 216.181 220.471 228.000" data-n="118"></polygon>
-<polygon points="275.059 157.088 268.235 145.269 254.588 145.269 261.412 157.088" data-n="119"></polygon>
-<polygon points="275.059 298.912 261.412 298.912 254.588 310.731 268.235 310.731" data-n="120"></polygon>
-<polygon points="234.118 228.000 220.471 228.000 213.647 239.819 227.294 239.819" data-n="121"></polygon>
-<polygon points="356.941 298.912 350.118 310.731 356.941 322.550 363.765 310.731" data-n="122"></polygon>
-<polygon points="275.059 298.912 268.235 310.731 275.059 322.550 281.882 310.731" data-n="123"></polygon>
-<polygon points="397.882 228.000 404.706 239.819 418.353 239.819 411.529 228.000" data-n="124"></polygon>
-<polygon points="356.941 298.912 363.765 310.731 377.412 310.731 370.588 298.912" data-n="125"></polygon>
-</g>
-<g id="g13" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="363.765 145.269 377.412 145.269 384.235 133.450 370.588 133.450" data-n="126"></polygon>
-<polygon points="411.529 228.000 425.176 228.000 432.000 216.181 418.353 216.181" data-n="127"></polygon>
-<polygon points="268.235 145.269 275.059 133.450 268.235 121.632 261.412 133.450" data-n="128"></polygon>
-<polygon points="363.765 145.269 370.588 133.450 363.765 121.632 356.941 133.450" data-n="129"></polygon>
-<polygon points="220.471 228.000 213.647 216.181 200.000 216.181 206.824 228.000" data-n="130"></polygon>
-<polygon points="268.235 145.269 261.412 133.450 247.765 133.450 254.588 145.269" data-n="131"></polygon>
-<polygon points="268.235 310.731 254.588 310.731 247.765 322.550 261.412 322.550" data-n="132"></polygon>
-<polygon points="220.471 228.000 206.824 228.000 200.000 239.819 213.647 239.819" data-n="133"></polygon>
-<polygon points="363.765 310.731 356.941 322.550 363.765 334.368 370.588 322.550" data-n="134"></polygon>
-<polygon points="268.235 310.731 261.412 322.550 268.235 334.368 275.059 322.550" data-n="135"></polygon>
-<polygon points="411.529 228.000 418.353 239.819 432.000 239.819 425.176 228.000" data-n="136"></polygon>
-<polygon points="363.765 310.731 370.588 322.550 384.235 322.550 377.412 310.731" data-n="137"></polygon>
-</g>
-<g id="g14" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="370.588 133.450 384.235 133.450 391.059 121.632 377.412 121.632" data-n="138"></polygon>
-<polygon points="425.176 228.000 438.824 228.000 445.647 216.181 432.000 216.181" data-n="139"></polygon>
-<polygon points="261.412 133.450 268.235 121.632 261.412 109.813 254.588 121.632" data-n="140"></polygon>
-<polygon points="370.588 133.450 377.412 121.632 370.588 109.813 363.765 121.632" data-n="141"></polygon>
-<polygon points="206.824 228.000 200.000 216.181 186.353 216.181 193.176 228.000" data-n="142"></polygon>
-<polygon points="261.412 133.450 254.588 121.632 240.941 121.632 247.765 133.450" data-n="143"></polygon>
-<polygon points="261.412 322.550 247.765 322.550 240.941 334.368 254.588 334.368" data-n="144"></polygon>
-<polygon points="206.824 228.000 193.176 228.000 186.353 239.819 200.000 239.819" data-n="145"></polygon>
-<polygon points="370.588 322.550 363.765 334.368 370.588 346.187 377.412 334.368" data-n="146"></polygon>
-<polygon points="261.412 322.550 254.588 334.368 261.412 346.187 268.235 334.368" data-n="147"></polygon>
-<polygon points="425.176 228.000 432.000 239.819 445.647 239.819 438.824 228.000" data-n="148"></polygon>
-<polygon points="370.588 322.550 377.412 334.368 391.059 334.368 384.235 322.550" data-n="149"></polygon>
-</g>
-<g id="g15" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="377.412 121.632 391.059 121.632 397.882 109.813 384.235 109.813" data-n="150"></polygon>
-<polygon points="438.824 228.000 452.471 228.000 459.294 216.181 445.647 216.181" data-n="151"></polygon>
-<polygon points="254.588 121.632 261.412 109.813 254.588 97.994 247.765 109.813" data-n="152"></polygon>
-<polygon points="377.412 121.632 384.235 109.813 377.412 97.994 370.588 109.813" data-n="153"></polygon>
-<polygon points="193.176 228.000 186.353 216.181 172.706 216.181 179.529 228.000" data-n="154"></polygon>
-<polygon points="254.588 121.632 247.765 109.813 234.118 109.813 240.941 121.632" data-n="155"></polygon>
-<polygon points="254.588 334.368 240.941 334.368 234.118 346.187 247.765 346.187" data-n="156"></polygon>
-<polygon points="193.176 228.000 179.529 228.000 172.706 239.819 186.353 239.819" data-n="157"></polygon>
-<polygon points="377.412 334.368 370.588 346.187 377.412 358.006 384.235 346.187" data-n="158"></polygon>
-<polygon points="254.588 334.368 247.765 346.187 254.588 358.006 261.412 346.187" data-n="159"></polygon>
-<polygon points="438.824 228.000 445.647 239.819 459.294 239.819 452.471 228.000" data-n="160"></polygon>
-<polygon points="377.412 334.368 384.235 346.187 397.882 346.187 391.059 334.368" data-n="161"></polygon>
-</g>
-<g id="g16" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="384.235 109.813 397.882 109.813 404.706 97.994 391.059 97.994" data-n="162"></polygon>
-<polygon points="452.471 228.000 466.118 228.000 472.941 216.181 459.294 216.181" data-n="163"></polygon>
-<polygon points="247.765 109.813 254.588 97.994 247.765 86.176 240.941 97.994" data-n="164"></polygon>
-<polygon points="384.235 109.813 391.059 97.994 384.235 86.176 377.412 97.994" data-n="165"></polygon>
-<polygon points="179.529 228.000 172.706 216.181 159.059 216.181 165.882 228.000" data-n="166"></polygon>
-<polygon points="247.765 109.813 240.941 97.994 227.294 97.994 234.118 109.813" data-n="167"></polygon>
-<polygon points="247.765 346.187 234.118 346.187 227.294 358.006 240.941 358.006" data-n="168"></polygon>
-<polygon points="179.529 228.000 165.882 228.000 159.059 239.819 172.706 239.819" data-n="169"></polygon>
-<polygon points="384.235 346.187 377.412 358.006 384.235 369.824 391.059 358.006" data-n="170"></polygon>
-<polygon points="247.765 346.187 240.941 358.006 247.765 369.824 254.588 358.006" data-n="171"></polygon>
-<polygon points="452.471 228.000 459.294 239.819 472.941 239.819 466.118 228.000" data-n="172"></polygon>
-<polygon points="384.235 346.187 391.059 358.006 404.706 358.006 397.882 346.187" data-n="173"></polygon>
-</g>
-<g id="g17" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="391.059 97.994 404.706 97.994 411.529 86.176 397.882 86.176" data-n="174"></polygon>
-<polygon points="466.118 228.000 479.765 228.000 486.588 216.181 472.941 216.181" data-n="175"></polygon>
-<polygon points="240.941 97.994 247.765 86.176 240.941 74.357 234.118 86.176" data-n="176"></polygon>
-<polygon points="391.059 97.994 397.882 86.176 391.059 74.357 384.235 86.176" data-n="177"></polygon>
-<polygon points="165.882 228.000 159.059 216.181 145.412 216.181 152.235 228.000" data-n="178"></polygon>
-<polygon points="240.941 97.994 234.118 86.176 220.471 86.176 227.294 97.994" data-n="179"></polygon>
-<polygon points="240.941 358.006 227.294 358.006 220.471 369.824 234.118 369.824" data-n="180"></polygon>
-<polygon points="165.882 228.000 152.235 228.000 145.412 239.819 159.059 239.819" data-n="181"></polygon>
-<polygon points="391.059 358.006 384.235 369.824 391.059 381.643 397.882 369.824" data-n="182"></polygon>
-<polygon points="240.941 358.006 234.118 369.824 240.941 381.643 247.765 369.824" data-n="183"></polygon>
-<polygon points="466.118 228.000 472.941 239.819 486.588 239.819 479.765 228.000" data-n="184"></polygon>
-<polygon points="391.059 358.006 397.882 369.824 411.529 369.824 404.706 358.006" data-n="185"></polygon>
-</g>
-<g id="g18" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="397.882 86.176 411.529 86.176 418.353 74.357 404.706 74.357" data-n="186"></polygon>
-<polygon points="479.765 228.000 493.412 228.000 500.235 216.181 486.588 216.181" data-n="187"></polygon>
-<polygon points="234.118 86.176 240.941 74.357 234.118 62.538 227.294 74.357" data-n="188"></polygon>
-<polygon points="397.882 86.176 404.706 74.357 397.882 62.538 391.059 74.357" data-n="189"></polygon>
-<polygon points="152.235 228.000 145.412 216.181 131.765 216.181 138.588 228.000" data-n="190"></polygon>
-<polygon points="234.118 86.176 227.294 74.357 213.647 74.357 220.471 86.176" data-n="191"></polygon>
-<polygon points="234.118 369.824 220.471 369.824 213.647 381.643 227.294 381.643" data-n="192"></polygon>
-<polygon points="152.235 228.000 138.588 228.000 131.765 239.819 145.412 239.819" data-n="193"></polygon>
-<polygon points="397.882 369.824 391.059 381.643 397.882 393.462 404.706 381.643" data-n="194"></polygon>
-<polygon points="234.118 369.824 227.294 381.643 234.118 393.462 240.941 381.643" data-n="195"></polygon>
-<polygon points="479.765 228.000 486.588 239.819 500.235 239.819 493.412 228.000" data-n="196"></polygon>
-<polygon points="397.882 369.824 404.706 381.643 418.353 381.643 411.529 369.824" data-n="197"></polygon>
-</g>
-<g id="g19" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="404.706 74.357 418.353 74.357 425.176 62.538 411.529 62.538" data-n="198"></polygon>
-<polygon points="493.412 228.000 507.059 228.000 513.882 216.181 500.235 216.181" data-n="199"></polygon>
-<polygon points="227.294 74.357 234.118 62.538 227.294 50.720 220.471 62.538" data-n="200"></polygon>
-<polygon points="404.706 74.357 411.529 62.538 404.706 50.720 397.882 62.538" data-n="201"></polygon>
-<polygon points="138.588 228.000 131.765 216.181 118.118 216.181 124.941 228.000" data-n="202"></polygon>
-<polygon points="227.294 74.357 220.471 62.538 206.824 62.538 213.647 74.357" data-n="203"></polygon>
-<polygon points="227.294 381.643 213.647 381.643 206.824 393.462 220.471 393.462" data-n="204"></polygon>
-<polygon points="138.588 228.000 124.941 228.000 118.118 239.819 131.765 239.819" data-n="205"></polygon>
-<polygon points="404.706 381.643 397.882 393.462 404.706 405.280 411.529 393.462" data-n="206"></polygon>
-<polygon points="227.294 381.643 220.471 393.462 227.294 405.280 234.118 393.462" data-n="207"></polygon>
-<polygon points="493.412 228.000 500.235 239.819 513.882 239.819 507.059 228.000" data-n="208"></polygon>
-<polygon points="404.706 381.643 411.529 393.462 425.176 393.462 418.353 381.643" data-n="209"></polygon>
-</g>
-<g id="g20" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="411.529 62.538 425.176 62.538 432.000 50.720 418.353 50.720" data-n="210"></polygon>
-<polygon points="507.059 228.000 520.706 228.000 527.529 216.181 513.882 216.181" data-n="211"></polygon>
-<polygon points="220.471 62.538 227.294 50.720 220.471 38.901 213.647 50.720" data-n="212"></polygon>
-<polygon points="411.529 62.538 418.353 50.720 411.529 38.901 404.706 50.720" data-n="213"></polygon>
-<polygon points="124.941 228.000 118.118 216.181 104.471 216.181 111.294 228.000" data-n="214"></polygon>
-<polygon points="220.471 62.538 213.647 50.720 200.000 50.720 206.824 62.538" data-n="215"></polygon>
-<polygon points="220.471 393.462 206.824 393.462 200.000 405.280 213.647 405.280" data-n="216"></polygon>
-<polygon points="124.941 228.000 111.294 228.000 104.471 239.819 118.118 239.819" data-n="217"></polygon>
-<polygon points="411.529 393.462 404.706 405.280 411.529 417.099 418.353 405.280" data-n="218"></polygon>
-<polygon points="220.471 393.462 213.647 405.280 220.471 417.099 227.294 405.280" data-n="219"></polygon>
-<polygon points="507.059 228.000 513.882 239.819 527.529 239.819 520.706 228.000" data-n="220"></polygon>
-<polygon points="411.529 393.462 418.353 405.280 432.000 405.280 425.176 393.462" data-n="221"></polygon>
-</g>
-<g id="g21" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="418.353 50.720 432.000 50.720 438.824 38.901 425.176 38.901" data-n="222"></polygon>
-<polygon points="520.706 228.000 534.353 228.000 541.176 216.181 527.529 216.181" data-n="223"></polygon>
-<polygon points="213.647 50.720 220.471 38.901 213.647 27.082 206.824 38.901" data-n="224"></polygon>
-<polygon points="418.353 50.720 425.176 38.901 418.353 27.082 411.529 38.901" data-n="225"></polygon>
-<polygon points="111.294 228.000 104.471 216.181 90.824 216.181 97.647 228.000" data-n="226"></polygon>
-<polygon points="213.647 50.720 206.824 38.901 193.176 38.901 200.000 50.720" data-n="227"></polygon>
-<polygon points="213.647 405.280 200.000 405.280 193.176 417.099 206.824 417.099" data-n="228"></polygon>
-<polygon points="111.294 228.000 97.647 228.000 90.824 239.819 104.471 239.819" data-n="229"></polygon>
-<polygon points="418.353 405.280 411.529 417.099 418.353 428.918 425.176 417.099" data-n="230"></polygon>
-<polygon points="213.647 405.280 206.824 417.099 213.647 428.918 220.471 417.099" data-n="231"></polygon>
-<polygon points="520.706 228.000 527.529 239.819 541.176 239.819 534.353 228.000" data-n="232"></polygon>
-<polygon points="418.353 405.280 425.176 417.099 438.824 417.099 432.000 405.280" data-n="233"></polygon>
-</g>
-<g id="g22" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="363.765 168.907 377.412 168.907 384.235 157.088 370.588 157.088" data-n="234"></polygon>
-<polygon points="391.059 216.181 404.706 216.181 411.529 204.363 397.882 204.363" data-n="235"></polygon>
-<polygon points="288.706 157.088 295.529 145.269 288.706 133.450 281.882 145.269" data-n="236"></polygon>
-<polygon points="343.294 157.088 350.118 145.269 343.294 133.450 336.471 145.269" data-n="237"></polygon>
-<polygon points="240.941 216.181 234.118 204.363 220.471 204.363 227.294 216.181" data-n="238"></polygon>
-<polygon points="268.235 168.907 261.412 157.088 247.765 157.088 254.588 168.907" data-n="239"></polygon>
-<polygon points="268.235 287.093 254.588 287.093 247.765 298.912 261.412 298.912" data-n="240"></polygon>
-<polygon points="240.941 239.819 227.294 239.819 220.471 251.637 234.118 251.637" data-n="241"></polygon>
-<polygon points="343.294 298.912 336.471 310.731 343.294 322.550 350.118 310.731" data-n="242"></polygon>
-<polygon points="288.706 298.912 281.882 310.731 288.706 322.550 295.529 310.731" data-n="243"></polygon>
-<polygon points="391.059 239.819 397.882 251.637 411.529 251.637 404.706 239.819" data-n="244"></polygon>
-<polygon points="363.765 287.093 370.588 298.912 384.235 298.912 377.412 287.093" data-n="245"></polygon>
-</g>
-<g id="g23" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="370.588 157.088 384.235 157.088 391.059 145.269 377.412 145.269" data-n="246"></polygon>
-<polygon points="404.706 216.181 418.353 216.181 425.176 204.363 411.529 204.363" data-n="247"></polygon>
-<polygon points="281.882 145.269 288.706 133.450 281.882 121.632 275.059 133.450" data-n="248"></polygon>
-<polygon points="350.118 145.269 356.941 133.450 350.118 121.632 343.294 133.450" data-n="249"></polygon>
-<polygon points="227.294 216.181 220.471 204.363 206.824 204.363 213.647 216.181" data-n="250"></polygon>
-<polygon points="261.412 157.088 254.588 145.269 240.941 145.269 247.765 157.088" data-n="251"></polygon>
-<polygon points="261.412 298.912 247.765 298.912 240.941 310.731 254.588 310.731" data-n="252"></polygon>
-<polygon points="227.294 239.819 213.647 239.819 206.824 251.637 220.471 251.637" data-n="253"></polygon>
-<polygon points="350.118 310.731 343.294 322.550 350.118 334.368 356.941 322.550" data-n="254"></polygon>
-<polygon points="281.882 310.731 275.059 322.550 281.882 334.368 288.706 322.550" data-n="255"></polygon>
-<polygon points="404.706 239.819 411.529 251.637 425.176 251.637 418.353 239.819" data-n="256"></polygon>
-<polygon points="370.588 298.912 377.412 310.731 391.059 310.731 384.235 298.912" data-n="257"></polygon>
-</g>
-<g id="g24" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="377.412 145.269 391.059 145.269 397.882 133.450 384.235 133.450" data-n="258"></polygon>
-<polygon points="418.353 216.181 432.000 216.181 438.824 204.363 425.176 204.363" data-n="259"></polygon>
-<polygon points="275.059 133.450 281.882 121.632 275.059 109.813 268.235 121.632" data-n="260"></polygon>
-<polygon points="356.941 133.450 363.765 121.632 356.941 109.813 350.118 121.632" data-n="261"></polygon>
-<polygon points="213.647 216.181 206.824 204.363 193.176 204.363 200.000 216.181" data-n="262"></polygon>
-<polygon points="254.588 145.269 247.765 133.450 234.118 133.450 240.941 145.269" data-n="263"></polygon>
-<polygon points="254.588 310.731 240.941 310.731 234.118 322.550 247.765 322.550" data-n="264"></polygon>
-<polygon points="213.647 239.819 200.000 239.819 193.176 251.637 206.824 251.637" data-n="265"></polygon>
-<polygon points="356.941 322.550 350.118 334.368 356.941 346.187 363.765 334.368" data-n="266"></polygon>
-<polygon points="275.059 322.550 268.235 334.368 275.059 346.187 281.882 334.368" data-n="267"></polygon>
-<polygon points="418.353 239.819 425.176 251.637 438.824 251.637 432.000 239.819" data-n="268"></polygon>
-<polygon points="377.412 310.731 384.235 322.550 397.882 322.550 391.059 310.731" data-n="269"></polygon>
-</g>
-<g id="g25" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="384.235 133.450 397.882 133.450 404.706 121.632 391.059 121.632" data-n="270"></polygon>
-<polygon points="432.000 216.181 445.647 216.181 452.471 204.363 438.824 204.363" data-n="271"></polygon>
-<polygon points="268.235 121.632 275.059 109.813 268.235 97.994 261.412 109.813" data-n="272"></polygon>
-<polygon points="363.765 121.632 370.588 109.813 363.765 97.994 356.941 109.813" data-n="273"></polygon>
-<polygon points="200.000 216.181 193.176 204.363 179.529 204.363 186.353 216.181" data-n="274"></polygon>
-<polygon points="247.765 133.450 240.941 121.632 227.294 121.632 234.118 133.450" data-n="275"></polygon>
-<polygon points="247.765 322.550 234.118 322.550 227.294 334.368 240.941 334.368" data-n="276"></polygon>
-<polygon points="200.000 239.819 186.353 239.819 179.529 251.637 193.176 251.637" data-n="277"></polygon>
-<polygon points="363.765 334.368 356.941 346.187 363.765 358.006 370.588 346.187" data-n="278"></polygon>
-<polygon points="268.235 334.368 261.412 346.187 268.235 358.006 275.059 346.187" data-n="279"></polygon>
-<polygon points="432.000 239.819 438.824 251.637 452.471 251.637 445.647 239.819" data-n="280"></polygon>
-<polygon points="384.235 322.550 391.059 334.368 404.706 334.368 397.882 322.550" data-n="281"></polygon>
-</g>
-<g id="g26" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="391.059 121.632 404.706 121.632 411.529 109.813 397.882 109.813" data-n="282"></polygon>
-<polygon points="445.647 216.181 459.294 216.181 466.118 204.363 452.471 204.363" data-n="283"></polygon>
-<polygon points="261.412 109.813 268.235 97.994 261.412 86.176 254.588 97.994" data-n="284"></polygon>
-<polygon points="370.588 109.813 377.412 97.994 370.588 86.176 363.765 97.994" data-n="285"></polygon>
-<polygon points="186.353 216.181 179.529 204.363 165.882 204.363 172.706 216.181" data-n="286"></polygon>
-<polygon points="240.941 121.632 234.118 109.813 220.471 109.813 227.294 121.632" data-n="287"></polygon>
-<polygon points="240.941 334.368 227.294 334.368 220.471 346.187 234.118 346.187" data-n="288"></polygon>
-<polygon points="186.353 239.819 172.706 239.819 165.882 251.637 179.529 251.637" data-n="289"></polygon>
-<polygon points="370.588 346.187 363.765 358.006 370.588 369.824 377.412 358.006" data-n="290"></polygon>
-<polygon points="261.412 346.187 254.588 358.006 261.412 369.824 268.235 358.006" data-n="291"></polygon>
-<polygon points="445.647 239.819 452.471 251.637 466.118 251.637 459.294 239.819" data-n="292"></polygon>
-<polygon points="391.059 334.368 397.882 346.187 411.529 346.187 404.706 334.368" data-n="293"></polygon>
-</g>
-<g id="g27" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="397.882 109.813 411.529 109.813 418.353 97.994 404.706 97.994" data-n="294"></polygon>
-<polygon points="459.294 216.181 472.941 216.181 479.765 204.363 466.118 204.363" data-n="295"></polygon>
-<polygon points="254.588 97.994 261.412 86.176 254.588 74.357 247.765 86.176" data-n="296"></polygon>
-<polygon points="377.412 97.994 384.235 86.176 377.412 74.357 370.588 86.176" data-n="297"></polygon>
-<polygon points="172.706 216.181 165.882 204.363 152.235 204.363 159.059 216.181" data-n="298"></polygon>
-<polygon points="234.118 109.813 227.294 97.994 213.647 97.994 220.471 109.813" data-n="299"></polygon>
-<polygon points="234.118 346.187 220.471 346.187 213.647 358.006 227.294 358.006" data-n="300"></polygon>
-<polygon points="172.706 239.819 159.059 239.819 152.235 251.637 165.882 251.637" data-n="301"></polygon>
-<polygon points="377.412 358.006 370.588 369.824 377.412 381.643 384.235 369.824" data-n="302"></polygon>
-<polygon points="254.588 358.006 247.765 369.824 254.588 381.643 261.412 369.824" data-n="303"></polygon>
-<polygon points="459.294 239.819 466.118 251.637 479.765 251.637 472.941 239.819" data-n="304"></polygon>
-<polygon points="397.882 346.187 404.706 358.006 418.353 358.006 411.529 346.187" data-n="305"></polygon>
-</g>
-<g id="g28" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="404.706 97.994 418.353 97.994 425.176 86.176 411.529 86.176" data-n="306"></polygon>
-<polygon points="472.941 216.181 486.588 216.181 493.412 204.363 479.765 204.363" data-n="307"></polygon>
-<polygon points="247.765 86.176 254.588 74.357 247.765 62.538 240.941 74.357" data-n="308"></polygon>
-<polygon points="384.235 86.176 391.059 74.357 384.235 62.538 377.412 74.357" data-n="309"></polygon>
-<polygon points="159.059 216.181 152.235 204.363 138.588 204.363 145.412 216.181" data-n="310"></polygon>
-<polygon points="227.294 97.994 220.471 86.176 206.824 86.176 213.647 97.994" data-n="311"></polygon>
-<polygon points="227.294 358.006 213.647 358.006 206.824 369.824 220.471 369.824" data-n="312"></polygon>
-<polygon points="159.059 239.819 145.412 239.819 138.588 251.637 152.235 251.637" data-n="313"></polygon>
-<polygon points="384.235 369.824 377.412 381.643 384.235 393.462 391.059 381.643" data-n="314"></polygon>
-<polygon points="247.765 369.824 240.941 381.643 247.765 393.462 254.588 381.643" data-n="315"></polygon>
-<polygon points="472.941 239.819 479.765 251.637 493.412 251.637 486.588 239.819" data-n="316"></polygon>
-<polygon points="404.706 358.006 411.529 369.824 425.176 369.824 418.353 358.006" data-n="317"></polygon>
-</g>
-<g id="g29" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="411.529 86.176 425.176 86.176 432.000 74.357 418.353 74.357" data-n="318"></polygon>
-<polygon points="486.588 216.181 500.235 216.181 507.059 204.363 493.412 204.363" data-n="319"></polygon>
-<polygon points="240.941 74.357 247.765 62.538 240.941 50.720 234.118 62.538" data-n="320"></polygon>
-<polygon points="391.059 74.357 397.882 62.538 391.059 50.720 384.235 62.538" data-n="321"></polygon>
-<polygon points="145.412 216.181 138.588 204.363 124.941 204.363 131.765 216.181" data-n="322"></polygon>
-<polygon points="220.471 86.176 213.647 74.357 200.000 74.357 206.824 86.176" data-n="323"></polygon>
-<polygon points="220.471 369.824 206.824 369.824 200.000 381.643 213.647 381.643" data-n="324"></polygon>
-<polygon points="145.412 239.819 131.765 239.819 124.941 251.637 138.588 251.637" data-n="325"></polygon>
-<polygon points="391.059 381.643 384.235 393.462 391.059 405.280 397.882 393.462" data-n="326"></polygon>
-<polygon points="240.941 381.643 234.118 393.462 240.941 405.280 247.765 393.462" data-n="327"></polygon>
-<polygon points="486.588 239.819 493.412 251.637 507.059 251.637 500.235 239.819" data-n="328"></polygon>
-<polygon points="411.529 369.824 418.353 381.643 432.000 381.643 425.176 369.824" data-n="329"></polygon>
-</g>
-<g id="g30" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="418.353 74.357 432.000 74.357 438.824 62.538 425.176 62.538" data-n="330"></polygon>
-<polygon points="500.235 216.181 513.882 216.181 520.706 204.363 507.059 204.363" data-n="331"></polygon>
-<polygon points="234.118 62.538 240.941 50.720 234.118 38.901 227.294 50.720" data-n="332"></polygon>
-<polygon points="397.882 62.538 404.706 50.720 397.882 38.901 391.059 50.720" data-n="333"></polygon>
-<polygon points="131.765 216.181 124.941 204.363 111.294 204.363 118.118 216.181" data-n="334"></polygon>
-<polygon points="213.647 74.357 206.824 62.538 193.176 62.538 200.000 74.357" data-n="335"></polygon>
-<polygon points="213.647 381.643 200.000 381.643 193.176 393.462 206.824 393.462" data-n="336"></polygon>
-<polygon points="131.765 239.819 118.118 239.819 111.294 251.637 124.941 251.637" data-n="337"></polygon>
-<polygon points="397.882 393.462 391.059 405.280 397.882 417.099 404.706 405.280" data-n="338"></polygon>
-<polygon points="234.118 393.462 227.294 405.280 234.118 417.099 240.941 405.280" data-n="339"></polygon>
-<polygon points="500.235 239.819 507.059 251.637 520.706 251.637 513.882 239.819" data-n="340"></polygon>
-<polygon points="418.353 381.643 425.176 393.462 438.824 393.462 432.000 381.643" data-n="341"></polygon>
-</g>
-<g id="g31" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="425.176 62.538 438.824 62.538 445.647 50.720 432.000 50.720" data-n="342"></polygon>
-<polygon points="513.882 216.181 527.529 216.181 534.353 204.363 520.706 204.363" data-n="343"></polygon>
-<polygon points="227.294 50.720 234.118 38.901 227.294 27.082 220.471 38.901" data-n="344"></polygon>
-<polygon points="404.706 50.720 411.529 38.901 404.706 27.082 397.882 38.901" data-n="345"></polygon>
-<polygon points="118.118 216.181 111.294 204.363 97.647 204.363 104.471 216.181" data-n="346"></polygon>
-<polygon points="206.824 62.538 200.000 50.720 186.353 50.720 193.176 62.538" data-n="347"></polygon>
-<polygon points="206.824 393.462 193.176 393.462 186.353 405.280 200.000 405.280" data-n="348"></polygon>
-<polygon points="118.118 239.819 104.471 239.819 97.647 251.637 111.294 251.637" data-n="349"></polygon>
-<polygon points="404.706 405.280 397.882 417.099 404.706 428.918 411.529 417.099" data-n="350"></polygon>
-<polygon points="227.294 405.280 220.471 417.099 227.294 428.918 234.118 417.099" data-n="351"></polygon>
-<polygon points="513.882 239.819 520.706 251.637 534.353 251.637 527.529 239.819" data-n="352"></polygon>
-<polygon points="425.176 393.462 432.000 405.280 445.647 405.280 438.824 393.462" data-n="353"></polygon>
-</g>
-<g id="g32" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="432.000 74.357 445.647 74.357 452.471 62.538 438.824 62.538" data-n="354"></polygon>
-<polygon points="507.059 204.363 520.706 204.363 527.529 192.544 513.882 192.544" data-n="355"></polygon>
-<polygon points="240.941 50.720 247.765 38.901 240.941 27.082 234.118 38.901" data-n="356"></polygon>
-<polygon points="391.059 50.720 397.882 38.901 391.059 27.082 384.235 38.901" data-n="357"></polygon>
-<polygon points="124.941 204.363 118.118 192.544 104.471 192.544 111.294 204.363" data-n="358"></polygon>
-<polygon points="200.000 74.357 193.176 62.538 179.529 62.538 186.353 74.357" data-n="359"></polygon>
-<polygon points="200.000 381.643 186.353 381.643 179.529 393.462 193.176 393.462" data-n="360"></polygon>
-<polygon points="124.941 251.637 111.294 251.637 104.471 263.456 118.118 263.456" data-n="361"></polygon>
-<polygon points="391.059 405.280 384.235 417.099 391.059 428.918 397.882 417.099" data-n="362"></polygon>
-<polygon points="240.941 405.280 234.118 417.099 240.941 428.918 247.765 417.099" data-n="363"></polygon>
-<polygon points="507.059 251.637 513.882 263.456 527.529 263.456 520.706 251.637" data-n="364"></polygon>
-<polygon points="432.000 381.643 438.824 393.462 452.471 393.462 445.647 381.643" data-n="365"></polygon>
-</g>
-<g id="g33" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="438.824 86.176 452.471 86.176 459.294 74.357 445.647 74.357" data-n="366"></polygon>
-<polygon points="500.235 192.544 513.882 192.544 520.706 180.725 507.059 180.725" data-n="367"></polygon>
-<polygon points="254.588 50.720 261.412 38.901 254.588 27.082 247.765 38.901" data-n="368"></polygon>
-<polygon points="377.412 50.720 384.235 38.901 377.412 27.082 370.588 38.901" data-n="369"></polygon>
-<polygon points="131.765 192.544 124.941 180.725 111.294 180.725 118.118 192.544" data-n="370"></polygon>
-<polygon points="193.176 86.176 186.353 74.357 172.706 74.357 179.529 86.176" data-n="371"></polygon>
-<polygon points="193.176 369.824 179.529 369.824 172.706 381.643 186.353 381.643" data-n="372"></polygon>
-<polygon points="131.765 263.456 118.118 263.456 111.294 275.275 124.941 275.275" data-n="373"></polygon>
-<polygon points="377.412 405.280 370.588 417.099 377.412 428.918 384.235 417.099" data-n="374"></polygon>
-<polygon points="254.588 405.280 247.765 417.099 254.588 428.918 261.412 417.099" data-n="375"></polygon>
-<polygon points="500.235 263.456 507.059 275.275 520.706 275.275 513.882 263.456" data-n="376"></polygon>
-<polygon points="438.824 369.824 445.647 381.643 459.294 381.643 452.471 369.824" data-n="377"></polygon>
-</g>
-<g id="g34" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="445.647 97.994 459.294 97.994 466.118 86.176 452.471 86.176" data-n="378"></polygon>
-<polygon points="493.412 180.725 507.059 180.725 513.882 168.907 500.235 168.907" data-n="379"></polygon>
-<polygon points="268.235 50.720 275.059 38.901 268.235 27.082 261.412 38.901" data-n="380"></polygon>
-<polygon points="363.765 50.720 370.588 38.901 363.765 27.082 356.941 38.901" data-n="381"></polygon>
-<polygon points="138.588 180.725 131.765 168.907 118.118 168.907 124.941 180.725" data-n="382"></polygon>
-<polygon points="186.353 97.994 179.529 86.176 165.882 86.176 172.706 97.994" data-n="383"></polygon>
-<polygon points="186.353 358.006 172.706 358.006 165.882 369.824 179.529 369.824" data-n="384"></polygon>
-<polygon points="138.588 275.275 124.941 275.275 118.118 287.093 131.765 287.093" data-n="385"></polygon>
-<polygon points="363.765 405.280 356.941 417.099 363.765 428.918 370.588 417.099" data-n="386"></polygon>
-<polygon points="268.235 405.280 261.412 417.099 268.235 428.918 275.059 417.099" data-n="387"></polygon>
-<polygon points="493.412 275.275 500.235 287.093 513.882 287.093 507.059 275.275" data-n="388"></polygon>
-<polygon points="445.647 358.006 452.471 369.824 466.118 369.824 459.294 358.006" data-n="389"></polygon>
-</g>
-<g id="g35" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="452.471 109.813 466.118 109.813 472.941 97.994 459.294 97.994" data-n="390"></polygon>
-<polygon points="486.588 168.907 500.235 168.907 507.059 157.088 493.412 157.088" data-n="391"></polygon>
-<polygon points="281.882 50.720 288.706 38.901 281.882 27.082 275.059 38.901" data-n="392"></polygon>
-<polygon points="350.118 50.720 356.941 38.901 350.118 27.082 343.294 38.901" data-n="393"></polygon>
-<polygon points="145.412 168.907 138.588 157.088 124.941 157.088 131.765 168.907" data-n="394"></polygon>
-<polygon points="179.529 109.813 172.706 97.994 159.059 97.994 165.882 109.813" data-n="395"></polygon>
-<polygon points="179.529 346.187 165.882 346.187 159.059 358.006 172.706 358.006" data-n="396"></polygon>
-<polygon points="145.412 287.093 131.765 287.093 124.941 298.912 138.588 298.912" data-n="397"></polygon>
-<polygon points="350.118 405.280 343.294 417.099 350.118 428.918 356.941 417.099" data-n="398"></polygon>
-<polygon points="281.882 405.280 275.059 417.099 281.882 428.918 288.706 417.099" data-n="399"></polygon>
-<polygon points="486.588 287.093 493.412 298.912 507.059 298.912 500.235 287.093" data-n="400"></polygon>
-<polygon points="452.471 346.187 459.294 358.006 472.941 358.006 466.118 346.187" data-n="401"></polygon>
-</g>
-<g id="g36" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="459.294 121.632 472.941 121.632 479.765 109.813 466.118 109.813" data-n="402"></polygon>
-<polygon points="479.765 157.088 493.412 157.088 500.235 145.269 486.588 145.269" data-n="403"></polygon>
-<polygon points="295.529 50.720 302.353 38.901 295.529 27.082 288.706 38.901" data-n="404"></polygon>
-<polygon points="336.471 50.720 343.294 38.901 336.471 27.082 329.647 38.901" data-n="405"></polygon>
-<polygon points="152.235 157.088 145.412 145.269 131.765 145.269 138.588 157.088" data-n="406"></polygon>
-<polygon points="172.706 121.632 165.882 109.813 152.235 109.813 159.059 121.632" data-n="407"></polygon>
-<polygon points="172.706 334.368 159.059 334.368 152.235 346.187 165.882 346.187" data-n="408"></polygon>
-<polygon points="152.235 298.912 138.588 298.912 131.765 310.731 145.412 310.731" data-n="409"></polygon>
-<polygon points="336.471 405.280 329.647 417.099 336.471 428.918 343.294 417.099" data-n="410"></polygon>
-<polygon points="295.529 405.280 288.706 417.099 295.529 428.918 302.353 417.099" data-n="411"></polygon>
-<polygon points="479.765 298.912 486.588 310.731 500.235 310.731 493.412 298.912" data-n="412"></polygon>
-<polygon points="459.294 334.368 466.118 346.187 479.765 346.187 472.941 334.368" data-n="413"></polygon>
-</g>
-<g id="g37" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="466.118 133.450 479.765 133.450 486.588 121.632 472.941 121.632" data-n="414"></polygon>
-<polygon points="472.941 145.269 486.588 145.269 493.412 133.450 479.765 133.450" data-n="415"></polygon>
-<polygon points="309.176 50.720 316.000 38.901 309.176 27.082 302.353 38.901" data-n="416"></polygon>
-<polygon points="322.824 50.720 329.647 38.901 322.824 27.082 316.000 38.901" data-n="417"></polygon>
-<polygon points="159.059 145.269 152.235 133.450 138.588 133.450 145.412 145.269" data-n="418"></polygon>
-<polygon points="165.882 133.450 159.059 121.632 145.412 121.632 152.235 133.450" data-n="419"></polygon>
-<polygon points="165.882 322.550 152.235 322.550 145.412 334.368 159.059 334.368" data-n="420"></polygon>
-<polygon points="159.059 310.731 145.412 310.731 138.588 322.550 152.235 322.550" data-n="421"></polygon>
-<polygon points="322.824 405.280 316.000 417.099 322.824 428.918 329.647 417.099" data-n="422"></polygon>
-<polygon points="309.176 405.280 302.353 417.099 309.176 428.918 316.000 417.099" data-n="423"></polygon>
-<polygon points="472.941 310.731 479.765 322.550 493.412 322.550 486.588 310.731" data-n="424"></polygon>
-<polygon points="466.118 322.550 472.941 334.368 486.588 334.368 479.765 322.550" data-n="425"></polygon>
-</g>
-<g id="g38" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="363.765 192.544 377.412 192.544 384.235 180.725 370.588 180.725" data-n="426"></polygon>
-<polygon points="370.588 204.363 384.235 204.363 391.059 192.544 377.412 192.544" data-n="427"></polygon>
-<polygon points="309.176 168.907 316.000 157.088 309.176 145.269 302.353 157.088" data-n="428"></polygon>
-<polygon points="322.824 168.907 329.647 157.088 322.824 145.269 316.000 157.088" data-n="429"></polygon>
-<polygon points="261.412 204.363 254.588 192.544 240.941 192.544 247.765 204.363" data-n="430"></polygon>
-<polygon points="268.235 192.544 261.412 180.725 247.765 180.725 254.588 192.544" data-n="431"></polygon>
-<polygon points="268.235 263.456 254.588 263.456 247.765 275.275 261.412 275.275" data-n="432"></polygon>
-<polygon points="261.412 251.637 247.765 251.637 240.941 263.456 254.588 263.456" data-n="433"></polygon>
-<polygon points="322.824 287.093 316.000 298.912 322.824 310.731 329.647 298.912" data-n="434"></polygon>
-<polygon points="309.176 287.093 302.353 298.912 309.176 310.731 316.000 298.912" data-n="435"></polygon>
-<polygon points="370.588 251.637 377.412 263.456 391.059 263.456 384.235 251.637" data-n="436"></polygon>
-<polygon points="363.765 263.456 370.588 275.275 384.235 275.275 377.412 263.456" data-n="437"></polygon>
-</g>
-<g id="g39" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="370.588 180.725 384.235 180.725 391.059 168.907 377.412 168.907" data-n="438"></polygon>
-<polygon points="384.235 204.363 397.882 204.363 404.706 192.544 391.059 192.544" data-n="439"></polygon>
-<polygon points="302.353 157.088 309.176 145.269 302.353 133.450 295.529 145.269" data-n="440"></polygon>
-<polygon points="329.647 157.088 336.471 145.269 329.647 133.450 322.824 145.269" data-n="441"></polygon>
-<polygon points="247.765 204.363 240.941 192.544 227.294 192.544 234.118 204.363" data-n="442"></polygon>
-<polygon points="261.412 180.725 254.588 168.907 240.941 168.907 247.765 180.725" data-n="443"></polygon>
-<polygon points="261.412 275.275 247.765 275.275 240.941 287.093 254.588 287.093" data-n="444"></polygon>
-<polygon points="247.765 251.637 234.118 251.637 227.294 263.456 240.941 263.456" data-n="445"></polygon>
-<polygon points="329.647 298.912 322.824 310.731 329.647 322.550 336.471 310.731" data-n="446"></polygon>
-<polygon points="302.353 298.912 295.529 310.731 302.353 322.550 309.176 310.731" data-n="447"></polygon>
-<polygon points="384.235 251.637 391.059 263.456 404.706 263.456 397.882 251.637" data-n="448"></polygon>
-<polygon points="370.588 275.275 377.412 287.093 391.059 287.093 384.235 275.275" data-n="449"></polygon>
-</g>
-<g id="g40" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="377.412 168.907 391.059 168.907 397.882 157.088 384.235 157.088" data-n="450"></polygon>
-<polygon points="397.882 204.363 411.529 204.363 418.353 192.544 404.706 192.544" data-n="451"></polygon>
-<polygon points="295.529 145.269 302.353 133.450 295.529 121.632 288.706 133.450" data-n="452"></polygon>
-<polygon points="336.471 145.269 343.294 133.450 336.471 121.632 329.647 133.450" data-n="453"></polygon>
-<polygon points="234.118 204.363 227.294 192.544 213.647 192.544 220.471 204.363" data-n="454"></polygon>
-<polygon points="254.588 168.907 247.765 157.088 234.118 157.088 240.941 168.907" data-n="455"></polygon>
-<polygon points="254.588 287.093 240.941 287.093 234.118 298.912 247.765 298.912" data-n="456"></polygon>
-<polygon points="234.118 251.637 220.471 251.637 213.647 263.456 227.294 263.456" data-n="457"></polygon>
-<polygon points="336.471 310.731 329.647 322.550 336.471 334.368 343.294 322.550" data-n="458"></polygon>
-<polygon points="295.529 310.731 288.706 322.550 295.529 334.368 302.353 322.550" data-n="459"></polygon>
-<polygon points="397.882 251.637 404.706 263.456 418.353 263.456 411.529 251.637" data-n="460"></polygon>
-<polygon points="377.412 287.093 384.235 298.912 397.882 298.912 391.059 287.093" data-n="461"></polygon>
-</g>
-<g id="g41" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="384.235 157.088 397.882 157.088 404.706 145.269 391.059 145.269" data-n="462"></polygon>
-<polygon points="411.529 204.363 425.176 204.363 432.000 192.544 418.353 192.544" data-n="463"></polygon>
-<polygon points="288.706 133.450 295.529 121.632 288.706 109.813 281.882 121.632" data-n="464"></polygon>
-<polygon points="343.294 133.450 350.118 121.632 343.294 109.813 336.471 121.632" data-n="465"></polygon>
-<polygon points="220.471 204.363 213.647 192.544 200.000 192.544 206.824 204.363" data-n="466"></polygon>
-<polygon points="247.765 157.088 240.941 145.269 227.294 145.269 234.118 157.088" data-n="467"></polygon>
-<polygon points="247.765 298.912 234.118 298.912 227.294 310.731 240.941 310.731" data-n="468"></polygon>
-<polygon points="220.471 251.637 206.824 251.637 200.000 263.456 213.647 263.456" data-n="469"></polygon>
-<polygon points="343.294 322.550 336.471 334.368 343.294 346.187 350.118 334.368" data-n="470"></polygon>
-<polygon points="288.706 322.550 281.882 334.368 288.706 346.187 295.529 334.368" data-n="471"></polygon>
-<polygon points="411.529 251.637 418.353 263.456 432.000 263.456 425.176 251.637" data-n="472"></polygon>
-<polygon points="384.235 298.912 391.059 310.731 404.706 310.731 397.882 298.912" data-n="473"></polygon>
-</g>
-<g id="g42" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="391.059 145.269 404.706 145.269 411.529 133.450 397.882 133.450" data-n="474"></polygon>
-<polygon points="425.176 204.363 438.824 204.363 445.647 192.544 432.000 192.544" data-n="475"></polygon>
-<polygon points="281.882 121.632 288.706 109.813 281.882 97.994 275.059 109.813" data-n="476"></polygon>
-<polygon points="350.118 121.632 356.941 109.813 350.118 97.994 343.294 109.813" data-n="477"></polygon>
-<polygon points="206.824 204.363 200.000 192.544 186.353 192.544 193.176 204.363" data-n="478"></polygon>
-<polygon points="240.941 145.269 234.118 133.450 220.471 133.450 227.294 145.269" data-n="479"></polygon>
-<polygon points="240.941 310.731 227.294 310.731 220.471 322.550 234.118 322.550" data-n="480"></polygon>
-<polygon points="206.824 251.637 193.176 251.637 186.353 263.456 200.000 263.456" data-n="481"></polygon>
-<polygon points="350.118 334.368 343.294 346.187 350.118 358.006 356.941 346.187" data-n="482"></polygon>
-<polygon points="281.882 334.368 275.059 346.187 281.882 358.006 288.706 346.187" data-n="483"></polygon>
-<polygon points="425.176 251.637 432.000 263.456 445.647 263.456 438.824 251.637" data-n="484"></polygon>
-<polygon points="391.059 310.731 397.882 322.550 411.529 322.550 404.706 310.731" data-n="485"></polygon>
-</g>
-<g id="g43" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="397.882 133.450 411.529 133.450 418.353 121.632 404.706 121.632" data-n="486"></polygon>
-<polygon points="438.824 204.363 452.471 204.363 459.294 192.544 445.647 192.544" data-n="487"></polygon>
-<polygon points="275.059 109.813 281.882 97.994 275.059 86.176 268.235 97.994" data-n="488"></polygon>
-<polygon points="356.941 109.813 363.765 97.994 356.941 86.176 350.118 97.994" data-n="489"></polygon>
-<polygon points="193.176 204.363 186.353 192.544 172.706 192.544 179.529 204.363" data-n="490"></polygon>
-<polygon points="234.118 133.450 227.294 121.632 213.647 121.632 220.471 133.450" data-n="491"></polygon>
-<polygon points="234.118 322.550 220.471 322.550 213.647 334.368 227.294 334.368" data-n="492"></polygon>
-<polygon points="193.176 251.637 179.529 251.637 172.706 263.456 186.353 263.456" data-n="493"></polygon>
-<polygon points="356.941 346.187 350.118 358.006 356.941 369.824 363.765 358.006" data-n="494"></polygon>
-<polygon points="275.059 346.187 268.235 358.006 275.059 369.824 281.882 358.006" data-n="495"></polygon>
-<polygon points="438.824 251.637 445.647 263.456 459.294 263.456 452.471 251.637" data-n="496"></polygon>
-<polygon points="397.882 322.550 404.706 334.368 418.353 334.368 411.529 322.550" data-n="497"></polygon>
-</g>
-<g id="g44" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="404.706 121.632 418.353 121.632 425.176 109.813 411.529 109.813" data-n="498"></polygon>
-<polygon points="452.471 204.363 466.118 204.363 472.941 192.544 459.294 192.544" data-n="499"></polygon>
-<polygon points="268.235 97.994 275.059 86.176 268.235 74.357 261.412 86.176" data-n="500"></polygon>
-<polygon points="363.765 97.994 370.588 86.176 363.765 74.357 356.941 86.176" data-n="501"></polygon>
-<polygon points="179.529 204.363 172.706 192.544 159.059 192.544 165.882 204.363" data-n="502"></polygon>
-<polygon points="227.294 121.632 220.471 109.813 206.824 109.813 213.647 121.632" data-n="503"></polygon>
-<polygon points="227.294 334.368 213.647 334.368 206.824 346.187 220.471 346.187" data-n="504"></polygon>
-<polygon points="179.529 251.637 165.882 251.637 159.059 263.456 172.706 263.456" data-n="505"></polygon>
-<polygon points="363.765 358.006 356.941 369.824 363.765 381.643 370.588 369.824" data-n="506"></polygon>
-<polygon points="268.235 358.006 261.412 369.824 268.235 381.643 275.059 369.824" data-n="507"></polygon>
-<polygon points="452.471 251.637 459.294 263.456 472.941 263.456 466.118 251.637" data-n="508"></polygon>
-<polygon points="404.706 334.368 411.529 346.187 425.176 346.187 418.353 334.368" data-n="509"></polygon>
-</g>
-<g id="g45" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="411.529 109.813 425.176 109.813 432.000 97.994 418.353 97.994" data-n="510"></polygon>
-<polygon points="466.118 204.363 479.765 204.363 486.588 192.544 472.941 192.544" data-n="511"></polygon>
-<polygon points="261.412 86.176 268.235 74.357 261.412 62.538 254.588 74.357" data-n="512"></polygon>
-<polygon points="370.588 86.176 377.412 74.357 370.588 62.538 363.765 74.357" data-n="513"></polygon>
-<polygon points="165.882 204.363 159.059 192.544 145.412 192.544 152.235 204.363" data-n="514"></polygon>
-<polygon points="220.471 109.813 213.647 97.994 200.000 97.994 206.824 109.813" data-n="515"></polygon>
-<polygon points="220.471 346.187 206.824 346.187 200.000 358.006 213.647 358.006" data-n="516"></polygon>
-<polygon points="165.882 251.637 152.235 251.637 145.412 263.456 159.059 263.456" data-n="517"></polygon>
-<polygon points="370.588 369.824 363.765 381.643 370.588 393.462 377.412 381.643" data-n="518"></polygon>
-<polygon points="261.412 369.824 254.588 381.643 261.412 393.462 268.235 381.643" data-n="519"></polygon>
-<polygon points="466.118 251.637 472.941 263.456 486.588 263.456 479.765 251.637" data-n="520"></polygon>
-<polygon points="411.529 346.187 418.353 358.006 432.000 358.006 425.176 346.187" data-n="521"></polygon>
-</g>
-<g id="g46" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="425.176 109.813 438.824 109.813 445.647 97.994 432.000 97.994" data-n="522"></polygon>
-<polygon points="472.941 192.544 486.588 192.544 493.412 180.725 479.765 180.725" data-n="523"></polygon>
-<polygon points="268.235 74.357 275.059 62.538 268.235 50.720 261.412 62.538" data-n="524"></polygon>
-<polygon points="363.765 74.357 370.588 62.538 363.765 50.720 356.941 62.538" data-n="525"></polygon>
-<polygon points="159.059 192.544 152.235 180.725 138.588 180.725 145.412 192.544" data-n="526"></polygon>
-<polygon points="206.824 109.813 200.000 97.994 186.353 97.994 193.176 109.813" data-n="527"></polygon>
-<polygon points="206.824 346.187 193.176 346.187 186.353 358.006 200.000 358.006" data-n="528"></polygon>
-<polygon points="159.059 263.456 145.412 263.456 138.588 275.275 152.235 275.275" data-n="529"></polygon>
-<polygon points="363.765 381.643 356.941 393.462 363.765 405.280 370.588 393.462" data-n="530"></polygon>
-<polygon points="268.235 381.643 261.412 393.462 268.235 405.280 275.059 393.462" data-n="531"></polygon>
-<polygon points="472.941 263.456 479.765 275.275 493.412 275.275 486.588 263.456" data-n="532"></polygon>
-<polygon points="425.176 346.187 432.000 358.006 445.647 358.006 438.824 346.187" data-n="533"></polygon>
-</g>
-<g id="g47" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="438.824 109.813 452.471 109.813 459.294 97.994 445.647 97.994" data-n="534"></polygon>
-<polygon points="479.765 180.725 493.412 180.725 500.235 168.907 486.588 168.907" data-n="535"></polygon>
-<polygon points="275.059 62.538 281.882 50.720 275.059 38.901 268.235 50.720" data-n="536"></polygon>
-<polygon points="356.941 62.538 363.765 50.720 356.941 38.901 350.118 50.720" data-n="537"></polygon>
-<polygon points="152.235 180.725 145.412 168.907 131.765 168.907 138.588 180.725" data-n="538"></polygon>
-<polygon points="193.176 109.813 186.353 97.994 172.706 97.994 179.529 109.813" data-n="539"></polygon>
-<polygon points="193.176 346.187 179.529 346.187 172.706 358.006 186.353 358.006" data-n="540"></polygon>
-<polygon points="152.235 275.275 138.588 275.275 131.765 287.093 145.412 287.093" data-n="541"></polygon>
-<polygon points="356.941 393.462 350.118 405.280 356.941 417.099 363.765 405.280" data-n="542"></polygon>
-<polygon points="275.059 393.462 268.235 405.280 275.059 417.099 281.882 405.280" data-n="543"></polygon>
-<polygon points="479.765 275.275 486.588 287.093 500.235 287.093 493.412 275.275" data-n="544"></polygon>
-<polygon points="438.824 346.187 445.647 358.006 459.294 358.006 452.471 346.187" data-n="545"></polygon>
-</g>
-<g id="g48" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="445.647 121.632 459.294 121.632 466.118 109.813 452.471 109.813" data-n="546"></polygon>
-<polygon points="472.941 168.907 486.588 168.907 493.412 157.088 479.765 157.088" data-n="547"></polygon>
-<polygon points="288.706 62.538 295.529 50.720 288.706 38.901 281.882 50.720" data-n="548"></polygon>
-<polygon points="343.294 62.538 350.118 50.720 343.294 38.901 336.471 50.720" data-n="549"></polygon>
-<polygon points="159.059 168.907 152.235 157.088 138.588 157.088 145.412 168.907" data-n="550"></polygon>
-<polygon points="186.353 121.632 179.529 109.813 165.882 109.813 172.706 121.632" data-n="551"></polygon>
-<polygon points="186.353 334.368 172.706 334.368 165.882 346.187 179.529 346.187" data-n="552"></polygon>
-<polygon points="159.059 287.093 145.412 287.093 138.588 298.912 152.235 298.912" data-n="553"></polygon>
-<polygon points="343.294 393.462 336.471 405.280 343.294 417.099 350.118 405.280" data-n="554"></polygon>
-<polygon points="288.706 393.462 281.882 405.280 288.706 417.099 295.529 405.280" data-n="555"></polygon>
-<polygon points="472.941 287.093 479.765 298.912 493.412 298.912 486.588 287.093" data-n="556"></polygon>
-<polygon points="445.647 334.368 452.471 346.187 466.118 346.187 459.294 334.368" data-n="557"></polygon>
-</g>
-<g id="g49" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="452.471 133.450 466.118 133.450 472.941 121.632 459.294 121.632" data-n="558"></polygon>
-<polygon points="466.118 157.088 479.765 157.088 486.588 145.269 472.941 145.269" data-n="559"></polygon>
-<polygon points="302.353 62.538 309.176 50.720 302.353 38.901 295.529 50.720" data-n="560"></polygon>
-<polygon points="329.647 62.538 336.471 50.720 329.647 38.901 322.824 50.720" data-n="561"></polygon>
-<polygon points="165.882 157.088 159.059 145.269 145.412 145.269 152.235 157.088" data-n="562"></polygon>
-<polygon points="179.529 133.450 172.706 121.632 159.059 121.632 165.882 133.450" data-n="563"></polygon>
-<polygon points="179.529 322.550 165.882 322.550 159.059 334.368 172.706 334.368" data-n="564"></polygon>
-<polygon points="165.882 298.912 152.235 298.912 145.412 310.731 159.059 310.731" data-n="565"></polygon>
-<polygon points="329.647 393.462 322.824 405.280 329.647 417.099 336.471 405.280" data-n="566"></polygon>
-<polygon points="302.353 393.462 295.529 405.280 302.353 417.099 309.176 405.280" data-n="567"></polygon>
-<polygon points="466.118 298.912 472.941 310.731 486.588 310.731 479.765 298.912" data-n="568"></polygon>
-<polygon points="452.471 322.550 459.294 334.368 472.941 334.368 466.118 322.550" data-n="569"></polygon>
-</g>
-<g id="g50" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="459.294 145.269 472.941 145.269 479.765 133.450 466.118 133.450" data-n="570"></polygon>
-<polygon points="316.000 62.538 322.824 50.720 316.000 38.901 309.176 50.720" data-n="571"></polygon>
-<polygon points="172.706 145.269 165.882 133.450 152.235 133.450 159.059 145.269" data-n="572"></polygon>
-<polygon points="172.706 310.731 159.059 310.731 152.235 322.550 165.882 322.550" data-n="573"></polygon>
-<polygon points="316.000 393.462 309.176 405.280 316.000 417.099 322.824 405.280" data-n="574"></polygon>
-<polygon points="459.294 310.731 466.118 322.550 479.765 322.550 472.941 310.731" data-n="575"></polygon>
-</g>
-<g id="g51" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="432.000 121.632 445.647 121.632 452.471 109.813 438.824 109.813" data-n="576"></polygon>
-<polygon points="466.118 180.725 479.765 180.725 486.588 168.907 472.941 168.907" data-n="577"></polygon>
-<polygon points="281.882 74.357 288.706 62.538 281.882 50.720 275.059 62.538" data-n="578"></polygon>
-<polygon points="350.118 74.357 356.941 62.538 350.118 50.720 343.294 62.538" data-n="579"></polygon>
-<polygon points="165.882 180.725 159.059 168.907 145.412 168.907 152.235 180.725" data-n="580"></polygon>
-<polygon points="200.000 121.632 193.176 109.813 179.529 109.813 186.353 121.632" data-n="581"></polygon>
-<polygon points="200.000 334.368 186.353 334.368 179.529 346.187 193.176 346.187" data-n="582"></polygon>
-<polygon points="165.882 275.275 152.235 275.275 145.412 287.093 159.059 287.093" data-n="583"></polygon>
-<polygon points="350.118 381.643 343.294 393.462 350.118 405.280 356.941 393.462" data-n="584"></polygon>
-<polygon points="281.882 381.643 275.059 393.462 281.882 405.280 288.706 393.462" data-n="585"></polygon>
-<polygon points="466.118 275.275 472.941 287.093 486.588 287.093 479.765 275.275" data-n="586"></polygon>
-<polygon points="432.000 334.368 438.824 346.187 452.471 346.187 445.647 334.368" data-n="587"></polygon>
-</g>
-<g id="g52" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="438.824 133.450 452.471 133.450 459.294 121.632 445.647 121.632" data-n="588"></polygon>
-<polygon points="459.294 168.907 472.941 168.907 479.765 157.088 466.118 157.088" data-n="589"></polygon>
-<polygon points="295.529 74.357 302.353 62.538 295.529 50.720 288.706 62.538" data-n="590"></polygon>
-<polygon points="336.471 74.357 343.294 62.538 336.471 50.720 329.647 62.538" data-n="591"></polygon>
-<polygon points="172.706 168.907 165.882 157.088 152.235 157.088 159.059 168.907" data-n="592"></polygon>
-<polygon points="193.176 133.450 186.353 121.632 172.706 121.632 179.529 133.450" data-n="593"></polygon>
-<polygon points="193.176 322.550 179.529 322.550 172.706 334.368 186.353 334.368" data-n="594"></polygon>
-<polygon points="172.706 287.093 159.059 287.093 152.235 298.912 165.882 298.912" data-n="595"></polygon>
-<polygon points="336.471 381.643 329.647 393.462 336.471 405.280 343.294 393.462" data-n="596"></polygon>
-<polygon points="295.529 381.643 288.706 393.462 295.529 405.280 302.353 393.462" data-n="597"></polygon>
-<polygon points="459.294 287.093 466.118 298.912 479.765 298.912 472.941 287.093" data-n="598"></polygon>
-<polygon points="438.824 322.550 445.647 334.368 459.294 334.368 452.471 322.550" data-n="599"></polygon>
-</g>
-<g id="g53" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="445.647 145.269 459.294 145.269 466.118 133.450 452.471 133.450" data-n="600"></polygon>
-<polygon points="452.471 157.088 466.118 157.088 472.941 145.269 459.294 145.269" data-n="601"></polygon>
-<polygon points="309.176 74.357 316.000 62.538 309.176 50.720 302.353 62.538" data-n="602"></polygon>
-<polygon points="322.824 74.357 329.647 62.538 322.824 50.720 316.000 62.538" data-n="603"></polygon>
-<polygon points="179.529 157.088 172.706 145.269 159.059 145.269 165.882 157.088" data-n="604"></polygon>
-<polygon points="186.353 145.269 179.529 133.450 165.882 133.450 172.706 145.269" data-n="605"></polygon>
-<polygon points="186.353 310.731 172.706 310.731 165.882 322.550 179.529 322.550" data-n="606"></polygon>
-<polygon points="179.529 298.912 165.882 298.912 159.059 310.731 172.706 310.731" data-n="607"></polygon>
-<polygon points="322.824 381.643 316.000 393.462 322.824 405.280 329.647 393.462" data-n="608"></polygon>
-<polygon points="309.176 381.643 302.353 393.462 309.176 405.280 316.000 393.462" data-n="609"></polygon>
-<polygon points="452.471 298.912 459.294 310.731 472.941 310.731 466.118 298.912" data-n="610"></polygon>
-<polygon points="445.647 310.731 452.471 322.550 466.118 322.550 459.294 310.731" data-n="611"></polygon>
-</g>
-<g id="g54" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="418.353 121.632 432.000 121.632 438.824 109.813 425.176 109.813" data-n="612"></polygon>
-<polygon points="459.294 192.544 472.941 192.544 479.765 180.725 466.118 180.725" data-n="613"></polygon>
-<polygon points="275.059 86.176 281.882 74.357 275.059 62.538 268.235 74.357" data-n="614"></polygon>
-<polygon points="356.941 86.176 363.765 74.357 356.941 62.538 350.118 74.357" data-n="615"></polygon>
-<polygon points="172.706 192.544 165.882 180.725 152.235 180.725 159.059 192.544" data-n="616"></polygon>
-<polygon points="213.647 121.632 206.824 109.813 193.176 109.813 200.000 121.632" data-n="617"></polygon>
-<polygon points="213.647 334.368 200.000 334.368 193.176 346.187 206.824 346.187" data-n="618"></polygon>
-<polygon points="172.706 263.456 159.059 263.456 152.235 275.275 165.882 275.275" data-n="619"></polygon>
-<polygon points="356.941 369.824 350.118 381.643 356.941 393.462 363.765 381.643" data-n="620"></polygon>
-<polygon points="275.059 369.824 268.235 381.643 275.059 393.462 281.882 381.643" data-n="621"></polygon>
-<polygon points="459.294 263.456 466.118 275.275 479.765 275.275 472.941 263.456" data-n="622"></polygon>
-<polygon points="418.353 334.368 425.176 346.187 438.824 346.187 432.000 334.368" data-n="623"></polygon>
-</g>
-<g id="g55" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="425.176 133.450 438.824 133.450 445.647 121.632 432.000 121.632" data-n="624"></polygon>
-<polygon points="452.471 180.725 466.118 180.725 472.941 168.907 459.294 168.907" data-n="625"></polygon>
-<polygon points="288.706 86.176 295.529 74.357 288.706 62.538 281.882 74.357" data-n="626"></polygon>
-<polygon points="343.294 86.176 350.118 74.357 343.294 62.538 336.471 74.357" data-n="627"></polygon>
-<polygon points="179.529 180.725 172.706 168.907 159.059 168.907 165.882 180.725" data-n="628"></polygon>
-<polygon points="206.824 133.450 200.000 121.632 186.353 121.632 193.176 133.450" data-n="629"></polygon>
-<polygon points="206.824 322.550 193.176 322.550 186.353 334.368 200.000 334.368" data-n="630"></polygon>
-<polygon points="179.529 275.275 165.882 275.275 159.059 287.093 172.706 287.093" data-n="631"></polygon>
-<polygon points="343.294 369.824 336.471 381.643 343.294 393.462 350.118 381.643" data-n="632"></polygon>
-<polygon points="288.706 369.824 281.882 381.643 288.706 393.462 295.529 381.643" data-n="633"></polygon>
-<polygon points="452.471 275.275 459.294 287.093 472.941 287.093 466.118 275.275" data-n="634"></polygon>
-<polygon points="425.176 322.550 432.000 334.368 445.647 334.368 438.824 322.550" data-n="635"></polygon>
-</g>
-<g id="g56" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="432.000 145.269 445.647 145.269 452.471 133.450 438.824 133.450" data-n="636"></polygon>
-<polygon points="445.647 168.907 459.294 168.907 466.118 157.088 452.471 157.088" data-n="637"></polygon>
-<polygon points="302.353 86.176 309.176 74.357 302.353 62.538 295.529 74.357" data-n="638"></polygon>
-<polygon points="329.647 86.176 336.471 74.357 329.647 62.538 322.824 74.357" data-n="639"></polygon>
-<polygon points="186.353 168.907 179.529 157.088 165.882 157.088 172.706 168.907" data-n="640"></polygon>
-<polygon points="200.000 145.269 193.176 133.450 179.529 133.450 186.353 145.269" data-n="641"></polygon>
-<polygon points="200.000 310.731 186.353 310.731 179.529 322.550 193.176 322.550" data-n="642"></polygon>
-<polygon points="186.353 287.093 172.706 287.093 165.882 298.912 179.529 298.912" data-n="643"></polygon>
-<polygon points="329.647 369.824 322.824 381.643 329.647 393.462 336.471 381.643" data-n="644"></polygon>
-<polygon points="302.353 369.824 295.529 381.643 302.353 393.462 309.176 381.643" data-n="645"></polygon>
-<polygon points="445.647 287.093 452.471 298.912 466.118 298.912 459.294 287.093" data-n="646"></polygon>
-<polygon points="432.000 310.731 438.824 322.550 452.471 322.550 445.647 310.731" data-n="647"></polygon>
-</g>
-<g id="g57" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="411.529 133.450 425.176 133.450 432.000 121.632 418.353 121.632" data-n="648"></polygon>
-<polygon points="445.647 192.544 459.294 192.544 466.118 180.725 452.471 180.725" data-n="649"></polygon>
-<polygon points="281.882 97.994 288.706 86.176 281.882 74.357 275.059 86.176" data-n="650"></polygon>
-<polygon points="350.118 97.994 356.941 86.176 350.118 74.357 343.294 86.176" data-n="651"></polygon>
-<polygon points="186.353 192.544 179.529 180.725 165.882 180.725 172.706 192.544" data-n="652"></polygon>
-<polygon points="220.471 133.450 213.647 121.632 200.000 121.632 206.824 133.450" data-n="653"></polygon>
-<polygon points="220.471 322.550 206.824 322.550 200.000 334.368 213.647 334.368" data-n="654"></polygon>
-<polygon points="186.353 263.456 172.706 263.456 165.882 275.275 179.529 275.275" data-n="655"></polygon>
-<polygon points="350.118 358.006 343.294 369.824 350.118 381.643 356.941 369.824" data-n="656"></polygon>
-<polygon points="281.882 358.006 275.059 369.824 281.882 381.643 288.706 369.824" data-n="657"></polygon>
-<polygon points="445.647 263.456 452.471 275.275 466.118 275.275 459.294 263.456" data-n="658"></polygon>
-<polygon points="411.529 322.550 418.353 334.368 432.000 334.368 425.176 322.550" data-n="659"></polygon>
-</g>
-<g id="g58" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="404.706 145.269 418.353 145.269 425.176 133.450 411.529 133.450" data-n="660"></polygon>
-<polygon points="432.000 192.544 445.647 192.544 452.471 180.725 438.824 180.725" data-n="661"></polygon>
-<polygon points="288.706 109.813 295.529 97.994 288.706 86.176 281.882 97.994" data-n="662"></polygon>
-<polygon points="343.294 109.813 350.118 97.994 343.294 86.176 336.471 97.994" data-n="663"></polygon>
-<polygon points="200.000 192.544 193.176 180.725 179.529 180.725 186.353 192.544" data-n="664"></polygon>
-<polygon points="227.294 145.269 220.471 133.450 206.824 133.450 213.647 145.269" data-n="665"></polygon>
-<polygon points="227.294 310.731 213.647 310.731 206.824 322.550 220.471 322.550" data-n="666"></polygon>
-<polygon points="200.000 263.456 186.353 263.456 179.529 275.275 193.176 275.275" data-n="667"></polygon>
-<polygon points="343.294 346.187 336.471 358.006 343.294 369.824 350.118 358.006" data-n="668"></polygon>
-<polygon points="288.706 346.187 281.882 358.006 288.706 369.824 295.529 358.006" data-n="669"></polygon>
-<polygon points="432.000 263.456 438.824 275.275 452.471 275.275 445.647 263.456" data-n="670"></polygon>
-<polygon points="404.706 310.731 411.529 322.550 425.176 322.550 418.353 310.731" data-n="671"></polygon>
-</g>
-<g id="g59" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="418.353 145.269 432.000 145.269 438.824 133.450 425.176 133.450" data-n="672"></polygon>
-<polygon points="438.824 180.725 452.471 180.725 459.294 168.907 445.647 168.907" data-n="673"></polygon>
-<polygon points="295.529 97.994 302.353 86.176 295.529 74.357 288.706 86.176" data-n="674"></polygon>
-<polygon points="336.471 97.994 343.294 86.176 336.471 74.357 329.647 86.176" data-n="675"></polygon>
-<polygon points="193.176 180.725 186.353 168.907 172.706 168.907 179.529 180.725" data-n="676"></polygon>
-<polygon points="213.647 145.269 206.824 133.450 193.176 133.450 200.000 145.269" data-n="677"></polygon>
-<polygon points="213.647 310.731 200.000 310.731 193.176 322.550 206.824 322.550" data-n="678"></polygon>
-<polygon points="193.176 275.275 179.529 275.275 172.706 287.093 186.353 287.093" data-n="679"></polygon>
-<polygon points="336.471 358.006 329.647 369.824 336.471 381.643 343.294 369.824" data-n="680"></polygon>
-<polygon points="295.529 358.006 288.706 369.824 295.529 381.643 302.353 369.824" data-n="681"></polygon>
-<polygon points="438.824 275.275 445.647 287.093 459.294 287.093 452.471 275.275" data-n="682"></polygon>
-<polygon points="418.353 310.731 425.176 322.550 438.824 322.550 432.000 310.731" data-n="683"></polygon>
-</g>
-<g id="g60" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="438.824 157.088 452.471 157.088 459.294 145.269 445.647 145.269" data-n="684"></polygon>
-<polygon points="316.000 86.176 322.824 74.357 316.000 62.538 309.176 74.357" data-n="685"></polygon>
-<polygon points="193.176 157.088 186.353 145.269 172.706 145.269 179.529 157.088" data-n="686"></polygon>
-<polygon points="193.176 298.912 179.529 298.912 172.706 310.731 186.353 310.731" data-n="687"></polygon>
-<polygon points="316.000 369.824 309.176 381.643 316.000 393.462 322.824 381.643" data-n="688"></polygon>
-<polygon points="438.824 298.912 445.647 310.731 459.294 310.731 452.471 298.912" data-n="689"></polygon>
-</g>
-<g id="g61" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="425.176 157.088 438.824 157.088 445.647 145.269 432.000 145.269" data-n="690"></polygon>
-<polygon points="432.000 168.907 445.647 168.907 452.471 157.088 438.824 157.088" data-n="691"></polygon>
-<polygon points="309.176 97.994 316.000 86.176 309.176 74.357 302.353 86.176" data-n="692"></polygon>
-<polygon points="322.824 97.994 329.647 86.176 322.824 74.357 316.000 86.176" data-n="693"></polygon>
-<polygon points="200.000 168.907 193.176 157.088 179.529 157.088 186.353 168.907" data-n="694"></polygon>
-<polygon points="206.824 157.088 200.000 145.269 186.353 145.269 193.176 157.088" data-n="695"></polygon>
-<polygon points="206.824 298.912 193.176 298.912 186.353 310.731 200.000 310.731" data-n="696"></polygon>
-<polygon points="200.000 287.093 186.353 287.093 179.529 298.912 193.176 298.912" data-n="697"></polygon>
-<polygon points="322.824 358.006 316.000 369.824 322.824 381.643 329.647 369.824" data-n="698"></polygon>
-<polygon points="309.176 358.006 302.353 369.824 309.176 381.643 316.000 369.824" data-n="699"></polygon>
-<polygon points="432.000 287.093 438.824 298.912 452.471 298.912 445.647 287.093" data-n="700"></polygon>
-<polygon points="425.176 298.912 432.000 310.731 445.647 310.731 438.824 298.912" data-n="701"></polygon>
-</g>
-<g id="g62" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="411.529 157.088 425.176 157.088 432.000 145.269 418.353 145.269" data-n="702"></polygon>
-<polygon points="425.176 180.725 438.824 180.725 445.647 168.907 432.000 168.907" data-n="703"></polygon>
-<polygon points="302.353 109.813 309.176 97.994 302.353 86.176 295.529 97.994" data-n="704"></polygon>
-<polygon points="329.647 109.813 336.471 97.994 329.647 86.176 322.824 97.994" data-n="705"></polygon>
-<polygon points="206.824 180.725 200.000 168.907 186.353 168.907 193.176 180.725" data-n="706"></polygon>
-<polygon points="220.471 157.088 213.647 145.269 200.000 145.269 206.824 157.088" data-n="707"></polygon>
-<polygon points="220.471 298.912 206.824 298.912 200.000 310.731 213.647 310.731" data-n="708"></polygon>
-<polygon points="206.824 275.275 193.176 275.275 186.353 287.093 200.000 287.093" data-n="709"></polygon>
-<polygon points="329.647 346.187 322.824 358.006 329.647 369.824 336.471 358.006" data-n="710"></polygon>
-<polygon points="302.353 346.187 295.529 358.006 302.353 369.824 309.176 358.006" data-n="711"></polygon>
-<polygon points="425.176 275.275 432.000 287.093 445.647 287.093 438.824 275.275" data-n="712"></polygon>
-<polygon points="411.529 298.912 418.353 310.731 432.000 310.731 425.176 298.912" data-n="713"></polygon>
-</g>
-<g id="g63" fill="blue" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="397.882 157.088 411.529 157.088 418.353 145.269 404.706 145.269" data-n="714"></polygon>
-<polygon points="418.353 192.544 432.000 192.544 438.824 180.725 425.176 180.725" data-n="715"></polygon>
-<polygon points="295.529 121.632 302.353 109.813 295.529 97.994 288.706 109.813" data-n="716"></polygon>
-<polygon points="336.471 121.632 343.294 109.813 336.471 97.994 329.647 109.813" data-n="717"></polygon>
-<polygon points="213.647 192.544 206.824 180.725 193.176 180.725 200.000 192.544" data-n="718"></polygon>
-<polygon points="234.118 157.088 227.294 145.269 213.647 145.269 220.471 157.088" data-n="719"></polygon>
-<polygon points="234.118 298.912 220.471 298.912 213.647 310.731 227.294 310.731" data-n="720"></polygon>
-<polygon points="213.647 263.456 200.000 263.456 193.176 275.275 206.824 275.275" data-n="721"></polygon>
-<polygon points="336.471 334.368 329.647 346.187 336.471 358.006 343.294 346.187" data-n="722"></polygon>
-<polygon points="295.529 334.368 288.706 346.187 295.529 358.006 302.353 346.187" data-n="723"></polygon>
-<polygon points="418.353 263.456 425.176 275.275 438.824 275.275 432.000 263.456" data-n="724"></polygon>
-<polygon points="397.882 298.912 404.706 310.731 418.353 310.731 411.529 298.912" data-n="725"></polygon>
-</g>
-<g id="g64" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="418.353 168.907 432.000 168.907 438.824 157.088 425.176 157.088" data-n="726"></polygon>
-<polygon points="316.000 109.813 322.824 97.994 316.000 86.176 309.176 97.994" data-n="727"></polygon>
-<polygon points="213.647 168.907 206.824 157.088 193.176 157.088 200.000 168.907" data-n="728"></polygon>
-<polygon points="213.647 287.093 200.000 287.093 193.176 298.912 206.824 298.912" data-n="729"></polygon>
-<polygon points="316.000 346.187 309.176 358.006 316.000 369.824 322.824 358.006" data-n="730"></polygon>
-<polygon points="418.353 287.093 425.176 298.912 438.824 298.912 432.000 287.093" data-n="731"></polygon>
-</g>
-<g id="g65" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="404.706 168.907 418.353 168.907 425.176 157.088 411.529 157.088" data-n="732"></polygon>
-<polygon points="411.529 180.725 425.176 180.725 432.000 168.907 418.353 168.907" data-n="733"></polygon>
-<polygon points="309.176 121.632 316.000 109.813 309.176 97.994 302.353 109.813" data-n="734"></polygon>
-<polygon points="322.824 121.632 329.647 109.813 322.824 97.994 316.000 109.813" data-n="735"></polygon>
-<polygon points="220.471 180.725 213.647 168.907 200.000 168.907 206.824 180.725" data-n="736"></polygon>
-<polygon points="227.294 168.907 220.471 157.088 206.824 157.088 213.647 168.907" data-n="737"></polygon>
-<polygon points="227.294 287.093 213.647 287.093 206.824 298.912 220.471 298.912" data-n="738"></polygon>
-<polygon points="220.471 275.275 206.824 275.275 200.000 287.093 213.647 287.093" data-n="739"></polygon>
-<polygon points="322.824 334.368 316.000 346.187 322.824 358.006 329.647 346.187" data-n="740"></polygon>
-<polygon points="309.176 334.368 302.353 346.187 309.176 358.006 316.000 346.187" data-n="741"></polygon>
-<polygon points="411.529 275.275 418.353 287.093 432.000 287.093 425.176 275.275" data-n="742"></polygon>
-<polygon points="404.706 287.093 411.529 298.912 425.176 298.912 418.353 287.093" data-n="743"></polygon>
-</g>
-<g id="g66" fill="green" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="397.882 180.725 411.529 180.725 418.353 168.907 404.706 168.907" data-n="744"></polygon>
-<polygon points="316.000 133.450 322.824 121.632 316.000 109.813 309.176 121.632" data-n="745"></polygon>
-<polygon points="234.118 180.725 227.294 168.907 213.647 168.907 220.471 180.725" data-n="746"></polygon>
-<polygon points="234.118 275.275 220.471 275.275 213.647 287.093 227.294 287.093" data-n="747"></polygon>
-<polygon points="316.000 322.550 309.176 334.368 316.000 346.187 322.824 334.368" data-n="748"></polygon>
-<polygon points="397.882 275.275 404.706 287.093 418.353 287.093 411.529 275.275" data-n="749"></polygon>
-</g>
-<g id="g67" fill="lime" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="391.059 168.907 404.706 168.907 411.529 157.088 397.882 157.088" data-n="750"></polygon>
-<polygon points="404.706 192.544 418.353 192.544 425.176 180.725 411.529 180.725" data-n="751"></polygon>
-<polygon points="302.353 133.450 309.176 121.632 302.353 109.813 295.529 121.632" data-n="752"></polygon>
-<polygon points="329.647 133.450 336.471 121.632 329.647 109.813 322.824 121.632" data-n="753"></polygon>
-<polygon points="227.294 192.544 220.471 180.725 206.824 180.725 213.647 192.544" data-n="754"></polygon>
-<polygon points="240.941 168.907 234.118 157.088 220.471 157.088 227.294 168.907" data-n="755"></polygon>
-<polygon points="240.941 287.093 227.294 287.093 220.471 298.912 234.118 298.912" data-n="756"></polygon>
-<polygon points="227.294 263.456 213.647 263.456 206.824 275.275 220.471 275.275" data-n="757"></polygon>
-<polygon points="329.647 322.550 322.824 334.368 329.647 346.187 336.471 334.368" data-n="758"></polygon>
-<polygon points="302.353 322.550 295.529 334.368 302.353 346.187 309.176 334.368" data-n="759"></polygon>
-<polygon points="404.706 263.456 411.529 275.275 425.176 275.275 418.353 263.456" data-n="760"></polygon>
-<polygon points="391.059 287.093 397.882 298.912 411.529 298.912 404.706 287.093" data-n="761"></polygon>
-</g>
-<g id="g68" fill="#A4019C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="384.235 180.725 397.882 180.725 404.706 168.907 391.059 168.907" data-n="762"></polygon>
-<polygon points="391.059 192.544 404.706 192.544 411.529 180.725 397.882 180.725" data-n="763"></polygon>
-<polygon points="309.176 145.269 316.000 133.450 309.176 121.632 302.353 133.450" data-n="764"></polygon>
-<polygon points="322.824 145.269 329.647 133.450 322.824 121.632 316.000 133.450" data-n="765"></polygon>
-<polygon points="240.941 192.544 234.118 180.725 220.471 180.725 227.294 192.544" data-n="766"></polygon>
-<polygon points="247.765 180.725 240.941 168.907 227.294 168.907 234.118 180.725" data-n="767"></polygon>
-<polygon points="247.765 275.275 234.118 275.275 227.294 287.093 240.941 287.093" data-n="768"></polygon>
-<polygon points="240.941 263.456 227.294 263.456 220.471 275.275 234.118 275.275" data-n="769"></polygon>
-<polygon points="322.824 310.731 316.000 322.550 322.824 334.368 329.647 322.550" data-n="770"></polygon>
-<polygon points="309.176 310.731 302.353 322.550 309.176 334.368 316.000 322.550" data-n="771"></polygon>
-<polygon points="391.059 263.456 397.882 275.275 411.529 275.275 404.706 263.456" data-n="772"></polygon>
-<polygon points="384.235 275.275 391.059 287.093 404.706 287.093 397.882 275.275" data-n="773"></polygon>
-</g>
-<g id="g69" fill="#009EE7" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="377.412 192.544 391.059 192.544 397.882 180.725 384.235 180.725" data-n="774"></polygon>
-<polygon points="316.000 157.088 322.824 145.269 316.000 133.450 309.176 145.269" data-n="775"></polygon>
-<polygon points="254.588 192.544 247.765 180.725 234.118 180.725 240.941 192.544" data-n="776"></polygon>
-<polygon points="254.588 263.456 240.941 263.456 234.118 275.275 247.765 275.275" data-n="777"></polygon>
-<polygon points="316.000 298.912 309.176 310.731 316.000 322.550 322.824 310.731" data-n="778"></polygon>
-<polygon points="377.412 263.456 384.235 275.275 397.882 275.275 391.059 263.456" data-n="779"></polygon>
-</g>
-<g id="g70" fill="purple" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="432.000 97.994 445.647 97.994 452.471 86.176 438.824 86.176" data-n="780"></polygon>
-<polygon points="486.588 192.544 500.235 192.544 507.059 180.725 493.412 180.725" data-n="781"></polygon>
-<polygon points="261.412 62.538 268.235 50.720 261.412 38.901 254.588 50.720" data-n="782"></polygon>
-<polygon points="370.588 62.538 377.412 50.720 370.588 38.901 363.765 50.720" data-n="783"></polygon>
-<polygon points="145.412 192.544 138.588 180.725 124.941 180.725 131.765 192.544" data-n="784"></polygon>
-<polygon points="200.000 97.994 193.176 86.176 179.529 86.176 186.353 97.994" data-n="785"></polygon>
-<polygon points="200.000 358.006 186.353 358.006 179.529 369.824 193.176 369.824" data-n="786"></polygon>
-<polygon points="145.412 263.456 131.765 263.456 124.941 275.275 138.588 275.275" data-n="787"></polygon>
-<polygon points="370.588 393.462 363.765 405.280 370.588 417.099 377.412 405.280" data-n="788"></polygon>
-<polygon points="261.412 393.462 254.588 405.280 261.412 417.099 268.235 405.280" data-n="789"></polygon>
-<polygon points="486.588 263.456 493.412 275.275 507.059 275.275 500.235 263.456" data-n="790"></polygon>
-<polygon points="432.000 358.006 438.824 369.824 452.471 369.824 445.647 358.006" data-n="791"></polygon>
-</g>
-<g id="g71" fill="#E60000" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="425.176 86.176 438.824 86.176 445.647 74.357 432.000 74.357" data-n="792"></polygon>
-<polygon points="493.412 204.363 507.059 204.363 513.882 192.544 500.235 192.544" data-n="793"></polygon>
-<polygon points="247.765 62.538 254.588 50.720 247.765 38.901 240.941 50.720" data-n="794"></polygon>
-<polygon points="384.235 62.538 391.059 50.720 384.235 38.901 377.412 50.720" data-n="795"></polygon>
-<polygon points="138.588 204.363 131.765 192.544 118.118 192.544 124.941 204.363" data-n="796"></polygon>
-<polygon points="206.824 86.176 200.000 74.357 186.353 74.357 193.176 86.176" data-n="797"></polygon>
-<polygon points="206.824 369.824 193.176 369.824 186.353 381.643 200.000 381.643" data-n="798"></polygon>
-<polygon points="138.588 251.637 124.941 251.637 118.118 263.456 131.765 263.456" data-n="799"></polygon>
-<polygon points="384.235 393.462 377.412 405.280 384.235 417.099 391.059 405.280" data-n="800"></polygon>
-<polygon points="247.765 393.462 240.941 405.280 247.765 417.099 254.588 405.280" data-n="801"></polygon>
-<polygon points="493.412 251.637 500.235 263.456 513.882 263.456 507.059 251.637" data-n="802"></polygon>
-<polygon points="425.176 369.824 432.000 381.643 445.647 381.643 438.824 369.824" data-n="803"></polygon>
-</g>
-<g id="g72" fill="#009A9C" onclick="this.style.fill=ink" style="fill: white; opacity: 1;">
-<polygon points="418.353 97.994 432.000 97.994 438.824 86.176 425.176 86.176" data-n="804"></polygon>
-<polygon points="479.765 204.363 493.412 204.363 500.235 192.544 486.588 192.544" data-n="805"></polygon>
-<polygon points="254.588 74.357 261.412 62.538 254.588 50.720 247.765 62.538" data-n="806"></polygon>
-<polygon points="377.412 74.357 384.235 62.538 377.412 50.720 370.588 62.538" data-n="807"></polygon>
-<polygon points="152.235 204.363 145.412 192.544 131.765 192.544 138.588 204.363" data-n="808"></polygon>
-<polygon points="213.647 97.994 206.824 86.176 193.176 86.176 200.000 97.994" data-n="809"></polygon>
-<polygon points="213.647 358.006 200.000 358.006 193.176 369.824 206.824 369.824" data-n="810"></polygon>
-<polygon points="152.235 251.637 138.588 251.637 131.765 263.456 145.412 263.456" data-n="811"></polygon>
-<polygon points="377.412 381.643 370.588 393.462 377.412 405.280 384.235 393.462" data-n="812"></polygon>
-<polygon points="254.588 381.643 247.765 393.462 254.588 405.280 261.412 393.462" data-n="813"></polygon>
-<polygon points="479.765 251.637 486.588 263.456 500.235 263.456 493.412 251.637" data-n="814"></polygon>
-<polygon points="418.353 358.006 425.176 369.824 438.824 369.824 432.000 358.006" data-n="815"></polygon>
-</g>
-
-
-<g id="txt">
-<text x="254.588" y="65.538" onclick="g72.style.fill=ink"> </text>
-<text x="377.412" y="65.538" onclick="g72.style.fill=ink"> </text>
-<text x="247.765" y="53.72" onclick="g71.style.fill=ink"> </text>
-<text x="384.235" y="53.72" onclick="g71.style.fill=ink"> </text>
-<text x="261.412" y="53.72" onclick="g70.style.fill=ink"> </text>
-<text x="370.588" y="53.72" onclick="g70.style.fill=ink"> </text>
-<text  x="316" y="148.269" onclick="g69.style.fill=ink"> </text>
-<text  x="309.176" y="136.45" onclick="g68.style.fill=ink"> </text>
-<text  x="322.824" y="136.45" onclick="g68.style.fill=ink"> </text>
-<text  x="302.353" y="124.632" onclick="g67.style.fill=ink"> </text>
-<text  x="329.647" y="124.632" onclick="g67.style.fill=ink"> </text>
-<text  x="316" y="124.632" onclick="g66.style.fill=ink"> </text>
-<text  x="309.176" y="112.813" onclick="g65.style.fill=ink"> </text>
-<text  x="322.824" y="112.813" onclick="g65.style.fill=ink"> </text>
-<text  x="316" y="100.994" onclick="g64.style.fill=ink"> </text>
-<text  x="295.529" y="112.813" onclick="g63.style.fill=ink"> </text>
-<text  x="336.471" y="112.813" onclick="g63.style.fill=ink"> </text>
-<text  x="302.353" y="100.994" onclick="g62.style.fill=ink"> </text>
-<text  x="329.647" y="100.994" onclick="g62.style.fill=ink"> </text>
-<text  x="309.176" y="89.176" onclick="g61.style.fill=ink"> </text>
-<text  x="322.824" y="89.176" onclick="g61.style.fill=ink"> </text>
-<text  x="316" y="77.357" onclick="g60.style.fill=ink"> </text>
-<text  x="295.529" y="89.176" onclick="g59.style.fill=ink"> </text>
-<text  x="336.471" y="89.176" onclick="g59.style.fill=ink"> </text>
-<text  x="288.706" y="100.994" onclick="g58.style.fill=ink"> </text>
-<text  x="343.294" y="100.994" onclick="g58.style.fill=ink"> </text>
-<text  x="281.882" y="89.176" onclick="g57.style.fill=ink"> </text>
-<text  x="350.118" y="89.176" onclick="g57.style.fill=ink"> </text>
-<text  x="302.353" y="77.357" onclick="g56.style.fill=ink"> </text>
-<text  x="329.647" y="77.357" onclick="g56.style.fill=ink"> </text>
-<text  x="288.706" y="77.357" onclick="g55.style.fill=ink"> </text>
-<text  x="343.294" y="77.357" onclick="g55.style.fill=ink"> </text>
-<text  x="275.059" y="77.357" onclick="g54.style.fill=ink"> </text>
-<text  x="356.941" y="77.357" onclick="g54.style.fill=ink"> </text>
-<text  x="309.176" y="65.538" onclick="g53.style.fill=ink"> </text>
-<text  x="322.824" y="65.538" onclick="g53.style.fill=ink"> </text>
-<text  x="295.529" y="65.538" onclick="g52.style.fill=ink"> </text>
-<text  x="336.471" y="65.538" onclick="g52.style.fill=ink"> </text>
-<text  x="281.882" y="65.538" onclick="g51.style.fill=ink"> </text>
-<text  x="350.118" y="65.538" onclick="g51.style.fill=ink"> </text>
-<text  x="316" y="53.72" onclick="g50.style.fill=ink"> </text>
-<text  x="302.353" y="53.72" onclick="g49.style.fill=ink"> </text>
-<text x="329.647" y="53.72" onclick="g49.style.fill=ink"> </text>
-<text x="288.706" y="53.72" onclick="g48.style.fill=ink"> </text>
-<text x="343.294" y="53.72" onclick="g48.style.fill=ink"> </text>
-<text x="275.059" y="53.72" onclick="g47.style.fill=ink"> </text>
-<text x="356.941" y="53.72" onclick="g47.style.fill=ink"> </text>
-<text  x="268.235" y="65.538" onclick="g46.style.fill=ink"> </text>
-<text  x="363.765" y="65.538" onclick="g46.style.fill=ink"> </text>
-<text  x="261.412" y="77.357" onclick="g45.style.fill=ink"> </text>
-<text  x="370.588" y="77.357" onclick="g45.style.fill=ink"> </text>
-<text  x="268.235" y="89.176" onclick="g44.style.fill=ink"> </text>
-<text  x="363.765" y="89.176" onclick="g44.style.fill=ink"> </text>
-<text  x="275.059" y="100.994" onclick="g43.style.fill=ink"> </text>
-<text  x="356.941" y="100.994" onclick="g43.style.fill=ink"> </text>
-<text  x="281.882" y="112.813" onclick="g42.style.fill=ink"> </text>
-<text  x="350.118" y="112.813" onclick="g42.style.fill=ink"> </text>
-<text  x="288.706" y="124.632" onclick="g41.style.fill=ink"> </text>
-<text  x="343.294" y="124.632" onclick="g41.style.fill=ink"> </text>
-<text  x="295.529" y="136.45" onclick="g40.style.fill=ink"> </text>
-<text  x="336.471" y="136.45" onclick="g40.style.fill=ink"> </text>
-<text  x="302.353" y="148.269" onclick="g39.style.fill=ink"> </text>
-<text  x="329.647" y="148.269" onclick="g39.style.fill=ink"> </text>
-<text  x="309.176" y="160.088" onclick="g38.style.fill=ink"> </text>
-<text  x="322.824" y="160.088" onclick="g38.style.fill=ink"> </text>
-<text  x="309.176" y="41.901" onclick="g37.style.fill=ink"> </text>
-<text  x="322.824" y="41.901" onclick="g37.style.fill=ink"> </text>
-<text  x="295.529" y="41.901" onclick="g36.style.fill=ink"> </text>
-<text  x="336.471" y="41.901" onclick="g36.style.fill=ink"> </text>
-<text  x="281.882" y="41.901" onclick="g35.style.fill=ink"> </text>
-<text  x="350.118" y="41.901" onclick="g35.style.fill=ink"> </text>
-<text  x="268.235" y="41.901" onclick="g34.style.fill=ink"> </text>
-<text  x="363.765" y="41.901" onclick="g34.style.fill=ink"> </text>
-<text  x="254.588" y="41.901" onclick="g33.style.fill=ink"> </text>
-<text  x="377.412" y="41.901" onclick="g33.style.fill=ink"> </text>
-<text  x="240.941" y="41.901" onclick="g32.style.fill=ink"> </text>
-<text  x="391.059" y="41.901" onclick="g32.style.fill=ink"> </text>
-<text  x="227.294" y="41.901" onclick="g31.style.fill=ink"> </text>
-<text  x="404.706" y="41.901" onclick="g31.style.fill=ink"> </text>
-<text  x="234.118" y="53.72" onclick="g30.style.fill=ink"> </text>
-<text  x="397.882" y="53.72" onclick="g30.style.fill=ink"> </text>
-<text  x="240.941" y="65.538" onclick="g29.style.fill=ink"> </text>
-<text  x="391.059" y="65.538" onclick="g29.style.fill=ink"> </text>
-<text  x="247.765" y="77.357" onclick="g28.style.fill=ink"> </text>
-<text  x="384.235" y="77.357" onclick="g28.style.fill=ink"> </text>
-<text  x="254.588" y="89.176" onclick="g27.style.fill=ink"> </text>
-<text  x="377.412" y="89.176" onclick="g27.style.fill=ink"> </text>
-<text  x="261.412" y="100.994" onclick="g26.style.fill=ink"> </text>
-<text  x="370.588" y="100.994" onclick="g26.style.fill=ink"> </text>
-<text  x="268.235" y="112.813" onclick="g25.style.fill=ink"> </text>
-<text  x="363.765" y="112.813" onclick="g25.style.fill=ink"> </text>
-<text  x="275.059" y="124.632" onclick="g24.style.fill=ink"> </text>
-<text  x="356.941" y="124.632" onclick="g24.style.fill=ink"> </text>
-<text  x="281.882" y="136.45" onclick="g23.style.fill=ink"> </text>
-<text  x="350.118" y="136.45" onclick="g23.style.fill=ink"> </text>
-<text  x="288.706" y="148.269"  onclick="g22.style.fill=ink"> </text>
-<text  x="343.294" y="148.269" onclick="g22.style.fill=ink"> </text>
-<text  x="213.647" y="41.901" onclick="g21.style.fill=ink"> </text>
-<text  x="418.353" y="41.901" onclick="g21.style.fill=ink"> </text>
-<text  x="220.471" y="53.72" onclick="g20.style.fill=ink"> </text>
-<text  x="411.529" y="53.72" onclick="g20.style.fill=ink"> </text>
-<text  x="227.294" y="65.538" onclick="g19.style.fill=ink"> </text>
-<text  x="404.706" y="65.538" onclick="g19.style.fill=ink"> </text>
-<text  x="234.118" y="77.357" onclick="g18.style.fill=ink"> </text>
-<text  x="397.882" y="77.357" onclick="g18.style.fill=ink"> </text>
-<text  x="240.941" y="89.176" onclick="g17.style.fill=ink"> </text>
-<text  x="391.059" y="89.176" onclick="g17.style.fill=ink"> </text>
-<text  x="247.765" y="100.994" onclick="g16.style.fill=ink"> </text>
-<text  x="384.235" y="100.994" onclick="g16.style.fill=ink"> </text>
-<text  x="254.588" y="112.813" onclick="g15.style.fill=ink"> </text>
-<text  x="377.412" y="112.813" onclick="g15.style.fill=ink"> </text>
-<text  x="261.412" y="124.632" onclick="g14.style.fill=ink"> </text>
-<text  x="370.588" y="124.632" onclick="g14.style.fill=ink"> </text>
-<text  x="268.235" y="136.45" onclick="g13.style.fill=ink"> </text>
-<text  x="363.765" y="136.45" onclick="g13.style.fill=ink"> </text>
-<text  x="275.059" y="148.269" onclick="g12.style.fill=ink"> </text>
-<text  x="356.941" y="148.269" onclick="g12.style.fill=ink"> </text>
-<text  x="281.882" y="160.088" onclick="g11.style.fill=ink"> </text>
-<text  x="350.118" y="160.088" onclick="g11.style.fill=ink"> </text>
-<text  x="295.529" y="160.088" onclick="g10.style.fill=ink"> </text>
-<text  x="336.471" y="160.088" onclick="g10.style.fill=ink"> </text>
-<text  x="302.353" y="171.907" onclick="g9.style.fill=ink"> </text>
-<text  x="329.647" y="171.907" onclick="g9.style.fill=ink"> </text>
-<text  x="288.706" y="171.907" onclick="g8.style.fill=ink"> </text>
-<text  x="343.294" y="171.907" onclick="g8.style.fill=ink"> </text>
-<text  x="295.529" y="183.725" onclick="g7.style.fill=ink"> </text>
-<text  x="336.471" y="183.725" onclick="g7.style.fill=ink"> </text>
-<text  x="316" y="171.907" onclick="g6.style.fill=ink"> </text>
-<text  x="309.176" y="183.725" onclick="g5.style.fill=ink"> </text>
-<text  x="322.824" y="183.725" onclick="g5.style.fill=ink"> </text>
-<text  x="302.353" y="195.544" onclick="g4.style.fill=ink"> </text>
-<text  x="329.647" y="195.544" onclick="g4.style.fill=ink"> </text>
-<text  x="316" y="195.544" onclick="g3.style.fill=ink"> </text>
-<text  x="309.176" y="207.363" onclick="g2.style.fill=ink"> </text>
-<text  x="322.824" y="207.363" onclick="g2.style.fill=ink"> </text>
-<text  x="316" y="219.181" onclick="g1.style.fill=ink"> </text>
-</g>
-</svg> 
+	<svg width="1200" height="900" viewBox="0 0 633 400" fill="none" id="ogam">
+		
+	</svg> 
 </div>
 </td></tr><tr><td>
 
-<div style="margin-top:-27px; text-align: right; background:white; color: black; padding: 8px;display: inline-block">
-<div id="inkcolor"></div>
-<span>1 Красный </span>
-<br>
-<span>2 Синий </span>
-<br>
-<span>3 Зеленый </span>
-<br>
-<span>4 Желтый </span>
-<br>
-<span>5 Голубой </span>
-<br>
-<span>6 Бирюзовый </span>
-<br>
-<span>7 Розовый </span>
-<br>
-<span>8 Оранжевый </span>
-<br>
-<span>9 Фиолетовый </span>
-<br>
-
-</div>
 </td></tr></tbody>
 </table>
 
@@ -1176,8 +96,1009 @@
 
 
 
-<script>//
+<script>//<rect x="0" y="0" width="633" height="457" fill="none"></rect>
 var s='';
+let negr=[
+{g:1,
+h:[{n:0,a:[316.000, 228.000, 329.647, 228.000, 336.471, 216.181, 322.824, 216.181]},
+{n:1,a:[316.000, 228.000, 322.824, 216.181, 316.000, 204.363, 309.176, 216.181]},
+{n:2,a:[316.000, 228.000, 309.176, 216.181, 295.529, 216.181, 302.353, 228.000]},
+{n:3,a:[316.000, 228.000, 302.353, 228.000, 295.529, 239.819, 309.176, 239.819]},
+{n:4,a:[316.000, 228.000, 309.176, 239.819, 316.000, 251.637, 322.824, 239.819]},
+{n:5,a:[316.000, 228.000, 322.824, 239.819, 336.471, 239.819, 329.647, 228.000]},
+]},
+{g:2,
+h:[{n:6,a:[322.824, 216.181, 336.471, 216.181, 343.294, 204.363, 329.647, 204.363]},
+{n:7,a:[329.647, 228.000, 343.294, 228.000, 350.118, 216.181, 336.471, 216.181]},
+{n:8,a:[309.176, 216.181, 316.000, 204.363, 309.176, 192.544, 302.353, 204.363]},
+{n:9,a:[322.824, 216.181, 329.647, 204.363, 322.824, 192.544, 316.000, 204.363]},
+{n:10,a:[302.353, 228.000, 295.529, 216.181, 281.882, 216.181, 288.706, 228.000]},
+{n:11,a:[309.176, 216.181, 302.353, 204.363, 288.706, 204.363, 295.529, 216.181]},
+{n:12,a:[309.176, 239.819, 295.529, 239.819, 288.706, 251.637, 302.353, 251.637]},
+{n:13,a:[302.353, 228.000, 288.706, 228.000, 281.882, 239.819, 295.529, 239.819]},
+{n:14,a:[322.824, 239.819, 316.000, 251.637, 322.824, 263.456, 329.647, 251.637]},
+{n:15,a:[309.176, 239.819, 302.353, 251.637, 309.176, 263.456, 316.000, 251.637]},
+{n:16,a:[329.647, 228.000, 336.471, 239.819, 350.118, 239.819, 343.294, 228.000]},
+{n:17,a:[322.824, 239.819, 329.647, 251.637, 343.294, 251.637, 336.471, 239.819]},
+]}, 
+{g:3,
+h:[{n:18,a:[336.471, 216.181, 350.118, 216.181, 356.941, 204.363, 343.294, 204.363]},
+{n:19,a:[316.000, 204.363, 322.824, 192.544, 316.000, 180.725, 309.176, 192.544]},
+{n:20,a:[295.529, 216.181, 288.706, 204.363, 275.059, 204.363, 281.882, 216.181]},
+{n:21,a:[295.529, 239.819, 281.882, 239.819, 275.059, 251.637, 288.706, 251.637]},
+{n:22,a:[316.000, 251.637, 309.176, 263.456, 316.000, 275.275, 322.824, 263.456]},
+{n:23,a:[336.471, 239.819, 343.294, 251.637, 356.941, 251.637, 350.118, 239.819]},
+]},
+{g:4,
+h:[{n:24,a:[329.647, 204.363, 343.294, 204.363, 350.118, 192.544, 336.471, 192.544]},
+{n:25,a:[343.294, 228.000, 356.941, 228.000, 363.765, 216.181, 350.118, 216.181]},
+{n:26,a:[302.353, 204.363, 309.176, 192.544, 302.353, 180.725, 295.529, 192.544]},
+{n:27,a:[329.647, 204.363, 336.471, 192.544, 329.647, 180.725, 322.824, 192.544]},
+{n:28,a:[288.706, 228.000, 281.882, 216.181, 268.235, 216.181, 275.059, 228.000]},
+{n:29,a:[302.353, 204.363, 295.529, 192.544, 281.882, 192.544, 288.706, 204.363]},
+{n:30,a:[302.353, 251.637, 288.706, 251.637, 281.882, 263.456, 295.529, 263.456]},
+{n:31,a:[288.706, 228.000, 275.059, 228.000, 268.235, 239.819, 281.882, 239.819]},
+{n:32,a:[329.647, 251.637, 322.824, 263.456, 329.647, 275.275, 336.471, 263.456]},
+{n:33,a:[302.353, 251.637, 295.529, 263.456, 302.353, 275.275, 309.176, 263.456]},
+{n:34,a:[343.294, 228.000, 350.118, 239.819, 363.765, 239.819, 356.941, 228.000]},
+{n:35,a:[329.647, 251.637, 336.471, 263.456, 350.118, 263.456, 343.294, 251.637]},
+]},
+{g:5,
+h:[{n:36,a:[343.294, 204.363, 356.941, 204.363, 363.765, 192.544, 350.118, 192.544]},
+{n:37,a:[350.118, 216.181, 363.765, 216.181, 370.588, 204.363, 356.941, 204.363]},
+{n:38,a:[309.176, 192.544, 316.000, 180.725, 309.176, 168.907, 302.353, 180.725]},
+{n:39,a:[322.824, 192.544, 329.647, 180.725, 322.824, 168.907, 316.000, 180.725]},
+{n:40,a:[281.882, 216.181, 275.059, 204.363, 261.412, 204.363, 268.235, 216.181]},
+{n:41,a:[288.706, 204.363, 281.882, 192.544, 268.235, 192.544, 275.059, 204.363]},
+{n:42,a:[288.706, 251.637, 275.059, 251.637, 268.235, 263.456, 281.882, 263.456]},
+{n:43,a:[281.882, 239.819, 268.235, 239.819, 261.412, 251.637, 275.059, 251.637]},
+{n:44,a:[322.824, 263.456, 316.000, 275.275, 322.824, 287.093, 329.647, 275.275]},
+{n:45,a:[309.176, 263.456, 302.353, 275.275, 309.176, 287.093, 316.000, 275.275]},
+{n:46,a:[350.118, 239.819, 356.941, 251.637, 370.588, 251.637, 363.765, 239.819]},
+{n:47,a:[343.294, 251.637, 350.118, 263.456, 363.765, 263.456, 356.941, 251.637]},
+]},
+{g:6,
+h:[{n:48,a:[356.941, 204.363, 370.588, 204.363, 377.412, 192.544, 363.765, 192.544]},
+{n:49,a:[316.000, 180.725, 322.824, 168.907, 316.000, 157.088, 309.176, 168.907]},
+{n:50,a:[275.059, 204.363, 268.235, 192.544, 254.588, 192.544, 261.412, 204.363]},
+{n:51,a:[275.059, 251.637, 261.412, 251.637, 254.588, 263.456, 268.235, 263.456]},
+{n:52,a:[316.000, 275.275, 309.176, 287.093, 316.000, 298.912, 322.824, 287.093]},
+{n:53,a:[356.941, 251.637, 363.765, 263.456, 377.412, 263.456, 370.588, 251.637]},
+]},
+{g:7,
+h:[{n:54,a:[336.471, 192.544, 350.118, 192.544, 356.941, 180.725, 343.294, 180.725]},
+{n:55,a:[356.941, 228.000, 370.588, 228.000, 377.412, 216.181, 363.765, 216.181]},
+{n:56,a:[295.529, 192.544, 302.353, 180.725, 295.529, 168.907, 288.706, 180.725]},
+{n:57,a:[336.471, 192.544, 343.294, 180.725, 336.471, 168.907, 329.647, 180.725]},
+{n:58,a:[275.059, 228.000, 268.235, 216.181, 254.588, 216.181, 261.412, 228.000]},
+{n:59,a:[295.529, 192.544, 288.706, 180.725, 275.059, 180.725, 281.882, 192.544]},
+{n:60,a:[295.529, 263.456, 281.882, 263.456, 275.059, 275.275, 288.706, 275.275]},
+{n:61,a:[275.059, 228.000, 261.412, 228.000, 254.588, 239.819, 268.235, 239.819]},
+{n:62,a:[336.471, 263.456, 329.647, 275.275, 336.471, 287.093, 343.294, 275.275]},
+{n:63,a:[295.529, 263.456, 288.706, 275.275, 295.529, 287.093, 302.353, 275.275]},
+{n:64,a:[356.941, 228.000, 363.765, 239.819, 377.412, 239.819, 370.588, 228.000]},
+{n:65,a:[336.471, 263.456, 343.294, 275.275, 356.941, 275.275, 350.118, 263.456]},
+]},
+{g:8,
+h:[{n:66,a:[343.294, 180.725, 356.941, 180.725, 363.765, 168.907, 350.118, 168.907]},
+{n:67,a:[370.588, 228.000, 384.235, 228.000, 391.059, 216.181, 377.412, 216.181]},
+{n:68,a:[288.706, 180.725, 295.529, 168.907, 288.706, 157.088, 281.882, 168.907]},
+{n:69,a:[343.294, 180.725, 350.118, 168.907, 343.294, 157.088, 336.471, 168.907]},
+{n:70,a:[261.412, 228.000, 254.588, 216.181, 240.941, 216.181, 247.765, 228.000]},
+{n:71,a:[288.706, 180.725, 281.882, 168.907, 268.235, 168.907, 275.059, 180.725]},
+{n:72,a:[288.706, 275.275, 275.059, 275.275, 268.235, 287.093, 281.882, 287.093]},
+{n:73,a:[261.412, 228.000, 247.765, 228.000, 240.941, 239.819, 254.588, 239.819]},
+{n:74,a:[343.294, 275.275, 336.471, 287.093, 343.294, 298.912, 350.118, 287.093]},
+{n:75,a:[288.706, 275.275, 281.882, 287.093, 288.706, 298.912, 295.529, 287.093]},
+{n:76,a:[370.588, 228.000, 377.412, 239.819, 391.059, 239.819, 384.235, 228.000]},
+{n:77,a:[343.294, 275.275, 350.118, 287.093, 363.765, 287.093, 356.941, 275.275]},
+]},
+{g:9,
+h:[{n:78,a:[350.118, 192.544, 363.765, 192.544, 370.588, 180.725, 356.941, 180.725]},
+{n:79,a:[363.765, 216.181, 377.412, 216.181, 384.235, 204.363, 370.588, 204.363]},
+{n:80,a:[302.353, 180.725, 309.176, 168.907, 302.353, 157.088, 295.529, 168.907]},
+{n:81,a:[329.647, 180.725, 336.471, 168.907, 329.647, 157.088, 322.824, 168.907]},
+{n:82,a:[268.235, 216.181, 261.412, 204.363, 247.765, 204.363, 254.588, 216.181]},
+{n:83,a:[281.882, 192.544, 275.059, 180.725, 261.412, 180.725, 268.235, 192.544]},
+{n:84,a:[281.882, 263.456, 268.235, 263.456, 261.412, 275.275, 275.059, 275.275]},
+{n:85,a:[268.235, 239.819, 254.588, 239.819, 247.765, 251.637, 261.412, 251.637]},
+{n:86,a:[329.647, 275.275, 322.824, 287.093, 329.647, 298.912, 336.471, 287.093]},
+{n:87,a:[302.353, 275.275, 295.529, 287.093, 302.353, 298.912, 309.176, 287.093]},
+{n:88,a:[363.765, 239.819, 370.588, 251.637, 384.235, 251.637, 377.412, 239.819]},
+{n:89,a:[350.118, 263.456, 356.941, 275.275, 370.588, 275.275, 363.765, 263.456]},
+]},
+{g:10,
+h:[{n:90,a:[356.941, 180.725, 370.588, 180.725, 377.412, 168.907, 363.765, 168.907]},
+{n:91,a:[377.412, 216.181, 391.059, 216.181, 397.882, 204.363, 384.235, 204.363]},
+{n:92,a:[295.529, 168.907, 302.353, 157.088, 295.529, 145.269, 288.706, 157.088]},
+{n:93,a:[336.471, 168.907, 343.294, 157.088, 336.471, 145.269, 329.647, 157.088]},
+{n:94,a:[254.588, 216.181, 247.765, 204.363, 234.118, 204.363, 240.941, 216.181]},
+{n:95,a:[275.059, 180.725, 268.235, 168.907, 254.588, 168.907, 261.412, 180.725]},
+{n:96,a:[275.059, 275.275, 261.412, 275.275, 254.588, 287.093, 268.235, 287.093]},
+{n:97,a:[254.588, 239.819, 240.941, 239.819, 234.118, 251.637, 247.765, 251.637]},
+{n:98,a:[336.471, 287.093, 329.647, 298.912, 336.471, 310.731, 343.294, 298.912]},
+{n:99,a:[295.529, 287.093, 288.706, 298.912, 295.529, 310.731, 302.353, 298.912]},
+{n:100,a:[377.412, 239.819, 384.235, 251.637, 397.882, 251.637, 391.059, 239.819]},
+{n:101,a:[356.941, 275.275, 363.765, 287.093, 377.412, 287.093, 370.588, 275.275]},
+]},
+{g:11,
+h:[{n:102,a:[350.118, 168.907, 363.765, 168.907, 370.588, 157.088, 356.941, 157.088]},
+{n:103,a:[384.235, 228.000, 397.882, 228.000, 404.706, 216.181, 391.059, 216.181]},
+{n:104,a:[281.882, 168.907, 288.706, 157.088, 281.882, 145.269, 275.059, 157.088]},
+{n:105,a:[350.118, 168.907, 356.941, 157.088, 350.118, 145.269, 343.294, 157.088]},
+{n:106,a:[247.765, 228.000, 240.941, 216.181, 227.294, 216.181, 234.118, 228.000]},
+{n:107,a:[281.882, 168.907, 275.059, 157.088, 261.412, 157.088, 268.235, 168.907]},
+{n:108,a:[281.882, 287.093, 268.235, 287.093, 261.412, 298.912, 275.059, 298.912]},
+{n:109,a:[247.765, 228.000, 234.118, 228.000, 227.294, 239.819, 240.941, 239.819]},
+{n:110,a:[350.118, 287.093, 343.294, 298.912, 350.118, 310.731, 356.941, 298.912]},
+{n:111,a:[281.882, 287.093, 275.059, 298.912, 281.882, 310.731, 288.706, 298.912]},
+{n:112,a:[384.235, 228.000, 391.059, 239.819, 404.706, 239.819, 397.882, 228.000]},
+{n:113,a:[350.118, 287.093, 356.941, 298.912, 370.588, 298.912, 363.765, 287.093]},
+]},
+{g:12,
+h:[{n:114,a:[356.941, 157.088, 370.588, 157.088, 377.412, 145.269, 363.765, 145.269]},
+{n:115,a:[397.882, 228.000, 411.529, 228.000, 418.353, 216.181, 404.706, 216.181]},
+{n:116,a:[275.059, 157.088, 281.882, 145.269, 275.059, 133.450, 268.235, 145.269]},
+{n:117,a:[356.941, 157.088, 363.765, 145.269, 356.941, 133.450, 350.118, 145.269]},
+{n:118,a:[234.118, 228.000, 227.294, 216.181, 213.647, 216.181, 220.471, 228.000]},
+{n:119,a:[275.059, 157.088, 268.235, 145.269, 254.588, 145.269, 261.412, 157.088]},
+{n:120,a:[275.059, 298.912, 261.412, 298.912, 254.588, 310.731, 268.235, 310.731]},
+{n:121,a:[234.118, 228.000, 220.471, 228.000, 213.647, 239.819, 227.294, 239.819]},
+{n:122,a:[356.941, 298.912, 350.118, 310.731, 356.941, 322.550, 363.765, 310.731]},
+{n:123,a:[275.059, 298.912, 268.235, 310.731, 275.059, 322.550, 281.882, 310.731]},
+{n:124,a:[397.882, 228.000, 404.706, 239.819, 418.353, 239.819, 411.529, 228.000]},
+{n:125,a:[356.941, 298.912, 363.765, 310.731, 377.412, 310.731, 370.588, 298.912]},
+]},
+{g:13,
+h:[{n:126,a:[363.765, 145.269, 377.412, 145.269, 384.235, 133.450, 370.588, 133.450]},
+{n:127,a:[411.529, 228.000, 425.176, 228.000, 432.000, 216.181, 418.353, 216.181]},
+{n:128,a:[268.235, 145.269, 275.059, 133.450, 268.235, 121.632, 261.412, 133.450]},
+{n:129,a:[363.765, 145.269, 370.588, 133.450, 363.765, 121.632, 356.941, 133.450]},
+{n:130,a:[220.471, 228.000, 213.647, 216.181, 200.000, 216.181, 206.824, 228.000]},
+{n:131,a:[268.235, 145.269, 261.412, 133.450, 247.765, 133.450, 254.588, 145.269]},
+{n:132,a:[268.235, 310.731, 254.588, 310.731, 247.765, 322.550, 261.412, 322.550]},
+{n:133,a:[220.471, 228.000, 206.824, 228.000, 200.000, 239.819, 213.647, 239.819]},
+{n:134,a:[363.765, 310.731, 356.941, 322.550, 363.765, 334.368, 370.588, 322.550]},
+{n:135,a:[268.235, 310.731, 261.412, 322.550, 268.235, 334.368, 275.059, 322.550]},
+{n:136,a:[411.529, 228.000, 418.353, 239.819, 432.000, 239.819, 425.176, 228.000]},
+{n:137,a:[363.765, 310.731, 370.588, 322.550, 384.235, 322.550, 377.412, 310.731]},
+]},
+{g:14,
+h:[{n:138,a:[370.588, 133.450, 384.235, 133.450, 391.059, 121.632, 377.412, 121.632]},
+{n:139,a:[425.176, 228.000, 438.824, 228.000, 445.647, 216.181, 432.000, 216.181]},
+{n:140,a:[261.412, 133.450, 268.235, 121.632, 261.412, 109.813, 254.588, 121.632]},
+{n:141,a:[370.588, 133.450, 377.412, 121.632, 370.588, 109.813, 363.765, 121.632]},
+{n:142,a:[206.824, 228.000, 200.000, 216.181, 186.353, 216.181, 193.176, 228.000]},
+{n:143,a:[261.412, 133.450, 254.588, 121.632, 240.941, 121.632, 247.765, 133.450]},
+{n:144,a:[261.412, 322.550, 247.765, 322.550, 240.941, 334.368, 254.588, 334.368]},
+{n:145,a:[206.824, 228.000, 193.176, 228.000, 186.353, 239.819, 200.000, 239.819]},
+{n:146,a:[370.588, 322.550, 363.765, 334.368, 370.588, 346.187, 377.412, 334.368]},
+{n:147,a:[261.412, 322.550, 254.588, 334.368, 261.412, 346.187, 268.235, 334.368]},
+{n:148,a:[425.176, 228.000, 432.000, 239.819, 445.647, 239.819, 438.824, 228.000]},
+{n:149,a:[370.588, 322.550, 377.412, 334.368, 391.059, 334.368, 384.235, 322.550]},
+]},
+{g:15,
+h:[{n:150,a:[377.412, 121.632, 391.059, 121.632, 397.882, 109.813, 384.235, 109.813]},
+{n:151,a:[438.824, 228.000, 452.471, 228.000, 459.294, 216.181, 445.647, 216.181]},
+{n:152,a:[254.588, 121.632, 261.412, 109.813, 254.588, 97.994, 247.765, 109.813]},
+{n:153,a:[377.412, 121.632, 384.235, 109.813, 377.412, 97.994, 370.588, 109.813]},
+{n:154,a:[193.176, 228.000, 186.353, 216.181, 172.706, 216.181, 179.529, 228.000]},
+{n:155,a:[254.588, 121.632, 247.765, 109.813, 234.118, 109.813, 240.941, 121.632]},
+{n:156,a:[254.588, 334.368, 240.941, 334.368, 234.118, 346.187, 247.765, 346.187]},
+{n:157,a:[193.176, 228.000, 179.529, 228.000, 172.706, 239.819, 186.353, 239.819]},
+{n:158,a:[377.412, 334.368, 370.588, 346.187, 377.412, 358.006, 384.235, 346.187]},
+{n:159,a:[254.588, 334.368, 247.765, 346.187, 254.588, 358.006, 261.412, 346.187]},
+{n:160,a:[438.824, 228.000, 445.647, 239.819, 459.294, 239.819, 452.471, 228.000]},
+{n:161,a:[377.412, 334.368, 384.235, 346.187, 397.882, 346.187, 391.059, 334.368]},
+]},
+{g:16,
+h:[{n:162,a:[384.235, 109.813, 397.882, 109.813, 404.706, 97.994, 391.059, 97.994]},
+{n:163,a:[452.471, 228.000, 466.118, 228.000, 472.941, 216.181, 459.294, 216.181]},
+{n:164,a:[247.765, 109.813, 254.588, 97.994, 247.765, 86.176, 240.941, 97.994]},
+{n:165,a:[384.235, 109.813, 391.059, 97.994, 384.235, 86.176, 377.412, 97.994]},
+{n:166,a:[179.529, 228.000, 172.706, 216.181, 159.059, 216.181, 165.882, 228.000]},
+{n:167,a:[247.765, 109.813, 240.941, 97.994, 227.294, 97.994, 234.118, 109.813]},
+{n:168,a:[247.765, 346.187, 234.118, 346.187, 227.294, 358.006, 240.941, 358.006]},
+{n:169,a:[179.529, 228.000, 165.882, 228.000, 159.059, 239.819, 172.706, 239.819]},
+{n:170,a:[384.235, 346.187, 377.412, 358.006, 384.235, 369.824, 391.059, 358.006]},
+{n:171,a:[247.765, 346.187, 240.941, 358.006, 247.765, 369.824, 254.588, 358.006]},
+{n:172,a:[452.471, 228.000, 459.294, 239.819, 472.941, 239.819, 466.118, 228.000]},
+{n:173,a:[384.235, 346.187, 391.059, 358.006, 404.706, 358.006, 397.882, 346.187]},
+]},
+{g:17,
+h:[{n:174,a:[391.059, 97.994, 404.706, 97.994, 411.529, 86.176, 397.882, 86.176]},
+{n:175,a:[466.118, 228.000, 479.765, 228.000, 486.588, 216.181, 472.941, 216.181]},
+{n:176,a:[240.941, 97.994, 247.765, 86.176, 240.941, 74.357, 234.118, 86.176]},
+{n:177,a:[391.059, 97.994, 397.882, 86.176, 391.059, 74.357, 384.235, 86.176]},
+{n:178,a:[165.882, 228.000, 159.059, 216.181, 145.412, 216.181, 152.235, 228.000]},
+{n:179,a:[240.941, 97.994, 234.118, 86.176, 220.471, 86.176, 227.294, 97.994]},
+{n:180,a:[240.941, 358.006, 227.294, 358.006, 220.471, 369.824, 234.118, 369.824]},
+{n:181,a:[165.882, 228.000, 152.235, 228.000, 145.412, 239.819, 159.059, 239.819]},
+{n:182,a:[391.059, 358.006, 384.235, 369.824, 391.059, 381.643, 397.882, 369.824]},
+{n:183,a:[240.941, 358.006, 234.118, 369.824, 240.941, 381.643, 247.765, 369.824]},
+{n:184,a:[466.118, 228.000, 472.941, 239.819, 486.588, 239.819, 479.765, 228.000]},
+{n:185,a:[391.059, 358.006, 397.882, 369.824, 411.529, 369.824, 404.706, 358.006]},
+]},
+{g:18,
+h:[{n:186,a:[397.882, 86.176, 411.529, 86.176, 418.353, 74.357, 404.706, 74.357]},
+{n:187,a:[479.765, 228.000, 493.412, 228.000, 500.235, 216.181, 486.588, 216.181]},
+{n:188,a:[234.118, 86.176, 240.941, 74.357, 234.118, 62.538, 227.294, 74.357]},
+{n:189,a:[397.882, 86.176, 404.706, 74.357, 397.882, 62.538, 391.059, 74.357]},
+{n:190,a:[152.235, 228.000, 145.412, 216.181, 131.765, 216.181, 138.588, 228.000]},
+{n:191,a:[234.118, 86.176, 227.294, 74.357, 213.647, 74.357, 220.471, 86.176]},
+{n:192,a:[234.118, 369.824, 220.471, 369.824, 213.647, 381.643, 227.294, 381.643]},
+{n:193,a:[152.235, 228.000, 138.588, 228.000, 131.765, 239.819, 145.412, 239.819]},
+{n:194,a:[397.882, 369.824, 391.059, 381.643, 397.882, 393.462, 404.706, 381.643]},
+{n:195,a:[234.118, 369.824, 227.294, 381.643, 234.118, 393.462, 240.941, 381.643]},
+{n:196,a:[479.765, 228.000, 486.588, 239.819, 500.235, 239.819, 493.412, 228.000]},
+{n:197,a:[397.882, 369.824, 404.706, 381.643, 418.353, 381.643, 411.529, 369.824]},
+]},
+{g:19,
+h:[{n:198,a:[404.706, 74.357, 418.353, 74.357, 425.176, 62.538, 411.529, 62.538]},
+{n:199,a:[493.412, 228.000, 507.059, 228.000, 513.882, 216.181, 500.235, 216.181]},
+{n:200,a:[227.294, 74.357, 234.118, 62.538, 227.294, 50.720, 220.471, 62.538]},
+{n:201,a:[404.706, 74.357, 411.529, 62.538, 404.706, 50.720, 397.882, 62.538]},
+{n:202,a:[138.588, 228.000, 131.765, 216.181, 118.118, 216.181, 124.941, 228.000]},
+{n:203,a:[227.294, 74.357, 220.471, 62.538, 206.824, 62.538, 213.647, 74.357]},
+{n:204,a:[227.294, 381.643, 213.647, 381.643, 206.824, 393.462, 220.471, 393.462]},
+{n:205,a:[138.588, 228.000, 124.941, 228.000, 118.118, 239.819, 131.765, 239.819]},
+{n:206,a:[404.706, 381.643, 397.882, 393.462, 404.706, 405.280, 411.529, 393.462]},
+{n:207,a:[227.294, 381.643, 220.471, 393.462, 227.294, 405.280, 234.118, 393.462]},
+{n:208,a:[493.412, 228.000, 500.235, 239.819, 513.882, 239.819, 507.059, 228.000]},
+{n:209,a:[404.706, 381.643, 411.529, 393.462, 425.176, 393.462, 418.353, 381.643]},
+]},
+{g:20,
+h:[{n:210,a:[411.529, 62.538, 425.176, 62.538, 432.000, 50.720, 418.353, 50.720]},
+{n:211,a:[507.059, 228.000, 520.706, 228.000, 527.529, 216.181, 513.882, 216.181]},
+{n:212,a:[220.471, 62.538, 227.294, 50.720, 220.471, 38.901, 213.647, 50.720]},
+{n:213,a:[411.529, 62.538, 418.353, 50.720, 411.529, 38.901, 404.706, 50.720]},
+{n:214,a:[124.941, 228.000, 118.118, 216.181, 104.471, 216.181, 111.294, 228.000]},
+{n:215,a:[220.471, 62.538, 213.647, 50.720, 200.000, 50.720, 206.824, 62.538]},
+{n:216,a:[220.471, 393.462, 206.824, 393.462, 200.000, 405.280, 213.647, 405.280]},
+{n:217,a:[124.941, 228.000, 111.294, 228.000, 104.471, 239.819, 118.118, 239.819]},
+{n:218,a:[411.529, 393.462, 404.706, 405.280, 411.529, 417.099, 418.353, 405.280]},
+{n:219,a:[220.471, 393.462, 213.647, 405.280, 220.471, 417.099, 227.294, 405.280]},
+{n:220,a:[507.059, 228.000, 513.882, 239.819, 527.529, 239.819, 520.706, 228.000]},
+{n:221,a:[411.529, 393.462, 418.353, 405.280, 432.000, 405.280, 425.176, 393.462]},
+]},
+{g:21,
+h:[{n:222,a:[418.353, 50.720, 432.000, 50.720, 438.824, 38.901, 425.176, 38.901]},
+{n:223,a:[520.706, 228.000, 534.353, 228.000, 541.176, 216.181, 527.529, 216.181]},
+{n:224,a:[213.647, 50.720, 220.471, 38.901, 213.647, 27.082, 206.824, 38.901]},
+{n:225,a:[418.353, 50.720, 425.176, 38.901, 418.353, 27.082, 411.529, 38.901]},
+{n:226,a:[111.294, 228.000, 104.471, 216.181, 90.824, 216.181, 97.647, 228.000]},
+{n:227,a:[213.647, 50.720, 206.824, 38.901, 193.176, 38.901, 200.000, 50.720]},
+{n:228,a:[213.647, 405.280, 200.000, 405.280, 193.176, 417.099, 206.824, 417.099]},
+{n:229,a:[111.294, 228.000, 97.647,228.000, 90.824, 239.819, 104.471, 239.819]},
+{n:230,a:[418.353, 405.280, 411.529, 417.099, 418.353, 428.918, 425.176, 417.099]},
+{n:231,a:[213.647, 405.280, 206.824, 417.099, 213.647, 428.918, 220.471, 417.099]},
+{n:232,a:[520.706, 228.000, 527.529, 239.819, 541.176, 239.819, 534.353, 228.000]},
+{n:233,a:[418.353, 405.280, 425.176, 417.099, 438.824, 417.099, 432.000, 405.280]},
+]},
+{g:22,
+h:[{n:234,a:[363.765, 168.907, 377.412, 168.907, 384.235, 157.088, 370.588, 157.088]},
+{n:235,a:[391.059, 216.181, 404.706, 216.181, 411.529, 204.363, 397.882, 204.363]},
+{n:236,a:[288.706, 157.088, 295.529, 145.269, 288.706, 133.450, 281.882, 145.269]},
+{n:237,a:[343.294, 157.088, 350.118, 145.269, 343.294, 133.450, 336.471, 145.269]},
+{n:238,a:[240.941, 216.181, 234.118, 204.363, 220.471, 204.363, 227.294, 216.181]},
+{n:239,a:[268.235, 168.907, 261.412, 157.088, 247.765, 157.088, 254.588, 168.907]},
+{n:240,a:[268.235, 287.093, 254.588, 287.093, 247.765, 298.912, 261.412, 298.912]},
+{n:241,a:[240.941, 239.819, 227.294, 239.819, 220.471, 251.637, 234.118, 251.637]},
+{n:242,a:[343.294, 298.912, 336.471, 310.731, 343.294, 322.550, 350.118, 310.731]},
+{n:243,a:[288.706, 298.912, 281.882, 310.731, 288.706, 322.550, 295.529, 310.731]},
+{n:244,a:[391.059, 239.819, 397.882, 251.637, 411.529, 251.637, 404.706, 239.819]},
+{n:245,a:[363.765, 287.093, 370.588, 298.912, 384.235, 298.912, 377.412, 287.093]},
+]},
+{g:23,
+h:[{n:246,a:[370.588, 157.088, 384.235, 157.088, 391.059, 145.269, 377.412, 145.269]},
+{n:247,a:[404.706, 216.181, 418.353, 216.181, 425.176, 204.363, 411.529, 204.363]},
+{n:248,a:[281.882, 145.269, 288.706, 133.450, 281.882, 121.632, 275.059, 133.450]},
+{n:249,a:[350.118, 145.269, 356.941, 133.450, 350.118, 121.632, 343.294, 133.450]},
+{n:250,a:[227.294, 216.181, 220.471, 204.363, 206.824, 204.363, 213.647, 216.181]},
+{n:251,a:[261.412, 157.088, 254.588, 145.269, 240.941, 145.269, 247.765, 157.088]},
+{n:252,a:[261.412, 298.912, 247.765, 298.912, 240.941, 310.731, 254.588, 310.731]},
+{n:253,a:[227.294, 239.819, 213.647, 239.819, 206.824, 251.637, 220.471, 251.637]},
+{n:254,a:[350.118, 310.731, 343.294, 322.550, 350.118, 334.368, 356.941, 322.550]},
+{n:255,a:[281.882, 310.731, 275.059, 322.550, 281.882, 334.368, 288.706, 322.550]},
+{n:256,a:[404.706, 239.819, 411.529, 251.637, 425.176, 251.637, 418.353, 239.819]},
+{n:257,a:[370.588, 298.912, 377.412, 310.731, 391.059, 310.731, 384.235, 298.912]},
+]},
+{g:24,
+h:[{n:258,a:[377.412, 145.269, 391.059, 145.269, 397.882, 133.450, 384.235, 133.450]},
+{n:259,a:[418.353, 216.181, 432.000, 216.181, 438.824, 204.363, 425.176, 204.363]},
+{n:260,a:[275.059, 133.450, 281.882, 121.632, 275.059, 109.813, 268.235, 121.632]},
+{n:261,a:[356.941, 133.450, 363.765, 121.632, 356.941, 109.813, 350.118, 121.632]},
+{n:262,a:[213.647, 216.181, 206.824, 204.363, 193.176, 204.363, 200.000, 216.181]},
+{n:263,a:[254.588, 145.269, 247.765, 133.450, 234.118, 133.450, 240.941, 145.269]},
+{n:264,a:[254.588, 310.731, 240.941, 310.731, 234.118, 322.550, 247.765, 322.550]},
+{n:265,a:[213.647, 239.819, 200.000, 239.819, 193.176, 251.637, 206.824, 251.637]},
+{n:266,a:[356.941, 322.550, 350.118, 334.368, 356.941, 346.187, 363.765, 334.368]},
+{n:267,a:[275.059, 322.550, 268.235, 334.368, 275.059, 346.187, 281.882, 334.368]},
+{n:268,a:[418.353, 239.819, 425.176, 251.637, 438.824, 251.637, 432.000, 239.819]},
+{n:269,a:[377.412, 310.731, 384.235, 322.550, 397.882, 322.550, 391.059, 310.731]},
+]},
+{g:25,
+h:[{n:270,a:[384.235, 133.450, 397.882, 133.450, 404.706, 121.632, 391.059, 121.632]},
+{n:271,a:[432.000, 216.181, 445.647, 216.181, 452.471, 204.363, 438.824, 204.363]},
+{n:272,a:[268.235, 121.632, 275.059, 109.813, 268.235, 97.994, 261.412, 109.813]},
+{n:273,a:[363.765, 121.632, 370.588, 109.813, 363.765, 97.994, 356.941, 109.813]},
+{n:274,a:[200.000, 216.181, 193.176, 204.363, 179.529, 204.363, 186.353, 216.181]},
+{n:275,a:[247.765, 133.450, 240.941, 121.632, 227.294, 121.632, 234.118, 133.450]},
+{n:276,a:[247.765, 322.550, 234.118, 322.550, 227.294, 334.368, 240.941, 334.368]},
+{n:277,a:[200.000, 239.819, 186.353, 239.819, 179.529, 251.637, 193.176, 251.637]},
+{n:278,a:[363.765, 334.368, 356.941, 346.187, 363.765, 358.006, 370.588, 346.187]},
+{n:279,a:[268.235, 334.368, 261.412, 346.187, 268.235, 358.006, 275.059, 346.187]},
+{n:280,a:[432.000, 239.819, 438.824, 251.637, 452.471, 251.637, 445.647, 239.819]},
+{n:281,a:[384.235, 322.550, 391.059, 334.368, 404.706, 334.368, 397.882, 322.550]},
+]},
+{g:26,
+h:[{n:282,a:[391.059, 121.632, 404.706, 121.632, 411.529, 109.813, 397.882, 109.813]},
+{n:283,a:[445.647, 216.181, 459.294, 216.181, 466.118, 204.363, 452.471, 204.363]},
+{n:284,a:[261.412, 109.813, 268.235, 97.994, 261.412, 86.176, 254.588, 97.994]},
+{n:285,a:[370.588, 109.813, 377.412, 97.994, 370.588, 86.176, 363.765, 97.994]},
+{n:286,a:[186.353, 216.181, 179.529, 204.363, 165.882, 204.363, 172.706, 216.181]},
+{n:287,a:[240.941, 121.632, 234.118, 109.813, 220.471, 109.813, 227.294, 121.632]},
+{n:288,a:[240.941, 334.368, 227.294, 334.368, 220.471, 346.187, 234.118, 346.187]},
+{n:289,a:[186.353, 239.819, 172.706, 239.819, 165.882, 251.637, 179.529, 251.637]},
+{n:290,a:[370.588, 346.187, 363.765, 358.006, 370.588, 369.824, 377.412, 358.006]},
+{n:291,a:[261.412, 346.187, 254.588, 358.006, 261.412, 369.824, 268.235, 358.006]},
+{n:292,a:[445.647, 239.819, 452.471, 251.637, 466.118, 251.637, 459.294, 239.819]},
+{n:293,a:[391.059, 334.368, 397.882, 346.187, 411.529, 346.187, 404.706, 334.368]},
+]},
+{g:27,
+h:[{n:294,a:[397.882, 109.813, 411.529, 109.813, 418.353, 97.994, 404.706, 97.994]},
+{n:295,a:[459.294, 216.181, 472.941, 216.181, 479.765, 204.363, 466.118, 204.363]},
+{n:296,a:[254.588, 97.994, 261.412, 86.176, 254.588, 74.357, 247.765, 86.176]},
+{n:297,a:[377.412, 97.994, 384.235, 86.176, 377.412, 74.357, 370.588, 86.176]},
+{n:298,a:[172.706, 216.181, 165.882, 204.363, 152.235, 204.363, 159.059, 216.181]},
+{n:299,a:[234.118, 109.813, 227.294, 97.994, 213.647, 97.994, 220.471, 109.813]},
+{n:300,a:[234.118, 346.187, 220.471, 346.187, 213.647, 358.006, 227.294, 358.006]},
+{n:301,a:[172.706, 239.819, 159.059, 239.819, 152.235, 251.637, 165.882, 251.637]},
+{n:302,a:[377.412, 358.006, 370.588, 369.824, 377.412, 381.643, 384.235, 369.824]},
+{n:303,a:[254.588, 358.006, 247.765, 369.824, 254.588, 381.643, 261.412, 369.824]},
+{n:304,a:[459.294, 239.819, 466.118, 251.637, 479.765, 251.637, 472.941, 239.819]},
+{n:305,a:[397.882, 346.187, 404.706, 358.006, 418.353, 358.006, 411.529, 346.187]},
+]},
+{g:28,
+h:[{n:306,a:[404.706, 97.994, 418.353, 97.994, 425.176, 86.176, 411.529, 86.176]},
+{n:307,a:[472.941, 216.181, 486.588, 216.181, 493.412, 204.363, 479.765, 204.363]},
+{n:308,a:[247.765, 86.176, 254.588, 74.357, 247.765, 62.538, 240.941, 74.357]},
+{n:309,a:[384.235, 86.176, 391.059, 74.357, 384.235, 62.538, 377.412, 74.357]},
+{n:310,a:[159.059, 216.181, 152.235, 204.363, 138.588, 204.363, 145.412, 216.181]},
+{n:311,a:[227.294, 97.994, 220.471, 86.176, 206.824, 86.176, 213.647, 97.994]},
+{n:312,a:[227.294, 358.006, 213.647, 358.006, 206.824, 369.824, 220.471, 369.824]},
+{n:313,a:[159.059, 239.819, 145.412, 239.819, 138.588, 251.637, 152.235, 251.637]},
+{n:314,a:[384.235, 369.824, 377.412, 381.643, 384.235, 393.462, 391.059, 381.643]},
+{n:315,a:[247.765, 369.824, 240.941, 381.643, 247.765, 393.462, 254.588, 381.643]},
+{n:316,a:[472.941, 239.819, 479.765, 251.637, 493.412, 251.637, 486.588, 239.819]},
+{n:317,a:[404.706, 358.006, 411.529, 369.824, 425.176, 369.824, 418.353, 358.006]},
+]},
+{g:29,
+h:[{n:318,a:[411.529, 86.176, 425.176, 86.176, 432.000, 74.357, 418.353, 74.357]},
+{n:319,a:[486.588, 216.181, 500.235, 216.181, 507.059, 204.363, 493.412, 204.363]},
+{n:320,a:[240.941, 74.357, 247.765, 62.538, 240.941, 50.720, 234.118, 62.538]},
+{n:321,a:[391.059, 74.357, 397.882, 62.538, 391.059, 50.720, 384.235, 62.538]},
+{n:322,a:[145.412, 216.181, 138.588, 204.363, 124.941, 204.363, 131.765, 216.181]},
+{n:323,a:[220.471, 86.176, 213.647, 74.357, 200.000, 74.357, 206.824, 86.176]},
+{n:324,a:[220.471, 369.824, 206.824, 369.824, 200.000, 381.643, 213.647, 381.643]},
+{n:325,a:[145.412, 239.819, 131.765, 239.819, 124.941, 251.637, 138.588, 251.637]},
+{n:326,a:[391.059, 381.643, 384.235, 393.462, 391.059, 405.280, 397.882, 393.462]},
+{n:327,a:[240.941, 381.643, 234.118, 393.462, 240.941, 405.280, 247.765, 393.462]},
+{n:328,a:[486.588, 239.819, 493.412, 251.637, 507.059, 251.637, 500.235, 239.819]},
+{n:329,a:[411.529, 369.824, 418.353, 381.643, 432.000, 381.643, 425.176, 369.824]},
+]},
+{g:30,
+h:[{n:330,a:[418.353, 74.357, 432.000, 74.357, 438.824, 62.538, 425.176, 62.538]},
+{n:331,a:[500.235, 216.181, 513.882, 216.181, 520.706, 204.363, 507.059, 204.363]},
+{n:332,a:[234.118, 62.538, 240.941, 50.720, 234.118, 38.901, 227.294, 50.720]},
+{n:333,a:[397.882, 62.538, 404.706, 50.720, 397.882, 38.901, 391.059, 50.720]},
+{n:334,a:[131.765, 216.181, 124.941, 204.363, 111.294, 204.363, 118.118, 216.181]},
+{n:335,a:[213.647, 74.357, 206.824, 62.538, 193.176, 62.538, 200.000, 74.357]},
+{n:336,a:[213.647, 381.643, 200.000, 381.643, 193.176, 393.462, 206.824, 393.462]},
+{n:337,a:[131.765, 239.819, 118.118, 239.819, 111.294, 251.637, 124.941, 251.637]},
+{n:338,a:[397.882, 393.462, 391.059, 405.280, 397.882, 417.099, 404.706, 405.280]},
+{n:339,a:[234.118, 393.462, 227.294, 405.280, 234.118, 417.099, 240.941, 405.280]},
+{n:340,a:[500.235, 239.819, 507.059, 251.637, 520.706, 251.637, 513.882, 239.819]},
+{n:341,a:[418.353, 381.643, 425.176, 393.462, 438.824, 393.462, 432.000, 381.643]},
+]},
+{g:31,
+h:[{n:342,a:[425.176, 62.538, 438.824, 62.538, 445.647, 50.720, 432.000, 50.720]},
+{n:343,a:[513.882, 216.181, 527.529, 216.181, 534.353, 204.363, 520.706, 204.363]},
+{n:344,a:[227.294, 50.720, 234.118, 38.901, 227.294, 27.082, 220.471, 38.901]},
+{n:345,a:[404.706, 50.720, 411.529, 38.901, 404.706, 27.082, 397.882, 38.901]},
+{n:346,a:[118.118, 216.181, 111.294, 204.363, 97.647, 204.363, 104.471, 216.181]},
+{n:347,a:[206.824, 62.538, 200.000, 50.720, 186.353, 50.720, 193.176, 62.538]},
+{n:348,a:[206.824, 393.462, 193.176, 393.462, 186.353, 405.280, 200.000, 405.280]},
+{n:349,a:[118.118, 239.819, 104.471, 239.819, 97.647, 251.637, 111.294, 251.637]},
+{n:350,a:[404.706, 405.280, 397.882, 417.099, 404.706, 428.918, 411.529, 417.099]},
+{n:351,a:[227.294, 405.280, 220.471, 417.099, 227.294, 428.918, 234.118, 417.099]},
+{n:352,a:[513.882, 239.819, 520.706, 251.637, 534.353, 251.637, 527.529, 239.819]},
+{n:353,a:[425.176, 393.462, 432.000, 405.280, 445.647, 405.280, 438.824, 393.462]},
+]},
+{g:32,
+h:[{n:354,a:[432.000, 74.357, 445.647, 74.357, 452.471, 62.538, 438.824, 62.538]},
+{n:355,a:[507.059, 204.363, 520.706, 204.363, 527.529, 192.544, 513.882, 192.544]},
+{n:356,a:[240.941, 50.720, 247.765, 38.901, 240.941, 27.082, 234.118, 38.901]},
+{n:357,a:[391.059, 50.720, 397.882, 38.901, 391.059, 27.082, 384.235, 38.901]},
+{n:358,a:[124.941, 204.363, 118.118, 192.544, 104.471, 192.544, 111.294, 204.363]},
+{n:359,a:[200.000, 74.357, 193.176, 62.538, 179.529, 62.538, 186.353, 74.357]},
+{n:360,a:[200.000, 381.643, 186.353, 381.643, 179.529, 393.462, 193.176, 393.462]},
+{n:361,a:[124.941, 251.637, 111.294, 251.637, 104.471, 263.456, 118.118, 263.456]},
+{n:362,a:[391.059, 405.280, 384.235, 417.099, 391.059, 428.918, 397.882, 417.099]},
+{n:363,a:[240.941, 405.280, 234.118, 417.099, 240.941, 428.918, 247.765, 417.099]},
+{n:364,a:[507.059, 251.637, 513.882, 263.456, 527.529, 263.456, 520.706, 251.637]},
+{n:365,a:[432.000, 381.643, 438.824, 393.462, 452.471, 393.462, 445.647, 381.643]},
+]},
+{g:33,
+h:[{n:366,a:[438.824, 86.176, 452.471, 86.176, 459.294, 74.357, 445.647, 74.357]},
+{n:367,a:[500.235, 192.544, 513.882, 192.544, 520.706, 180.725, 507.059, 180.725]},
+{n:368,a:[254.588, 50.720, 261.412, 38.901, 254.588, 27.082, 247.765, 38.901]},
+{n:369,a:[377.412, 50.720, 384.235, 38.901, 377.412, 27.082, 370.588, 38.901]},
+{n:370,a:[131.765, 192.544, 124.941, 180.725, 111.294, 180.725, 118.118, 192.544]},
+{n:371,a:[193.176, 86.176, 186.353, 74.357, 172.706, 74.357, 179.529, 86.176]},
+{n:372,a:[193.176, 369.824, 179.529, 369.824, 172.706, 381.643, 186.353, 381.643]},
+{n:373,a:[131.765, 263.456, 118.118, 263.456, 111.294, 275.275, 124.941, 275.275]},
+{n:374,a:[377.412, 405.280, 370.588, 417.099, 377.412, 428.918, 384.235, 417.099]},
+{n:375,a:[254.588, 405.280, 247.765, 417.099, 254.588, 428.918, 261.412, 417.099]},
+{n:376,a:[500.235, 263.456, 507.059, 275.275, 520.706, 275.275, 513.882, 263.456]},
+{n:377,a:[438.824, 369.824, 445.647, 381.643, 459.294, 381.643, 452.471, 369.824]},
+]},
+{g:34,
+h:[{n:378,a:[445.647, 97.994, 459.294, 97.994, 466.118, 86.176, 452.471, 86.176]},
+{n:379,a:[493.412, 180.725, 507.059, 180.725, 513.882, 168.907, 500.235, 168.907]},
+{n:380,a:[268.235, 50.720, 275.059, 38.901, 268.235, 27.082, 261.412, 38.901]},
+{n:381,a:[363.765, 50.720, 370.588, 38.901, 363.765, 27.082, 356.941, 38.901]},
+{n:382,a:[138.588, 180.725, 131.765, 168.907, 118.118, 168.907, 124.941, 180.725]},
+{n:383,a:[186.353, 97.994, 179.529, 86.176, 165.882, 86.176, 172.706, 97.994]},
+{n:384,a:[186.353, 358.006, 172.706, 358.006, 165.882, 369.824, 179.529, 369.824]},
+{n:385,a:[138.588, 275.275, 124.941, 275.275, 118.118, 287.093, 131.765, 287.093]},
+{n:386,a:[363.765, 405.280, 356.941, 417.099, 363.765, 428.918, 370.588, 417.099]},
+{n:387,a:[268.235, 405.280, 261.412, 417.099, 268.235, 428.918, 275.059, 417.099]},
+{n:388,a:[493.412, 275.275, 500.235, 287.093, 513.882, 287.093, 507.059, 275.275]},
+{n:389,a:[445.647, 358.006, 452.471, 369.824, 466.118, 369.824, 459.294, 358.006]},
+]},
+{g:35,
+h:[{n:390,a:[452.471, 109.813, 466.118, 109.813, 472.941, 97.994, 459.294, 97.994]},
+{n:391,a:[486.588, 168.907, 500.235, 168.907, 507.059, 157.088, 493.412, 157.088]},
+{n:392,a:[281.882, 50.720, 288.706, 38.901, 281.882, 27.082, 275.059, 38.901]},
+{n:393,a:[350.118, 50.720, 356.941, 38.901, 350.118, 27.082, 343.294, 38.901]},
+{n:394,a:[145.412, 168.907, 138.588, 157.088, 124.941, 157.088, 131.765, 168.907]},
+{n:395,a:[179.529, 109.813, 172.706, 97.994, 159.059, 97.994, 165.882, 109.813]},
+{n:396,a:[179.529, 346.187, 165.882, 346.187, 159.059, 358.006, 172.706, 358.006]},
+{n:397,a:[145.412, 287.093, 131.765, 287.093, 124.941, 298.912, 138.588, 298.912]},
+{n:398,a:[350.118, 405.280, 343.294, 417.099, 350.118, 428.918, 356.941, 417.099]},
+{n:399,a:[281.882, 405.280, 275.059, 417.099, 281.882, 428.918, 288.706, 417.099]},
+{n:400,a:[486.588, 287.093, 493.412, 298.912, 507.059, 298.912, 500.235, 287.093]},
+{n:401,a:[452.471, 346.187, 459.294, 358.006, 472.941, 358.006, 466.118, 346.187]},
+]},
+{g:36,
+h:[{n:402,a:[459.294, 121.632, 472.941, 121.632, 479.765, 109.813, 466.118, 109.813]},
+{n:403,a:[479.765, 157.088, 493.412, 157.088, 500.235, 145.269, 486.588, 145.269]},
+{n:404,a:[295.529, 50.720, 302.353, 38.901, 295.529, 27.082, 288.706, 38.901]},
+{n:405,a:[336.471, 50.720, 343.294, 38.901, 336.471, 27.082, 329.647, 38.901]},
+{n:406,a:[152.235, 157.088, 145.412, 145.269, 131.765, 145.269, 138.588, 157.088]},
+{n:407,a:[172.706, 121.632, 165.882, 109.813, 152.235, 109.813, 159.059, 121.632]},
+{n:408,a:[172.706, 334.368, 159.059, 334.368, 152.235, 346.187, 165.882, 346.187]},
+{n:409,a:[152.235, 298.912, 138.588, 298.912, 131.765, 310.731, 145.412, 310.731]},
+{n:410,a:[336.471, 405.280, 329.647, 417.099, 336.471, 428.918, 343.294, 417.099]},
+{n:411,a:[295.529, 405.280, 288.706, 417.099, 295.529, 428.918, 302.353, 417.099]},
+{n:412,a:[479.765, 298.912, 486.588, 310.731, 500.235, 310.731, 493.412, 298.912]},
+{n:413,a:[459.294, 334.368, 466.118, 346.187, 479.765, 346.187, 472.941, 334.368]},
+]},
+{g:37,
+h:[{n:414,a:[466.118, 133.450, 479.765, 133.450, 486.588, 121.632, 472.941, 121.632]},
+{n:415,a:[472.941, 145.269, 486.588, 145.269, 493.412, 133.450, 479.765, 133.450]},
+{n:416,a:[309.176, 50.720, 316.000, 38.901, 309.176, 27.082, 302.353, 38.901]},
+{n:417,a:[322.824, 50.720, 329.647, 38.901, 322.824, 27.082, 316.000, 38.901]},
+{n:418,a:[159.059, 145.269, 152.235, 133.450, 138.588, 133.450, 145.412, 145.269]},
+{n:419,a:[165.882, 133.450, 159.059, 121.632, 145.412, 121.632, 152.235, 133.450]},
+{n:420,a:[165.882, 322.550, 152.235, 322.550, 145.412, 334.368, 159.059, 334.368]},
+{n:421,a:[159.059, 310.731, 145.412, 310.731, 138.588, 322.550, 152.235, 322.550]},
+{n:422,a:[322.824, 405.280, 316.000, 417.099, 322.824, 428.918, 329.647, 417.099]},
+{n:423,a:[309.176, 405.280, 302.353, 417.099, 309.176, 428.918, 316.000, 417.099]},
+{n:424,a:[472.941, 310.731, 479.765, 322.550, 493.412, 322.550, 486.588, 310.731]},
+{n:425,a:[466.118, 322.550, 472.941, 334.368, 486.588, 334.368, 479.765, 322.550]},
+]},
+{g:38,
+h:[{n:426,a:[363.765, 192.544, 377.412, 192.544, 384.235, 180.725, 370.588, 180.725]},
+{n:427,a:[370.588, 204.363, 384.235, 204.363, 391.059, 192.544, 377.412, 192.544]},
+{n:428,a:[309.176, 168.907, 316.000, 157.088, 309.176, 145.269, 302.353, 157.088]},
+{n:429,a:[322.824, 168.907, 329.647, 157.088, 322.824, 145.269, 316.000, 157.088]},
+{n:430,a:[261.412, 204.363, 254.588, 192.544, 240.941, 192.544, 247.765, 204.363]},
+{n:431,a:[268.235, 192.544, 261.412, 180.725, 247.765, 180.725, 254.588, 192.544]},
+{n:432,a:[268.235, 263.456, 254.588, 263.456, 247.765, 275.275, 261.412, 275.275]},
+{n:433,a:[261.412, 251.637, 247.765, 251.637, 240.941, 263.456, 254.588, 263.456]},
+{n:434,a:[322.824, 287.093, 316.000, 298.912, 322.824, 310.731, 329.647, 298.912]},
+{n:435,a:[309.176, 287.093, 302.353, 298.912, 309.176, 310.731, 316.000, 298.912]},
+{n:436,a:[370.588, 251.637, 377.412, 263.456, 391.059, 263.456, 384.235, 251.637]},
+{n:437,a:[363.765, 263.456, 370.588, 275.275, 384.235, 275.275, 377.412, 263.456]},
+]},
+{g:39,
+h:[{n:438,a:[370.588, 180.725, 384.235, 180.725, 391.059, 168.907, 377.412, 168.907]},
+{n:439,a:[384.235, 204.363, 397.882, 204.363, 404.706, 192.544, 391.059, 192.544]},
+{n:440,a:[302.353, 157.088, 309.176, 145.269, 302.353, 133.450, 295.529, 145.269]},
+{n:441,a:[329.647, 157.088, 336.471, 145.269, 329.647, 133.450, 322.824, 145.269]},
+{n:442,a:[247.765, 204.363, 240.941, 192.544, 227.294, 192.544, 234.118, 204.363]},
+{n:443,a:[261.412, 180.725, 254.588, 168.907, 240.941, 168.907, 247.765, 180.725]},
+{n:444,a:[261.412, 275.275, 247.765, 275.275, 240.941, 287.093, 254.588, 287.093]},
+{n:445,a:[247.765, 251.637, 234.118, 251.637, 227.294, 263.456, 240.941, 263.456]},
+{n:446,a:[329.647, 298.912, 322.824, 310.731, 329.647, 322.550, 336.471, 310.731]},
+{n:447,a:[302.353, 298.912, 295.529, 310.731, 302.353, 322.550, 309.176, 310.731]},
+{n:448,a:[384.235, 251.637, 391.059, 263.456, 404.706, 263.456, 397.882, 251.637]},
+{n:449,a:[370.588, 275.275, 377.412, 287.093, 391.059, 287.093, 384.235, 275.275]},
+]},
+{g:40,
+h:[{n:450,a:[377.412, 168.907, 391.059, 168.907, 397.882, 157.088, 384.235, 157.088]},
+{n:451,a:[397.882, 204.363, 411.529, 204.363, 418.353, 192.544, 404.706, 192.544]},
+{n:452,a:[295.529, 145.269, 302.353, 133.450, 295.529, 121.632, 288.706, 133.450]},
+{n:453,a:[336.471, 145.269, 343.294, 133.450, 336.471, 121.632, 329.647, 133.450]},
+{n:454,a:[234.118, 204.363, 227.294, 192.544, 213.647, 192.544, 220.471, 204.363]},
+{n:455,a:[254.588, 168.907, 247.765, 157.088, 234.118, 157.088, 240.941, 168.907]},
+{n:456,a:[254.588, 287.093, 240.941, 287.093, 234.118, 298.912, 247.765, 298.912]},
+{n:457,a:[234.118, 251.637, 220.471, 251.637, 213.647, 263.456, 227.294, 263.456]},
+{n:458,a:[336.471, 310.731, 329.647, 322.550, 336.471, 334.368, 343.294, 322.550]},
+{n:459,a:[295.529, 310.731, 288.706, 322.550, 295.529, 334.368, 302.353, 322.550]},
+{n:460,a:[397.882, 251.637, 404.706, 263.456, 418.353, 263.456, 411.529, 251.637]},
+{n:461,a:[377.412, 287.093, 384.235, 298.912, 397.882, 298.912, 391.059, 287.093]},
+]},
+{g:41,
+h:[{n:462,a:[384.235, 157.088, 397.882, 157.088, 404.706, 145.269, 391.059, 145.269]},
+{n:463,a:[411.529, 204.363, 425.176, 204.363, 432.000, 192.544, 418.353, 192.544]},
+{n:464,a:[288.706, 133.450, 295.529, 121.632, 288.706, 109.813, 281.882, 121.632]},
+{n:465,a:[343.294, 133.450, 350.118, 121.632, 343.294, 109.813, 336.471, 121.632]},
+{n:466,a:[220.471, 204.363, 213.647, 192.544, 200.000, 192.544, 206.824, 204.363]},
+{n:467,a:[247.765, 157.088, 240.941, 145.269, 227.294, 145.269, 234.118, 157.088]},
+{n:468,a:[247.765, 298.912, 234.118, 298.912, 227.294, 310.731, 240.941, 310.731]},
+{n:469,a:[220.471, 251.637, 206.824, 251.637, 200.000, 263.456, 213.647, 263.456]},
+{n:470,a:[343.294, 322.550, 336.471, 334.368, 343.294, 346.187, 350.118, 334.368]},
+{n:471,a:[288.706, 322.550, 281.882, 334.368, 288.706, 346.187, 295.529, 334.368]},
+{n:472,a:[411.529, 251.637, 418.353, 263.456, 432.000, 263.456, 425.176, 251.637]},
+{n:473,a:[384.235, 298.912, 391.059, 310.731, 404.706, 310.731, 397.882, 298.912]},
+]},
+{g:42,
+h:[{n:474,a:[391.059, 145.269, 404.706, 145.269, 411.529, 133.450, 397.882, 133.450]},
+{n:475,a:[425.176, 204.363, 438.824, 204.363, 445.647, 192.544, 432.000, 192.544]},
+{n:476,a:[281.882, 121.632, 288.706, 109.813, 281.882, 97.994, 275.059, 109.813]},
+{n:477,a:[350.118, 121.632, 356.941, 109.813, 350.118, 97.994, 343.294, 109.813]},
+{n:478,a:[206.824, 204.363, 200.000, 192.544, 186.353, 192.544, 193.176, 204.363]},
+{n:479,a:[240.941, 145.269, 234.118, 133.450, 220.471, 133.450, 227.294, 145.269]},
+{n:480,a:[240.941, 310.731, 227.294, 310.731, 220.471, 322.550, 234.118, 322.550]},
+{n:481,a:[206.824, 251.637, 193.176, 251.637, 186.353, 263.456, 200.000, 263.456]},
+{n:482,a:[350.118, 334.368, 343.294, 346.187, 350.118, 358.006, 356.941, 346.187]},
+{n:483,a:[281.882, 334.368, 275.059, 346.187, 281.882, 358.006, 288.706, 346.187]},
+{n:484,a:[425.176, 251.637, 432.000, 263.456, 445.647, 263.456, 438.824, 251.637]},
+{n:485,a:[391.059, 310.731, 397.882, 322.550, 411.529, 322.550, 404.706, 310.731]},
+]},
+{g:43,
+h:[{n:486,a:[397.882, 133.450, 411.529, 133.450, 418.353, 121.632, 404.706, 121.632]},
+{n:487,a:[438.824, 204.363, 452.471, 204.363, 459.294, 192.544, 445.647, 192.544]},
+{n:488,a:[275.059, 109.813, 281.882, 97.994, 275.059, 86.176, 268.235, 97.994]},
+{n:489,a:[356.941, 109.813, 363.765, 97.994, 356.941, 86.176, 350.118, 97.994]},
+{n:490,a:[193.176, 204.363, 186.353, 192.544, 172.706, 192.544, 179.529, 204.363]},
+{n:491,a:[234.118, 133.450, 227.294, 121.632, 213.647, 121.632, 220.471, 133.450]},
+{n:492,a:[234.118, 322.550, 220.471, 322.550, 213.647, 334.368, 227.294, 334.368]},
+{n:493,a:[193.176, 251.637, 179.529, 251.637, 172.706, 263.456, 186.353, 263.456]},
+{n:494,a:[356.941, 346.187, 350.118, 358.006, 356.941, 369.824, 363.765, 358.006]},
+{n:495,a:[275.059, 346.187, 268.235, 358.006, 275.059, 369.824, 281.882, 358.006]},
+{n:496,a:[438.824, 251.637, 445.647, 263.456, 459.294, 263.456, 452.471, 251.637]},
+{n:497,a:[397.882, 322.550, 404.706, 334.368, 418.353, 334.368, 411.529, 322.550]},
+]},
+{g:44,
+h:[{n:498,a:[404.706, 121.632, 418.353, 121.632, 425.176, 109.813, 411.529, 109.813]},
+{n:499,a:[452.471, 204.363, 466.118, 204.363, 472.941, 192.544, 459.294, 192.544]},
+{n:500,a:[268.235, 97.994, 275.059, 86.176, 268.235, 74.357, 261.412, 86.176]},
+{n:501,a:[363.765, 97.994, 370.588, 86.176, 363.765, 74.357, 356.941, 86.176]},
+{n:502,a:[179.529, 204.363, 172.706, 192.544, 159.059, 192.544, 165.882, 204.363]},
+{n:503,a:[227.294, 121.632, 220.471, 109.813, 206.824, 109.813, 213.647, 121.632]},
+{n:504,a:[227.294, 334.368, 213.647, 334.368, 206.824, 346.187, 220.471, 346.187]},
+{n:505,a:[179.529, 251.637, 165.882, 251.637, 159.059, 263.456, 172.706, 263.456]},
+{n:506,a:[363.765, 358.006, 356.941, 369.824, 363.765, 381.643, 370.588, 369.824]},
+{n:507,a:[268.235, 358.006, 261.412, 369.824, 268.235, 381.643, 275.059, 369.824]},
+{n:508,a:[452.471, 251.637, 459.294, 263.456, 472.941, 263.456, 466.118, 251.637]},
+{n:509,a:[404.706, 334.368, 411.529, 346.187, 425.176, 346.187, 418.353, 334.368]},
+]},
+{g:45,
+h:[{n:510,a:[411.529, 109.813, 425.176, 109.813, 432.000, 97.994, 418.353, 97.994]},
+{n:511,a:[466.118, 204.363, 479.765, 204.363, 486.588, 192.544, 472.941, 192.544]},
+{n:512,a:[261.412, 86.176, 268.235, 74.357, 261.412, 62.538, 254.588, 74.357]},
+{n:513,a:[370.588, 86.176, 377.412, 74.357, 370.588, 62.538, 363.765, 74.357]},
+{n:514,a:[165.882, 204.363, 159.059, 192.544, 145.412, 192.544, 152.235, 204.363]},
+{n:515,a:[220.471, 109.813, 213.647, 97.994, 200.000, 97.994, 206.824, 109.813]},
+{n:516,a:[220.471, 346.187, 206.824, 346.187, 200.000, 358.006, 213.647, 358.006]},
+{n:517,a:[165.882, 251.637, 152.235, 251.637, 145.412, 263.456, 159.059, 263.456]},
+{n:518,a:[370.588, 369.824, 363.765, 381.643, 370.588, 393.462, 377.412, 381.643]},
+{n:519,a:[261.412, 369.824, 254.588, 381.643, 261.412, 393.462, 268.235, 381.643]},
+{n:520,a:[466.118, 251.637, 472.941, 263.456, 486.588, 263.456, 479.765, 251.637]},
+{n:521,a:[411.529, 346.187, 418.353, 358.006, 432.000, 358.006, 425.176, 346.187]},
+]},
+{g:46,
+h:[{n:522,a:[425.176, 109.813, 438.824, 109.813, 445.647, 97.994, 432.000, 97.994]},
+{n:523,a:[472.941, 192.544, 486.588, 192.544, 493.412, 180.725, 479.765, 180.725]},
+{n:524,a:[268.235, 74.357, 275.059, 62.538, 268.235, 50.720, 261.412, 62.538]},
+{n:525,a:[363.765, 74.357, 370.588, 62.538, 363.765, 50.720, 356.941, 62.538]},
+{n:526,a:[159.059, 192.544, 152.235, 180.725, 138.588, 180.725, 145.412, 192.544]},
+{n:527,a:[206.824, 109.813, 200.000, 97.994, 186.353, 97.994, 193.176, 109.813]},
+{n:528,a:[206.824, 346.187, 193.176, 346.187, 186.353, 358.006, 200.000, 358.006]},
+{n:529,a:[159.059, 263.456, 145.412, 263.456, 138.588, 275.275, 152.235, 275.275]},
+{n:530,a:[363.765, 381.643, 356.941, 393.462, 363.765, 405.280, 370.588, 393.462]},
+{n:531,a:[268.235, 381.643, 261.412, 393.462, 268.235, 405.280, 275.059, 393.462]},
+{n:532,a:[472.941, 263.456, 479.765, 275.275, 493.412, 275.275, 486.588, 263.456]},
+{n:533,a:[425.176, 346.187, 432.000, 358.006, 445.647, 358.006, 438.824, 346.187]},
+]},
+{g:47,
+h:[{n:534,a:[438.824, 109.813, 452.471, 109.813, 459.294, 97.994, 445.647, 97.994]},
+{n:535,a:[479.765, 180.725, 493.412, 180.725, 500.235, 168.907, 486.588, 168.907]},
+{n:536,a:[275.059, 62.538, 281.882, 50.720, 275.059, 38.901, 268.235, 50.720]},
+{n:537,a:[356.941, 62.538, 363.765, 50.720, 356.941, 38.901, 350.118, 50.720]},
+{n:538,a:[152.235, 180.725, 145.412, 168.907, 131.765, 168.907, 138.588, 180.725]},
+{n:539,a:[193.176, 109.813, 186.353, 97.994, 172.706, 97.994, 179.529, 109.813]},
+{n:540,a:[193.176, 346.187, 179.529, 346.187, 172.706, 358.006, 186.353, 358.006]},
+{n:541,a:[152.235, 275.275, 138.588, 275.275, 131.765, 287.093, 145.412, 287.093]},
+{n:542,a:[356.941, 393.462, 350.118, 405.280, 356.941, 417.099, 363.765, 405.280]},
+{n:543,a:[275.059, 393.462, 268.235, 405.280, 275.059, 417.099, 281.882, 405.280]},
+{n:544,a:[479.765, 275.275, 486.588, 287.093, 500.235, 287.093, 493.412, 275.275]},
+{n:545,a:[438.824, 346.187, 445.647, 358.006, 459.294, 358.006, 452.471, 346.187]},
+]},
+{g:48,
+h:[{n:546,a:[445.647, 121.632, 459.294, 121.632, 466.118, 109.813, 452.471, 109.813]},
+{n:547,a:[472.941, 168.907, 486.588, 168.907, 493.412, 157.088, 479.765, 157.088]},
+{n:548,a:[288.706, 62.538, 295.529, 50.720, 288.706, 38.901, 281.882, 50.720]},
+{n:549,a:[343.294, 62.538, 350.118, 50.720, 343.294, 38.901, 336.471, 50.720]},
+{n:550,a:[159.059, 168.907, 152.235, 157.088, 138.588, 157.088, 145.412, 168.907]},
+{n:551,a:[186.353, 121.632, 179.529, 109.813, 165.882, 109.813, 172.706, 121.632]},
+{n:552,a:[186.353, 334.368, 172.706, 334.368, 165.882, 346.187, 179.529, 346.187]},
+{n:553,a:[159.059, 287.093, 145.412, 287.093, 138.588, 298.912, 152.235, 298.912]},
+{n:554,a:[343.294, 393.462, 336.471, 405.280, 343.294, 417.099, 350.118, 405.280]},
+{n:555,a:[288.706, 393.462, 281.882, 405.280, 288.706, 417.099, 295.529, 405.280]},
+{n:556,a:[472.941, 287.093, 479.765, 298.912, 493.412, 298.912, 486.588, 287.093]},
+{n:557,a:[445.647, 334.368, 452.471, 346.187, 466.118, 346.187, 459.294, 334.368]},
+]},
+{g:49,
+h:[{n:558,a:[452.471, 133.450, 466.118, 133.450, 472.941, 121.632, 459.294, 121.632]},
+{n:559,a:[466.118, 157.088, 479.765, 157.088, 486.588, 145.269, 472.941, 145.269]},
+{n:560,a:[302.353, 62.538, 309.176, 50.720, 302.353, 38.901, 295.529, 50.720]},
+{n:561,a:[329.647, 62.538, 336.471, 50.720, 329.647, 38.901, 322.824, 50.720]},
+{n:562,a:[165.882, 157.088, 159.059, 145.269, 145.412, 145.269, 152.235, 157.088]},
+{n:563,a:[179.529, 133.450, 172.706, 121.632, 159.059, 121.632, 165.882, 133.450]},
+{n:564,a:[179.529, 322.550, 165.882, 322.550, 159.059, 334.368, 172.706, 334.368]},
+{n:565,a:[165.882, 298.912, 152.235, 298.912, 145.412, 310.731, 159.059, 310.731]},
+{n:566,a:[329.647, 393.462, 322.824, 405.280, 329.647, 417.099, 336.471, 405.280]},
+{n:567,a:[302.353, 393.462, 295.529, 405.280, 302.353, 417.099, 309.176, 405.280]},
+{n:568,a:[466.118, 298.912, 472.941, 310.731, 486.588, 310.731, 479.765, 298.912]},
+{n:569,a:[452.471, 322.550, 459.294, 334.368, 472.941, 334.368, 466.118, 322.550]},
+]},
+
+{g:50,
+h:[{n:570,a:[459.294, 145.269, 472.941, 145.269, 479.765, 133.450, 466.118, 133.450]},
+{n:571,a:[316.000, 62.538, 322.824, 50.720, 316.000, 38.901, 309.176, 50.720]},
+{n:572,a:[172.706, 145.269, 165.882, 133.450, 152.235, 133.450, 159.059, 145.269]},
+{n:573,a:[172.706, 310.731, 159.059, 310.731, 152.235, 322.550, 165.882, 322.550]},
+{n:574,a:[316.000, 393.462, 309.176, 405.280, 316.000, 417.099, 322.824, 405.280]},
+{n:575,a:[459.294, 310.731, 466.118, 322.550, 479.765, 322.550, 472.941, 310.731]},
+]},
+
+{g:51,
+h:[{n:576,a:[432.000, 121.632, 445.647, 121.632, 452.471, 109.813, 438.824, 109.813]},
+{n:577,a:[466.118, 180.725, 479.765, 180.725, 486.588, 168.907, 472.941, 168.907]},
+{n:578,a:[281.882, 74.357, 288.706, 62.538, 281.882, 50.720, 275.059, 62.538]},
+{n:579,a:[350.118, 74.357, 356.941, 62.538, 350.118, 50.720, 343.294, 62.538]},
+{n:580,a:[165.882, 180.725, 159.059, 168.907, 145.412, 168.907, 152.235, 180.725]},
+{n:581,a:[200.000, 121.632, 193.176, 109.813, 179.529, 109.813, 186.353, 121.632]},
+{n:582,a:[200.000, 334.368, 186.353, 334.368, 179.529, 346.187, 193.176, 346.187]},
+{n:583,a:[165.882, 275.275, 152.235, 275.275, 145.412, 287.093, 159.059, 287.093]},
+{n:584,a:[350.118, 381.643, 343.294, 393.462, 350.118, 405.280, 356.941, 393.462]},
+{n:585,a:[281.882, 381.643, 275.059, 393.462, 281.882, 405.280, 288.706, 393.462]},
+{n:586,a:[466.118, 275.275, 472.941, 287.093, 486.588, 287.093, 479.765, 275.275]},
+{n:587,a:[432.000, 334.368, 438.824, 346.187, 452.471, 346.187, 445.647, 334.368]},
+]},
+
+{g:52,
+
+h:[{n:588,a:[438.824, 133.450, 452.471, 133.450, 459.294, 121.632, 445.647, 121.632]},
+{n:589,a:[459.294, 168.907, 472.941, 168.907, 479.765, 157.088, 466.118, 157.088]},
+{n:590,a:[295.529, 74.357, 302.353, 62.538, 295.529, 50.720, 288.706, 62.538]},
+{n:591,a:[336.471, 74.357, 343.294, 62.538, 336.471, 50.720, 329.647, 62.538]},
+{n:592,a:[172.706, 168.907, 165.882, 157.088, 152.235, 157.088, 159.059, 168.907]},
+{n:593,a:[193.176, 133.450, 186.353, 121.632, 172.706, 121.632, 179.529, 133.450]},
+{n:594,a:[193.176, 322.550, 179.529, 322.550, 172.706, 334.368, 186.353, 334.368]},
+{n:595,a:[172.706, 287.093, 159.059, 287.093, 152.235, 298.912, 165.882, 298.912]},
+{n:596,a:[336.471, 381.643, 329.647, 393.462, 336.471, 405.280, 343.294, 393.462]},
+{n:597,a:[295.529, 381.643, 288.706, 393.462, 295.529, 405.280, 302.353, 393.462]},
+{n:598,a:[459.294, 287.093, 466.118, 298.912, 479.765, 298.912, 472.941, 287.093]},
+{n:599,a:[438.824, 322.550, 445.647, 334.368, 459.294, 334.368, 452.471, 322.550]},
+]},
+{g:53,
+
+h:[{n:600,a:[445.647, 145.269, 459.294, 145.269, 466.118, 133.450, 452.471, 133.450]},
+{n:601,a:[452.471, 157.088, 466.118, 157.088, 472.941, 145.269, 459.294, 145.269]},
+{n:602,a:[309.176, 74.357, 316.000, 62.538, 309.176, 50.720, 302.353, 62.538]},
+{n:603,a:[322.824, 74.357, 329.647, 62.538, 322.824, 50.72, 316.000, 62.538]},
+{n:604,a:[179.529, 157.088, 172.706, 145.269, 159.059, 145.269, 165.882, 157.088]},
+{n:605,a:[186.353, 145.269, 179.529, 133.450, 165.882, 133.450, 172.706, 145.269]},
+{n:606,a:[186.353, 310.731, 172.706, 310.731, 165.882, 322.550, 179.529, 322.550]},
+{n:607,a:[179.529, 298.912, 165.882, 298.912, 159.059, 310.731, 172.706, 310.731]},
+{n:608,a:[322.824, 381.643, 316.000, 393.462, 322.824, 405.280, 329.647, 393.462]},
+{n:609,a:[309.176, 381.643, 302.353, 393.462, 309.176, 405.280, 316.000, 393.462]},
+{n:610,a:[452.471, 298.912, 459.294, 310.731, 472.941, 310.731, 466.118, 298.912]},
+{n:611,a:[445.647, 310.731, 452.471, 322.550, 466.118, 322.550, 459.294, 310.731]},
+]},
+{g:54,
+
+h:[{n:612,a:[418.353, 121.632, 432.000, 121.632, 438.824, 109.813, 425.176, 109.813]},
+{n:613,a:[459.294, 192.544, 472.941, 192.544, 479.765, 180.725, 466.118, 180.725]},
+{n:614,a:[275.059, 86.176, 281.882, 74.357, 275.059, 62.538, 268.235, 74.357]},
+{n:615,a:[356.941, 86.176, 363.765, 74.357, 356.941, 62.538, 350.118, 74.357]},
+{n:616,a:[172.706, 192.544, 165.882, 180.725, 152.235, 180.725, 159.059, 192.544]},
+{n:617,a:[213.647, 121.632, 206.824, 109.813, 193.176, 109.813, 200.000, 121.632]},
+{n:618,a:[213.647, 334.368, 200.000, 334.368, 193.176, 346.187, 206.824, 346.187]},
+{n:619,a:[172.706, 263.456, 159.059, 263.456, 152.235, 275.275, 165.882, 275.275]},
+{n:620,a:[356.941, 369.824, 350.118, 381.643, 356.941, 393.462, 363.765, 381.643]},
+{n:621,a:[275.059, 369.824, 268.235, 381.643, 275.059, 393.462, 281.882, 381.643]},
+{n:622,a:[459.294, 263.456, 466.118, 275.275, 479.765, 275.275, 472.941, 263.456]},
+{n:623,a:[418.353, 334.368, 425.176, 346.187, 438.824, 346.187, 432.000, 334.368]},
+]},
+{g:55,
+
+h:[{n:624,a:[425.176, 133.450, 438.824, 133.450, 445.647, 121.632, 432.000, 121.632]},
+{n:625,a:[452.471, 180.725, 466.118, 180.725, 472.941, 168.907, 459.294, 168.907]},
+{n:626,a:[288.706, 86.176, 295.529, 74.357, 288.706, 62.538, 281.882, 74.357]},
+{n:627,a:[343.294, 86.176, 350.118, 74.357, 343.294, 62.538, 336.471, 74.357]},
+{n:628,a:[179.529, 180.725, 172.706, 168.907, 159.059, 168.907, 165.882, 180.725]},
+{n:629,a:[206.824, 133.450, 200.000, 121.632, 186.353, 121.632, 193.176, 133.450]},
+{n:630,a:[206.824, 322.550, 193.176, 322.550, 186.353, 334.368, 200.000, 334.368]},
+{n:631,a:[179.529, 275.275, 165.882, 275.275, 159.059, 287.093, 172.706, 287.093]},
+{n:632,a:[343.294, 369.824, 336.471, 381.643, 343.294, 393.462, 350.118, 381.643]},
+{n:633,a:[288.706, 369.824, 281.882, 381.643, 288.706, 393.462, 295.529, 381.643]},
+{n:634,a:[452.471, 275.275, 459.294, 287.093, 472.941, 287.093, 466.118, 275.275]},
+{n:635,a:[425.176, 322.550, 432.000, 334.368, 445.647, 334.368, 438.824, 322.550]},
+]},
+{g:56,
+
+h:[{n:636,a:[432.000, 145.269, 445.647, 145.269, 452.471, 133.450, 438.824, 133.450]},
+{n:637,a:[445.647, 168.907, 459.294, 168.907, 466.118, 157.088, 452.471, 157.088]},
+{n:638,a:[302.353, 86.176, 309.176, 74.357, 302.353, 62.538, 295.529, 74.357]},
+{n:639,a:[329.647, 86.176, 336.471, 74.357, 329.647, 62.538, 322.824, 74.357]},
+{n:640,a:[186.353, 168.907, 179.529, 157.088, 165.882, 157.088, 172.706, 168.907]},
+{n:641,a:[200.000, 145.269, 193.176, 133.450, 179.529, 133.450, 186.353, 145.269]},
+{n:642,a:[200.000, 310.731, 186.353, 310.731, 179.529, 322.550, 193.176, 322.550]},
+{n:643,a:[186.353, 287.093, 172.706, 287.093, 165.882, 298.912, 179.529, 298.912]},
+{n:644,a:[329.647, 369.824, 322.824, 381.643, 329.647, 393.462, 336.471, 381.643]},
+{n:645,a:[302.353, 369.824, 295.529, 381.643, 302.353, 393.462, 309.176, 381.643]},
+{n:646,a:[445.647, 287.093, 452.471, 298.912, 466.118, 298.912, 459.294, 287.093]},
+{n:647,a:[432.000, 310.731, 438.824, 322.550, 452.471, 322.550, 445.647, 310.731]},
+]},
+{g:57,
+
+h:[{n:648,a:[411.529, 133.450, 425.176, 133.450, 432.000, 121.632, 418.353, 121.632]},
+{n:649,a:[445.647, 192.544, 459.294, 192.544, 466.118, 180.725, 452.471, 180.725]},
+{n:650,a:[281.882, 97.994, 288.706, 86.176, 281.882, 74.357, 275.059, 86.176]},
+{n:651,a:[350.118, 97.994, 356.941, 86.176, 350.118, 74.357, 343.294, 86.176]},
+{n:652,a:[186.353, 192.544, 179.529, 180.725, 165.882, 180.725, 172.706, 192.544]},
+{n:653,a:[220.471, 133.450, 213.647, 121.632, 200.000, 121.632, 206.824, 133.450]},
+{n:654,a:[220.471, 322.550, 206.824, 322.550, 200.000, 334.368, 213.647, 334.368]},
+{n:655,a:[186.353, 263.456, 172.706, 263.456, 165.882, 275.275, 179.529, 275.275]},
+{n:656,a:[350.118, 358.006, 343.294, 369.824, 350.118, 381.643, 356.941, 369.824]},
+{n:657,a:[281.882, 358.006, 275.059, 369.824, 281.882, 381.643, 288.706, 369.824]},
+{n:658,a:[445.647, 263.456, 452.471, 275.275, 466.118, 275.275, 459.294, 263.456]},
+{n:659,a:[411.529, 322.550, 418.353, 334.368, 432.000, 334.368, 425.176, 322.550]},
+]},
+{g:58,
+
+h:[{n:660,a:[404.706, 145.269, 418.353, 145.269, 425.176, 133.450, 411.529, 133.450]},
+{n:661,a:[432.000, 192.544, 445.647, 192.544, 452.471, 180.725, 438.824, 180.725]},
+{n:662,a:[288.706, 109.813, 295.529, 97.994, 288.706, 86.176, 281.882, 97.994]},
+{n:663,a:[343.294, 109.813, 350.118, 97.994, 343.294, 86.176, 336.471, 97.994]},
+{n:664,a:[200.000, 192.544, 193.176, 180.725, 179.529, 180.725, 186.353, 192.544]},
+{n:665,a:[227.294, 145.269, 220.471, 133.450, 206.824, 133.450, 213.647, 145.269]},
+{n:666,a:[227.294, 310.731, 213.647, 310.731, 206.824, 322.550, 220.471, 322.550]},
+{n:667,a:[200.000, 263.456, 186.353, 263.456, 179.529, 275.275, 193.176, 275.275]},
+{n:668,a:[343.294, 346.187, 336.471, 358.006, 343.294, 369.824, 350.118, 358.006]},
+{n:669,a:[288.706, 346.187, 281.882, 358.006, 288.706, 369.824, 295.529, 358.006]},
+{n:670,a:[432.000, 263.456, 438.824, 275.275, 452.471, 275.275, 445.647, 263.456]},
+{n:671,a:[404.706, 310.731, 411.529, 322.550, 425.176, 322.550, 418.353, 310.731]},
+]},
+{g:59,
+
+h:[{n:672,a:[418.353, 145.269, 432.000, 145.269, 438.824, 133.450, 425.176, 133.450]},
+{n:673,a:[438.824, 180.725, 452.471, 180.725, 459.294, 168.907, 445.647, 168.907]},
+{n:674,a:[295.529, 97.994, 302.353, 86.176, 295.529, 74.357, 288.706, 86.176]},
+{n:675,a:[336.471, 97.994, 343.294, 86.176, 336.471, 74.357, 329.647, 86.176]},
+{n:676,a:[193.176, 180.725, 186.353, 168.907, 172.706, 168.907, 179.529, 180.725]},
+{n:677,a:[213.647, 145.269, 206.824, 133.450, 193.176, 133.450, 200.000, 145.269]},
+{n:678,a:[213.647, 310.731, 200.000, 310.731, 193.176, 322.550, 206.824, 322.550]},
+{n:679,a:[193.176, 275.275, 179.529, 275.275, 172.706, 287.093, 186.353, 287.093]},
+{n:680,a:[336.471, 358.006, 329.647, 369.824, 336.471, 381.643, 343.294, 369.824]},
+{n:681,a:[295.529, 358.006, 288.706, 369.824, 295.529, 381.643, 302.353, 369.824]},
+{n:682,a:[438.824, 275.275, 445.647, 287.093, 459.294, 287.093, 452.471, 275.275]},
+{n:683,a:[418.353, 310.731, 425.176, 322.550, 438.824, 322.550, 432.000, 310.731]},
+]},
+{g:60,
+
+h:[{n:684,a:[438.824, 157.088, 452.471, 157.088, 459.294, 145.269, 445.647, 145.269]},
+{n:685,a:[316.000, 86.176, 322.824, 74.357, 316.000, 62.538, 309.176, 74.357]},
+{n:686,a:[193.176, 157.088, 186.353, 145.269, 172.706, 145.269, 179.529, 157.088]},
+{n:687,a:[193.176, 298.912, 179.529, 298.912, 172.706, 310.731, 186.353, 310.731]},
+{n:688,a:[316.000, 369.824, 309.176, 381.643, 316.000, 393.462, 322.824, 381.643]},
+{n:689,a:[438.824, 298.912, 445.647, 310.731, 459.294, 310.731, 452.471, 298.912]},
+]},
+{g:61,
+
+h:[{n:690,a:[425.176, 157.088, 438.824, 157.088, 445.647, 145.269, 432.000, 145.269]},
+{n:691,a:[432.000, 168.907, 445.647, 168.907, 452.471, 157.088, 438.824, 157.088]},
+{n:692,a:[309.176, 97.994, 316.000, 86.176, 309.176, 74.357, 302.353, 86.176]},
+{n:693,a:[322.824, 97.994, 329.647, 86.176, 322.824, 74.357, 316.000, 86.176]},
+{n:694,a:[200.000, 168.907, 193.176, 157.088, 179.529, 157.088, 186.353, 168.907]},
+{n:695,a:[206.824, 157.088, 200.000, 145.269, 186.353, 145.269, 193.176, 157.088]},
+{n:696,a:[206.824, 298.912, 193.176, 298.912, 186.353, 310.731, 200.000, 310.731]},
+{n:697,a:[200.000, 287.093, 186.353, 287.093, 179.529, 298.912, 193.176, 298.912]},
+{n:698,a:[322.824, 358.006, 316.000, 369.824, 322.824, 381.643, 329.647, 369.824]},
+{n:699,a:[309.176, 358.006, 302.353, 369.824, 309.176, 381.643, 316.000, 369.824]},
+{n:700,a:[432.000, 287.093, 438.824, 298.912, 452.471, 298.912, 445.647, 287.093]},
+{n:701,a:[425.176, 298.912, 432.000, 310.731, 445.647, 310.731, 438.824, 298.912]},
+]},
+{g:62,
+
+h:[{n:702,a:[411.529, 157.088, 425.176, 157.088, 432.000, 145.269, 418.353, 145.269]},
+{n:703,a:[425.176, 180.725, 438.824, 180.725, 445.647, 168.907, 432.000, 168.907]},
+{n:704,a:[302.353, 109.813, 309.176, 97.994, 302.353, 86.176, 295.529, 97.994]},
+{n:705,a:[329.647, 109.813, 336.471, 97.994, 329.647, 86.176, 322.824, 97.994]},
+{n:706,a:[206.824, 180.725, 200.000, 168.907, 186.353, 168.907, 193.176, 180.725]},
+{n:707,a:[220.471, 157.088, 213.647, 145.269, 200.000, 145.269, 206.824, 157.088]},
+{n:708,a:[220.471, 298.912, 206.824, 298.912, 200.000, 310.731, 213.647, 310.731]},
+{n:709,a:[206.824, 275.275, 193.176, 275.275, 186.353, 287.093, 200.000, 287.093]},
+{n:710,a:[329.647, 346.187, 322.824, 358.006, 329.647, 369.824, 336.471, 358.006]},
+{n:711,a:[302.353, 346.187, 295.529, 358.006, 302.353, 369.824, 309.176, 358.006]},
+{n:712,a:[425.176, 275.275, 432.000, 287.093, 445.647, 287.093, 438.824, 275.275]},
+{n:713,a:[411.529, 298.912, 418.353, 310.731, 432.000, 310.731, 425.176, 298.912]},
+]},
+{g:63,
+
+h:[{n:714,a:[397.882, 157.088, 411.529, 157.088, 418.353, 145.269, 404.706, 145.269]},
+{n:715,a:[418.353, 192.544, 432.000, 192.544, 438.824, 180.725, 425.176, 180.725]},
+{n:716,a:[295.529, 121.632, 302.353, 109.813, 295.529, 97.994, 288.706, 109.813]},
+{n:717,a:[336.471, 121.632, 343.294, 109.813, 336.471, 97.994, 329.647, 109.813]},
+{n:718,a:[213.647, 192.544, 206.824, 180.725, 193.176, 180.725, 200.000, 192.544]},
+{n:719,a:[234.118, 157.088, 227.294, 145.269, 213.647, 145.269, 220.471, 157.088]},
+{n:720,a:[234.118, 298.912, 220.471, 298.912, 213.647, 310.731, 227.294, 310.731]},
+{n:721,a:[213.647, 263.456, 200.000, 263.456, 193.176, 275.275, 206.824, 275.275]},
+{n:722,a:[336.471, 334.368, 329.647, 346.187, 336.471, 358.006, 343.294, 346.187]},
+{n:723,a:[295.529, 334.368, 288.706, 346.187, 295.529, 358.006, 302.353, 346.187]},
+{n:724,a:[418.353, 263.456, 425.176, 275.275, 438.824, 275.275, 432.000, 263.456]},
+{n:725,a:[397.882, 298.912, 404.706, 310.731, 418.353, 310.731, 411.529, 298.912]},
+]},
+{g:64,
+
+h:[{n:726,a:[418.353, 168.907, 432.000, 168.907, 438.824, 157.088, 425.176, 157.088]},
+{n:727,a:[316.000, 109.813, 322.824, 97.994, 316.000, 86.176, 309.176, 97.994]},
+{n:728,a:[213.647, 168.907, 206.824, 157.088, 193.176, 157.088, 200.000, 168.907]},
+{n:729,a:[213.647, 287.093, 200.000, 287.093, 193.176, 298.912, 206.824, 298.912]},
+{n:730,a:[316.000, 346.187, 309.176, 358.006, 316.000, 369.824, 322.824, 358.006]},
+{n:731,a:[418.353, 287.093, 425.176, 298.912, 438.824, 298.912, 432.000, 287.093]},
+]},
+{g:65,
+
+h:[{n:732,a:[404.706, 168.907, 418.353, 168.907, 425.176, 157.088, 411.529, 157.088]},
+{n:733,a:[411.529, 180.725, 425.176, 180.725, 432.000, 168.907, 418.353, 168.907]},
+{n:734,a:[309.176, 121.632, 316.000, 109.813, 309.176, 97.994, 302.353, 109.813]},
+{n:735,a:[322.824, 121.632, 329.647, 109.813, 322.824, 97.994, 316.000, 109.813]},
+{n:736,a:[220.471, 180.725, 213.647, 168.907, 200.000, 168.907, 206.824, 180.725]},
+{n:737,a:[227.294, 168.907, 220.471, 157.088, 206.824, 157.088, 213.647, 168.907]},
+{n:738,a:[227.294, 287.093, 213.647, 287.093, 206.824, 298.912, 220.471, 298.912]},
+{n:739,a:[220.471, 275.275, 206.824, 275.275, 200.000, 287.093, 213.647, 287.093]},
+{n:740,a:[322.824, 334.368, 316.000, 346.187, 322.824, 358.006, 329.647, 346.187]},
+{n:741,a:[309.176, 334.368, 302.353, 346.187, 309.176, 358.006, 316.000, 346.187]},
+{n:742,a:[411.529, 275.275, 418.353, 287.093, 432.000, 287.093, 425.176, 275.275]},
+{n:743,a:[404.706, 287.093, 411.529, 298.912, 425.176, 298.912, 418.353, 287.093]},
+]},
+{g:66,
+h:[{n:744,a:[397.882, 180.725, 411.529, 180.725, 418.353, 168.907, 404.706, 168.907]},
+{n:745,a:[316.000, 133.450, 322.824, 121.632, 316.000, 109.813, 309.176, 121.632]},
+{n:746,a:[234.118, 180.725, 227.294, 168.907, 213.647, 168.907, 220.471, 180.725]},
+{n:747,a:[234.118, 275.275, 220.471, 275.275, 213.647, 287.093, 227.294, 287.093]},
+{n:748,a:[316.000, 322.550, 309.176, 334.368, 316.000, 346.187, 322.824, 334.368]},
+{n:749,a:[397.882, 275.275, 404.706, 287.093, 418.353, 287.093, 411.529, 275.275]},
+]},
+{g:67,
+
+h:[{n:750,a:[391.059, 168.907, 404.706, 168.907, 411.529, 157.088, 397.882, 157.088]},
+{n:751,a:[404.706, 192.544, 418.353, 192.544, 425.176, 180.725, 411.529, 180.725]},
+{n:752,a:[302.353, 133.450, 309.176, 121.632, 302.353, 109.813, 295.529, 121.632]},
+{n:753,a:[329.647, 133.450, 336.471, 121.632, 329.647, 109.813, 322.824, 121.632]},
+{n:754,a:[227.294, 192.544, 220.471, 180.725, 206.824, 180.725, 213.647, 192.544]},
+{n:755,a:[240.941, 168.907, 234.118, 157.088, 220.471, 157.088, 227.294, 168.907]},
+{n:756,a:[240.941, 287.093, 227.294, 287.093, 220.471, 298.912, 234.118, 298.912]},
+{n:757,a:[227.294, 263.456, 213.647, 263.456, 206.824, 275.275, 220.471, 275.275]},
+{n:758,a:[329.647, 322.550, 322.824, 334.368, 329.647, 346.187, 336.471, 334.368]},
+{n:759,a:[302.353, 322.550, 295.529, 334.368, 302.353, 346.187, 309.176, 334.368]},
+{n:760,a:[404.706, 263.456, 411.529, 275.275, 425.176, 275.275, 418.353, 263.456]},
+{n:761,a:[391.059, 287.093, 397.882, 298.912, 411.529, 298.912, 404.706, 287.093]},
+]},
+{g:68,
+
+h:[{n:762,a:[384.235, 180.725, 397.882, 180.725, 404.706, 168.907, 391.059, 168.907]},
+{n:763,a:[391.059, 192.544, 404.706, 192.544, 411.529, 180.725, 397.882, 180.725]},
+{n:764,a:[309.176, 145.269, 316.000, 133.450, 309.176, 121.632, 302.353, 133.450]},
+{n:765,a:[322.824, 145.269, 329.647, 133.450, 322.824, 121.632, 316.000, 133.450]},
+{n:766,a:[240.941, 192.544, 234.118, 180.725, 220.471, 180.725, 227.294, 192.544]},
+{n:767,a:[247.765, 180.725, 240.941, 168.907, 227.294, 168.907, 234.118, 180.725]},
+{n:768,a:[247.765, 275.275, 234.118, 275.275, 227.294, 287.093, 240.941, 287.093]},
+{n:769,a:[240.941, 263.456, 227.294, 263.456, 220.471, 275.275, 234.118, 275.275]},
+{n:770,a:[322.824, 310.731, 316.000, 322.550, 322.824, 334.368, 329.647, 322.550]},
+{n:771,a:[309.176, 310.731, 302.353, 322.550, 309.176, 334.368, 316.000, 322.550]},
+{n:772,a:[391.059, 263.456, 397.882, 275.275, 411.529, 275.275, 404.706, 263.456]},
+{n:773,a:[384.235, 275.275, 391.059, 287.093, 404.706, 287.093, 397.882, 275.275]},
+]},
+{g:69,
+
+h:[{n:774,a:[377.412, 192.544, 391.059, 192.544, 397.882, 180.725, 384.235, 180.725]},
+{n:775,a:[316.000, 157.088, 322.824, 145.269, 316.000, 133.450, 309.176, 145.269]},
+{n:776,a:[254.588, 192.544, 247.765, 180.725, 234.118, 180.725, 240.941, 192.544]},
+{n:777,a:[254.588, 263.456, 240.941, 263.456, 234.118, 275.275, 247.765, 275.275]},
+{n:778,a:[316.000, 298.912, 309.176, 310.731, 316.000, 322.550, 322.824, 310.731]},
+{n:779,a:[377.412, 263.456, 384.235, 275.275, 397.882, 275.275, 391.059, 263.456]},
+]},
+{g:70,
+
+h:[{n:780,a:[432.000, 97.994, 445.647, 97.994, 452.471, 86.176, 438.824, 86.176]},
+{n:781,a:[486.588, 192.544, 500.235, 192.544, 507.059, 180.725, 493.412, 180.725]},
+{n:782,a:[261.412, 62.538, 268.235, 50.720, 261.412, 38.901, 254.588, 50.720]},
+{n:783,a:[370.588, 62.538, 377.412, 50.720, 370.588, 38.901, 363.765, 50.720]},
+{n:784,a:[145.412, 192.544, 138.588, 180.725, 124.941, 180.725, 131.765, 192.544]},
+{n:785,a:[200.000, 97.994, 193.176, 86.176, 179.529, 86.176, 186.353, 97.994]},
+{n:786,a:[200.000, 358.006, 186.353, 358.006, 179.529, 369.824, 193.176, 369.824]},
+{n:787,a:[145.412, 263.456, 131.765, 263.456, 124.941, 275.275, 138.588, 275.275]},
+{n:788,a:[370.588, 393.462, 363.765, 405.280, 370.588, 417.099, 377.412, 405.280]},
+{n:789,a:[261.412, 393.462, 254.588, 405.280, 261.412, 417.099, 268.235, 405.280]},
+{n:790,a:[486.588, 263.456, 493.412, 275.275, 507.059, 275.275, 500.235, 263.456]},
+{n:791,a:[432.000, 358.006, 438.824, 369.824, 452.471, 369.824, 445.647, 358.006]},
+]},
+{g:71,
+
+h:[{n:792,a:[425.176, 86.176, 438.824, 86.176, 445.647, 74.357, 432.000, 74.357]},
+{n:793,a:[493.412, 204.363, 507.059, 204.363, 513.882, 192.544, 500.235, 192.544]},
+{n:794,a:[247.765, 62.538, 254.588, 50.720, 247.765, 38.901, 240.941, 50.720]},
+{n:795,a:[384.235, 62.538, 391.059, 50.720, 384.235, 38.901, 377.412, 50.720]},
+{n:796,a:[138.588, 204.363, 131.765, 192.544, 118.118, 192.544, 124.941, 204.363]},
+{n:797,a:[206.824, 86.176, 200.000, 74.357, 186.353, 74.357, 193.176, 86.176]},
+{n:798,a:[206.824, 369.824, 193.176, 369.824, 186.353, 381.643, 200.000, 381.643]},
+{n:799,a:[138.588, 251.637, 124.941, 251.637, 118.118, 263.456, 131.765, 263.456]},
+{n:800,a:[384.235, 393.462, 377.412, 405.280, 384.235, 417.099, 391.059, 405.280]},
+{n:801,a:[247.765, 393.462, 240.941, 405.280, 247.765, 417.099, 254.588, 405.280]},
+{n:802,a:[493.412, 251.637, 500.235, 263.456, 513.882, 263.456, 507.059, 251.637]},
+{n:803,a:[425.176, 369.824, 432.000, 381.643, 445.647, 381.643, 438.824, 369.824]},
+]},
+{g:72,
+h:[{n:804,a:[418.353, 97.994, 432.000, 97.994, 438.824, 86.176, 425.176, 86.176]},
+{n:805,a:[479.765, 204.363, 493.412, 204.363, 500.235, 192.544, 486.588, 192.544]},
+{n:806,a:[254.588, 74.357, 261.412, 62.538, 254.588, 50.720, 247.765, 62.538]},
+{n:807,a:[377.412, 74.357, 384.235, 62.538, 377.412, 50.720, 370.588, 62.538]},
+{n:808,a:[152.235, 204.363, 145.412, 192.544, 131.765, 192.544, 138.588, 204.363]},
+{n:809,a:[213.647, 97.994, 206.824, 86.176, 193.176, 86.176, 200.000, 97.994]},
+{n:810,a:[213.647, 358.006, 200.000, 358.006, 193.176, 369.824, 206.824, 369.824]},
+{n:811,a:[152.235, 251.637, 138.588, 251.637, 131.765, 263.456, 145.412, 263.456]},
+{n:812,a:[377.412, 381.643, 370.588, 393.462, 377.412, 405.280, 384.235, 393.462]},
+{n:813,a:[254.588, 381.643, 247.765, 393.462, 254.588, 405.280, 261.412, 393.462]},
+{n:814,a:[479.765, 251.637, 486.588, 263.456, 500.235, 263.456, 493.412, 251.637]},
+{n:815,a:[418.353, 358.006, 425.176, 369.824, 438.824, 369.824, 432.000, 358.006]},
+]},
+
+];
+
+negr=negr.map(y=>{return{g:y.g,h:y.h.map(x=>{return {n:x.n,a:x.a.map(z=>z)}})}});
+
+negr=negr.map(y=>{return{g:y.g,h:y.h.map(x=>{return {n:x.n,a:x.a.map((z,c)=>(c%2)?z-60:z)}})}});
+
+
+ogam.innerHTML=//
+	negr.map(y=>
+		'<g id="g'+y['g']+'" onclick="this.style.fill=ink;" style="fill: white">'+
+		y['h'].map(x=>'<polygon points="'+x.a.join(' ')+'" data-n="'+x.n+'"></polygon>').join('')+
+			'</g>').join('\n')+
+	'<g id="txt">'+
+	'</g>';
+
+
+
 let c6=[ // разводка
 [g21,g31,g32,g33,g34,g35,g36,g37,0,0, 0,0,0,0,0,0],
 [g20,g30,g71,g70,g47,g48,g49,g50,0,0, 0,0,0,0,0,0],
@@ -1263,99 +1184,101 @@ digit();// вставка цифр в рисунок
 
 
 function digit(){ // вставка цифр в рисунок
-let h=document.querySelectorAll('g');
-let q=[
-[71,2,2,2],[71,3,2,2],// группа номер-в-групе b[x] b[y]
-[70,2,1,2],[70,3,1,2],
-[69,2,1,3],[69,3,1,3],
-[68,1,9,3],
-[67,2,8,3],[67,3,8,3],
-[66,2,7,3],[66,3,7,3],
-[65,1,7,4],
-[64,2,6,4],[64,3,6,4],
-[63,1,5,5],
-[62,2,6,3],[62,3,6,3],
-[61,2,5,4],[61,3,5,4],
-[60,2,4,5],[60,3,4,5],
-[59,1,3,6],
-[58,2,4,4],[58,3,4,4],
-[57,2,5,3],[57,3,5,3],
-[56,2,4,3],[56,3,4,3],
-[55,2,3,5],[55,3,3,5],
-[54,2,3,4],[54,3,3,4],
-[53,2,3,3],[53,3,3,3],
-[52,2,2,6],[52,3,2,6],
-[51,2,2,5],[51,3,2,5],
-[50,2,2,4],[50,3,2,4],
-[49,1,1,7],
-[48,2,1,6],[48,3,1,6],
-[47,2,1,5],[47,3,1,5],
-[46,2,1,4],[46,3,1,4],
-[45,2,2,3],[45,3,2,3],
-[44,2,3,2],[44,3,3,2],
-[43,2,4,2],[43,3,4,2],
-[42,2,5,2],[42,3,5,2],
-[41,2,6,2],[41,3,6,2],
-[40,2,7,2],[40,3,7,2],
-[39,2,8,2],[39,3,8,2],
-[38,2,9,2],[38,3,9,2],
-[37,2,10,2],[37,3,10,2],
-[36,2,0,7],[36,3,0,7],
-[35,2,0,6],[35,3,0,6],
-[34,2,0,5],[34,3,0,5],
-[33,2,0,4],[33,3,0,4],
-[32,2,0,3],[32,3,0,3],
-[31,2,0,2],[31,3,0,2],
-[30,2,0,1],[30,3,0,1],
-[29,2,1,1],[29,3,1,1],
-[28,2,2,1],[28,3,2,1],
-[27,2,3,1],[27,3,3,1],
-[26,2,4,1],[26,3,4,1],
-[25,2,5,1],[25,3,5,1],
-[24,2,6,1],[24,3,6,1],
-[23,2,7,1],[23,3,7,1],
-[22,2,8,1],[22,3,8,1],
-[21,2,9,1],[21,3,9,1],
-[20,2,0,0],[20,3,0,0],
-[19,2,1,0],[19,3,1,0],
-[18,2,2,0],[18,3,2,0],
-[17,2,3,0],[17,3,3,0],
-[16,2,4,0],[16,3,4,0],
-[15,2,5,0],[15,3,5,0],
-[14,2,6,0],[14,3,6,0],
-[13,2,7,0],[13,3,7,0],
-[12,2,8,0],[12,3,8,0],
-[11,2,9,0],[11,3,9,0],
-[10,2,10,0],[10,3,10,0],
-[9,2,10,1],[9,3,10,1],
-[8,2,11,1],[8,3,11,1],
-[7,2,11,0],[7,3,11,0],
-[6,2,12,0],[6,3,12,0],
-[5,1,11,2],
-[4,2,12,1],[4,3,12,1],
-[3,2,13,0],[3,3,13,0],
-[2,1,13,1],
-[1,2,14,0],[1,3,14,0],
-[0,1,15,0],];
-let d='';
-let w=q.map((x,i)=>{
-	let v=h[x[0]].querySelectorAll('polygon')[x[1]];
-	let m=v.getAttribute('points').split(' ').map(y=>+y);
+	let h=document.querySelectorAll('g');
+	let q=[
+	[71,2,2,2],[71,3,2,2],// группа номер-в-групе b[x] b[y]
+	[70,2,1,2],[70,3,1,2],
+	[69,2,1,3],[69,3,1,3],
+	[68,1,9,3],
+	[67,2,8,3],[67,3,8,3],
+	[66,2,7,3],[66,3,7,3],
+	[65,1,7,4],
+	[64,2,6,4],[64,3,6,4],
+	[63,1,5,5],
+	[62,2,6,3],[62,3,6,3],
+	[61,2,5,4],[61,3,5,4],
+	[60,2,4,5],[60,3,4,5],
+	[59,1,3,6],
+	[58,2,4,4],[58,3,4,4],
+	[57,2,5,3],[57,3,5,3],
+	[56,2,4,3],[56,3,4,3],
+	[55,2,3,5],[55,3,3,5],
+	[54,2,3,4],[54,3,3,4],
+	[53,2,3,3],[53,3,3,3],
+	[52,2,2,6],[52,3,2,6],
+	[51,2,2,5],[51,3,2,5],
+	[50,2,2,4],[50,3,2,4],
+	[49,1,1,7],
+	[48,2,1,6],[48,3,1,6],
+	[47,2,1,5],[47,3,1,5],
+	[46,2,1,4],[46,3,1,4],
+	[45,2,2,3],[45,3,2,3],
+	[44,2,3,2],[44,3,3,2],
+	[43,2,4,2],[43,3,4,2],
+	[42,2,5,2],[42,3,5,2],
+	[41,2,6,2],[41,3,6,2],
+	[40,2,7,2],[40,3,7,2],
+	[39,2,8,2],[39,3,8,2],
+	[38,2,9,2],[38,3,9,2],
+	[37,2,10,2],[37,3,10,2],
+	[36,2,0,7],[36,3,0,7],
+	[35,2,0,6],[35,3,0,6],
+	[34,2,0,5],[34,3,0,5],
+	[33,2,0,4],[33,3,0,4],
+	[32,2,0,3],[32,3,0,3],
+	[31,2,0,2],[31,3,0,2],
+	[30,2,0,1],[30,3,0,1],
+	[29,2,1,1],[29,3,1,1],
+	[28,2,2,1],[28,3,2,1],
+	[27,2,3,1],[27,3,3,1],
+	[26,2,4,1],[26,3,4,1],
+	[25,2,5,1],[25,3,5,1],
+	[24,2,6,1],[24,3,6,1],
+	[23,2,7,1],[23,3,7,1],
+	[22,2,8,1],[22,3,8,1],
+	[21,2,9,1],[21,3,9,1],
+	[20,2,0,0],[20,3,0,0],
+	[19,2,1,0],[19,3,1,0],
+	[18,2,2,0],[18,3,2,0],
+	[17,2,3,0],[17,3,3,0],
+	[16,2,4,0],[16,3,4,0],
+	[15,2,5,0],[15,3,5,0],
+	[14,2,6,0],[14,3,6,0],
+	[13,2,7,0],[13,3,7,0],
+	[12,2,8,0],[12,3,8,0],
+	[11,2,9,0],[11,3,9,0],
+	[10,2,10,0],[10,3,10,0],
+	[9,2,10,1],[9,3,10,1],
+	[8,2,11,1],[8,3,11,1],
+	[7,2,11,0],[7,3,11,0],
+	[6,2,12,0],[6,3,12,0],
+	[5,1,11,2],
+	[4,2,12,1],[4,3,12,1],
+	[3,2,13,0],[3,3,13,0],
+	[2,1,13,1],
+	[1,2,14,0],[1,3,14,0],
+	[0,1,15,0],];
+	let d='';
+	let w=q.map((x,i)=>{
+		let v=h[x[0]].querySelectorAll('polygon')[x[1]];
+		let m=v.getAttribute('points').split(' ').map(y=>+y);
 
-	return '<text  x="'+(m[4]+(m[0]-m[4])/2)+'" y="'+(3+m[7]+(m[3]-m[7])/2)+'" onclick="'+(c6[x[2]][x[3]].id)+'.style.fill=ink">'+b6[x[2]][x[3]]+'</text>';
-}).join('\n');
-txt.innerHTML=d+w;
-}
+		return '<text  x="'+(m[4]+(m[0]-m[4])/2)+'" y="'+(3+m[7]+(m[3]-m[7])/2)+'" onclick="'+(c6[x[2]][x[3]].id)+'.style.fill=ink">'+b6[x[2]][x[3]]+'</text>';
+	}).join('\n');
+	txt.innerHTML=d+w;
+	}
 
 let a=['white','red','blue','springgreen','gold','#00BFFF','#40E0D0','fuchsia','orange','#8b00ff'];//'yellow'
-let u=[...document.querySelectorAll('span')]; 
-u.forEach((k,i)=>k.addEventListener('click',()=>{flower(i+1)}));
+
 
 function flower(x){
 	ink=a[x];
 	inkcolor.style.background=ink;
-	u.forEach((k,i)=>{k.style.border=['.2px solid white','.2px solid black'][+(x-1==i)]});
-}
+	}
+
+ 
+[...document.querySelectorAll('.pion')]
+.forEach((k,i)=>k.addEventListener('click',()=>{flower(i+1)}));
 
 
 </script>
