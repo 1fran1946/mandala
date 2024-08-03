@@ -11,28 +11,24 @@
 
   <title>Mandala</title>
 <style>  
-  *:not(hr), *::after, *::before {box-sizing: border-box;margin:0;padding:0;border:0}ul {list-style-type: none}
-  input[type='date'] {font-size: 36px}
-  /*@media screen and (max-width: 1080px) {input[type='date'] {font-size: 24px}}*/
+	*:not(hr), *::after, *::before {box-sizing: border-box;margin:0;padding:0;border:0}ul {list-style-type: none}
+	input[type='date'] {font-size: 36px}
+	/*@media screen and (max-width: 1080px) {input[type='date'] {font-size: 24px}}*/
 
-  polygon {stroke:#000f;}
-  polygon {stroke-width: .5px;}
-  #fish { overflow: hidden; margin: auto; width:880px; background: white;}
+	polygon {stroke:#000f;}
+	polygon {stroke-width: .5px;}
+	#fish { overflow: hidden; margin: auto; width:880px; background: white;}
  
   
-  #fish svg {transform: translateX(-160px);user-select: none;}
+	#fish svg {transform: translateX(-160px);user-select: none;}
   
-  text {text-anchor:middle; fill:black; font-family: sans-serif; font-size: 9px;}
-  #i0nkcolor {font-size: 18px;width:40px; height:13px; border: 1px solid white; margin: auto;}
+	text {text-anchor:middle; fill:black; font-family: sans-serif; font-size: 9px;}
+    
   
-  s0pan {padding: 0 10px 0; border: .2px solid white; line-height:20px;}
-  
-  
-  
-.morz {display:none;}
-.pion {display:inline-block; border:3px solid transparent;padding:2px;}
-.pion:has(.morz:checked){border:3px solid black;}
-.krug {width:40px; aspect-ratio:1;border-radius:50%;background:yellow;}  
+	.morz {display:none;}
+	.pion {display:inline-block; border:3px solid transparent;padding:2px;}
+	.pion:has(.morz:checked){border:3px solid black;}
+	.krug {width:40px; aspect-ratio:1;border-radius:50%;background:yellow;}  
  </style>
 <body style="text-align: center; padding-top: 51px; padding-bottom: 51px;">
 
@@ -1273,7 +1269,7 @@ let a=['white','red','blue','springgreen','gold','#00BFFF','#40E0D0','fuchsia','
 
 function flower(x){
 	ink=a[x];
-	inkcolor.style.background=ink;
+	//inkcolor.style.background=ink;
 	}
 
  
